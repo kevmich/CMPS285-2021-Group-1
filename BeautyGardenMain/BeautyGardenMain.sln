@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyGardenMain", "BeautyGardenMain\BeautyGardenMain.csproj", "{E24DDA51-ACC3-49D7-AB95-A683A07C9368}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyGardenMain", "BeautyGardenMain\BeautyGardenMain.csproj", "{173D927A-A9F2-40D5-ABD9-04B227F06BCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E24DDA51-ACC3-49D7-AB95-A683A07C9368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E24DDA51-ACC3-49D7-AB95-A683A07C9368}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E24DDA51-ACC3-49D7-AB95-A683A07C9368}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E24DDA51-ACC3-49D7-AB95-A683A07C9368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{173D927A-A9F2-40D5-ABD9-04B227F06BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173D927A-A9F2-40D5-ABD9-04B227F06BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173D927A-A9F2-40D5-ABD9-04B227F06BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173D927A-A9F2-40D5-ABD9-04B227F06BCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8808D8E2-63A9-4F8A-BBB3-372FA475C3C0}
+		SolutionGuid = {C59B08B0-F501-4B71-9BD2-3342A1F3FC5F}
 	EndGlobalSection
 EndGlobal
