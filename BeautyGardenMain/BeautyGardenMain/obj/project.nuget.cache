@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IfgnVpDcD8hmZsdvuqkhd+mO/DbxkYtDKpLxmwxpqfbDV5YhkWYMuYdyvHch31ffW2TUJ+BuZAm8u0snOODaYg==",
+  "dgSpecHash": "GcLN6hzxxLHcpwUhyOKDxkeuDdd2WgpJZXY3Z0/MG7ohY3pWvUPsieX2p/sbcb5Vo+6hStXsJ3FFUQIl9eaZ4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zieba\\source\\repos\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
+  "projectFilePath": "C:\\Users\\zieba\\Documents\\Projects\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zieba\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\zieba\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
