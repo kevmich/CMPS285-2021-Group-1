@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BeautyGardenMain.Entity.UserContacts;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace BeautyGardenMain.Data
         {
 
         }
-
+        public DbSet<UserContact> UserContact { get; set; }
         //DbSet go here--------
     }
 }
