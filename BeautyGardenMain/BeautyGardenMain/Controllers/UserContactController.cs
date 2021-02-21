@@ -6,6 +6,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using BeautyGardenMain.Data;
 using BeautyGardenMain.Entity.UserContacts;
+using MimeKit;
+using MailKit.Net.Smtp;
+using Microsoft.EntityFrameworkCore;
+using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
+using System.Linq.Expressions;
 
 namespace BeautyGardenMain.Controllers
 {
@@ -13,12 +19,32 @@ namespace BeautyGardenMain.Controllers
     [ApiController]
     public class UserContactController : ControllerBase
     {
+        
         private readonly DataContext dataContext;
 
         public UserContactController(DataContext dataContext)
         {
-            this.dataContext = dataContext;
+           this.dataContext = dataContext;
+            
         }
+
+       [HttpGet]
+        public static Expression<Func<UserContact, UserContactDto>> MapEntitytoDto()
+        {
+            return x => new UserContactDto
+            {
+                FullName = x.FullName,
+                PhoneNumber = x.PhoneNumber,
+                Email = x.Email,
+                Comment = x.Comment
+            };
+           
+        }
+
+       
+
+       
+        
 
         [HttpPost]
         public ActionResult<UserContactDto> Created(UserContactDto dto)
@@ -30,10 +56,29 @@ namespace BeautyGardenMain.Controllers
                 Email = dto.Email,
                 Comment = dto.Comment
             });
+
+           
             dataContext.SaveChanges();
             return Created(string.Empty, dto);
 
         }
 
+        [HttpGet] 
+        public IEnumerable<UserContactDto> GetAll()
+            {
+                return dataContext.Set<UserContact>().Select(MapEntitytoDto()).ToList();
+            }
+        [HttpDelete]
+        public ActionResult Delete(int id)
+        {
+            var data = dataContext.Set<UserContact>().FirstOrDefault(x => x.Id == id);
+            if (data == null)
+            {
+                return BadRequest();
+            }
+            dataContext.Set<UserContact>().Remove(data);
+            dataContext.SaveChanges();
+            return Ok();
+        }
     }
 }
