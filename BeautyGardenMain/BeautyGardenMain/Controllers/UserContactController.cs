@@ -31,12 +31,12 @@ namespace BeautyGardenMain.Controllers
        [HttpGet]
         public static Expression<Func<UserContact, UserContactDto>> MapEntitytoDto()
         {
-            return x => new UserContactDto
+            return i => new UserContactDto
             {
-                FullName = x.FullName,
-                PhoneNumber = x.PhoneNumber,
-                Email = x.Email,
-                Comment = x.Comment
+                FullName = i.FullName,
+                PhoneNumber = i.PhoneNumber,
+                Email = i.Email,
+                Comment = i.Comment
             };
            
         }
