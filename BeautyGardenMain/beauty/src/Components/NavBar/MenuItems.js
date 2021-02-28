@@ -1,25 +1,20 @@
-
+import { Link } from "react-router-dom";
 export const MenuItems = [
     
      {
         title:'Home',
-        url:'About',
+        url:'Home',
         cName:'nav-links'     
     },
     {
         title:'About',
-        url:'Contact',
+        url:'#',
         cName:'nav-links'     
     },
     {
         title:'Contact',
-        url:'#',
+        url:'Home',
         cName:'nav-links'     
     },
-    {
-        title:'Meet the Team',
-        url:'#',
-        cName:'nav-links'     
-    }
 ]
 export default MenuItems;

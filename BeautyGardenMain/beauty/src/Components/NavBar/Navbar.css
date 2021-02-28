@@ -11,7 +11,7 @@
 .navbar-logo {
     color:rgb(12, 8, 8);
     justify-self: start;
-    margin-right: 1000px;
+    margin-right: 1250px;
     cursor: pointer;
 
 }
@@ -41,7 +41,7 @@ margin-right: 2rem;
 }
 
 .nav-links:hover {
-    background-color: pink;
+    background-color: rgb(245, 204, 24);
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
