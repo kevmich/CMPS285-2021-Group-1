@@ -35,16 +35,20 @@ const Example = (props) => {
             <NavItem>
               <NavLink href="/Contact/">Contact</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/About/">About</NavLink>
+            </NavItem>
+            <NavItem></NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Meet The team
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  Name1
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                  Name2
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
@@ -53,7 +57,7 @@ const Example = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText>Coming soon!</NavbarText>
         </Collapse>
       </Navbar>
     </div>
