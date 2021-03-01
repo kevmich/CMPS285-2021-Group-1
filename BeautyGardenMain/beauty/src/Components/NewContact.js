@@ -47,7 +47,7 @@ const NewContact = () => {
                 <label htmlFor="email">Email</label>
                     <input type="text" name="email" value={newContact.email} onChange={handleChange} required />
                     </div>
-                    <div className="input-field" style={styles}>
+                    <div className="input-field">
                 <label htmlFor="comment">Comment</label>
                     <input type="text" name="comment" value={newContact.comment} styles={{ width:"300px" }} onChange={handleChange} required />
                     </div>
