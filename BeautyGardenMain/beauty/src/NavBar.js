@@ -4,7 +4,11 @@ import { MenuItems } from "./Components/NavBar/MenuItems"
 import './Components/NavBar/Navbar.css'
 
 class NavBar extends Component{
-
+    state = {clicked : false}
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked})
+    }
+   
 
 
     render() {
@@ -12,10 +16,11 @@ class NavBar extends Component{
             <nav className="NavbarItems">
                 <h1 className="navbar-logo"> The Beauty Garden </h1>
             
-                <div>
+                <div classNamae="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 
                 </div>
-                <ul>
+                <ul className= {this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     
                     {MenuItems.map((item, index) => {
                         return (
@@ -45,8 +50,6 @@ export default NavBar;
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/contactlist">Contact List</Link></li>
-            
         </ul>
     );
 

@@ -1,30 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
-import React from "react";
-import Home from './Home';
-import Contact from './Contact';
-import About from './About';
-import {Route, Link} from "react-router-dom";
-import NavBar from "./NavBar";
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
 
-// import axios from "axios";
-import { requirePropFactory } from '@material-ui/core';
+const Example = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggle = () => setIsOpen(!isOpen);
 
-
-function App() {
   return (
-    
-    <div className="App">
-     <NavBar />
-     {/* <Route exact path="/" component={Home} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contactlist" component={ContactList} /> */}
-    
-        
-        </div>
+    <div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink href="/components/">Components</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Options
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  Option 1
+                </DropdownItem>
+                <DropdownItem>
+                  Option 2
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  Reset
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+          <NavbarText>Simple Text</NavbarText>
+        </Collapse>
+      </Navbar>
+    </div>
   );
 }
 
-export default App;
+export default Example;
