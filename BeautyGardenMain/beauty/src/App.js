@@ -2,21 +2,8 @@ import React, { useState } from 'react';
 import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
-import NavBar from "./Navbar";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+import Navigation from "./Navigation";
+import ListPage from './ListPage';
 
 import {BrowserRouter as Router,
   Switch,
@@ -31,7 +18,7 @@ const Example = (props) => {
 
   return (
     <div>
-      <NavBar></NavBar>
+      <Navigation />
       <Router>
       <div>
 
@@ -43,9 +30,13 @@ const Example = (props) => {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/listpage">
+            <ListPage />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
+         
         </Switch>
       </div>
     </Router>

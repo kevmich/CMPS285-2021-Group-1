@@ -17,7 +17,7 @@ import {
 
 
 
-const Example = (props) => {
+const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -37,6 +37,9 @@ const Example = (props) => {
             </NavItem>
             <NavItem>
               <NavLink href="/About/">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/ListPage/">Contact List</NavLink>
             </NavItem>
             <NavItem></NavItem>
             <UncontrolledDropdown nav inNavbar>
@@ -58,10 +61,12 @@ const Example = (props) => {
             </UncontrolledDropdown>
           </Nav>
           <NavbarText>Coming soon!</NavbarText>
+         
+          
         </Collapse>
       </Navbar>
     </div>
   );
 }
 
-export default Example;
+export default Navigation;

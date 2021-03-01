@@ -39,7 +39,7 @@ function ContactList(props) {
                          <i className="fa fa-align-justify"></i> Contact List 
                         </CardHeader>
                     <CardBody>
-                        <Table hover bordered striped responsive size="sm"> 
+                        <Table hover bordered light responsive size="sm"> 
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -59,7 +59,7 @@ function ContactList(props) {
                                             <td>{item.comment}</td>
                                             <td>
                                                 <div class="btn-group">
-                                                <button className="btn btn-warning" onClick={deleteContact.bind(this, item.id)  
+                                                <button className="btn btn-secondary" onClick={deleteContact.bind(this, item.id)  
                                                  }>Delete</button>
                                                 </div>
                                             </td>

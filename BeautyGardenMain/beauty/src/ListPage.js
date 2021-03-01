@@ -1,13 +1,13 @@
 import React from "react";
 import ContactList from './ContactList';
 
-const Home = () => {
+const ListPage = () => {
     return (
         <div className="App"> 
-        Home page [under construction]
-        
+           
+            <ContactList />
         </div>
     )
 }
 
-export default Home;
+export default ListPage;
