@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeautyGardenMain.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210213234747_UserContact")]
-    partial class UserContact
+    [Migration("20210228033005_initial-create")]
+    partial class initialcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,8 +36,8 @@ namespace BeautyGardenMain.Migrations
                     b.Property<string>("FullName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("PhoneNumber")
-                        .HasColumnType("bigint");
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

@@ -31,12 +31,13 @@ namespace BeautyGardenMain.Controllers
        [HttpGet]
         public static Expression<Func<UserContact, UserContactDto>> MapEntitytoDto()
         {
-            return i => new UserContactDto
+            return dto => new UserContactDto
             {
-                FullName = i.FullName,
-                PhoneNumber = i.PhoneNumber,
-                Email = i.Email,
-                Comment = i.Comment
+                Id = dto.Id,
+                FullName = dto.FullName,
+                PhoneNumber = dto.PhoneNumber,
+                Email = dto.Email,
+                Comment = dto.Comment
             };
            
         }
@@ -61,6 +62,12 @@ namespace BeautyGardenMain.Controllers
             dataContext.SaveChanges();
             return Created(string.Empty, dto);
 
+        }
+
+        [HttpGet("{id}")]
+        public IEnumerable<UserContactDto> GetById(int id)
+        {
+            return dataContext.Set<UserContact>().Where(x => x.Id == id).Select(MapEntitytoDto()).ToList();
         }
 
         [HttpGet] 
