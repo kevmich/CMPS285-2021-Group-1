@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Home from "./Home";
+import Contact from "./Contact";
+import About from "./About";
+import NavBar from "./Navbar";
 import {
   Collapse,
   Navbar,
@@ -14,6 +18,12 @@ import {
   NavbarText
 } from 'reactstrap';
 
+import {BrowserRouter as Router,
+  Switch,
+  Route,
+  Link 
+  } from "react-router-dom";
+
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,38 +31,34 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">The Beauty Garden</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Meet The team
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
-      </Navbar>
+      <NavBar></NavBar>
+      <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/Contact">Contact</Link>
+          </li>
+        </ul>
+
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
     </div>
   );
 }

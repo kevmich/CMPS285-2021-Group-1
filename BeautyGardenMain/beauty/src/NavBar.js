@@ -1,59 +1,63 @@
-import React, { Component } from 'react';
-import {Link} from "react-router-dom"
-import { MenuItems } from "./Components/NavBar/MenuItems"
-import './Components/NavBar/Navbar.css'
+import React, { useState } from 'react';
+import "./App.css"
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
 
-class NavBar extends Component{
-    state = {clicked : false}
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked})
-    }
-   
 
 
-    render() {
-        return(
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo"> The Beauty Garden </h1>
-            
-                <div classNamae="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+const Example = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-                </div>
-                <ul className= {this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    
-                    {MenuItems.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
-                                    {item.title}
+  const toggle = () => setIsOpen(!isOpen);
 
-                                </a>
-                            </li>
-                        ) 
-                    })}
-                    
-                </ul>
-
-            </nav>
-        )
-    }
+  return (
+    <div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="/">The Beauty Garden</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink href="/components/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Meet The team
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  Option 1
+                </DropdownItem>
+                <DropdownItem>
+                  Option 2
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  Reset
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+          <NavbarText>under consruction</NavbarText>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
 }
 
-export default NavBar;
-
-
-
-/* function NavBar(){
-    return(
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-        </ul>
-    );
-
-
-}
-export default NavBar;
-*/
+export default Example;

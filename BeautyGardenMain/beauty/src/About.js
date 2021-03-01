@@ -1,14 +1,11 @@
 import React from "react";
 
-function About(){
-    return(
-        <div>
-            
-            <h1> About Us!</h1>
-            
+const About = () => {
+    return (
+        <div className="App"> 
+            <h1>Contact Us!</h1>
         </div>
-
-    );
+    )
 }
 
 export default About;
