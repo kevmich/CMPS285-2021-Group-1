@@ -32,7 +32,7 @@ const NewContact = () => {
     
 
     return (
-        <div className="container">
+        <div className="container" >
             <form className='white' onSubmit={handleSubmit}>
                 <h5 className="grey-text.text-darken-3">Contact Us</h5>                        
                 <div className="input-field">
@@ -52,7 +52,7 @@ const NewContact = () => {
                     <input type="text" name="comment" value={newContact.comment} styles={{ width:"300px" }} onChange={handleChange} required />
                     </div>
                  <div>
-                    <button className="btn blue darken-3" type="submit">Sign Up</button>
+                    <button className="btn blue darken-3" type="submit">Submit</button>
                 </div>
             </form>
         </div>

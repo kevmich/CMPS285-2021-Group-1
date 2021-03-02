@@ -11,7 +11,7 @@ import {BrowserRouter as Router,
   Link 
   } from "react-router-dom";
 
-const Example = (props) => {
+const App = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -44,4 +44,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default App;

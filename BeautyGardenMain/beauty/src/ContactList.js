@@ -31,7 +31,7 @@ function ContactList(props) {
     };
    
     return (
-        <div className="animated fadeIn">
+        <div className="animated fadeIn" >
             <Row>
                 <Col>
                     <Card>
@@ -39,7 +39,7 @@ function ContactList(props) {
                          <i className="fa fa-align-justify"></i> Contact List 
                         </CardHeader>
                     <CardBody>
-                        <Table hover bordered light responsive size="sm"> 
+                        <Table striped hover bordered light responsive size="sm"> 
                             <thead>
                                 <tr>
                                     <th>Name</th>
