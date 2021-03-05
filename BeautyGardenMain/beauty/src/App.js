@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import About from "./About";
 import Navigation from "./Navigation";
 import ListPage from './ListPage';
+import background from "./images/TBG-image-1.jpg";
 
 import {BrowserRouter as Router,
   Switch,

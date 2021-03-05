@@ -4,7 +4,7 @@ import ContactList from './ContactList';
 const Home = () => {
     return (
         <div className="App"> 
-        Home page [under construction]
+        Hello! Welcome to The Beauty Garden. Pardon our dust, as we are currently under construction.
         
         </div>
     )
