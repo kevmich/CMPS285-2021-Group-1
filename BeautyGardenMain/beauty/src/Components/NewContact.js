@@ -49,7 +49,7 @@ const NewContact = () => {
                     </div>
                     <div className="input-field">
                 <label htmlFor="comment">Comment</label>
-                    <input type="text" name="comment" value={newContact.comment} styles={{ width:"300px" }} onChange={handleChange} required />
+                    <textarea type="text" name="comment" placeholder ="What would you like to know more about?" value={newContact.comment} styles={{ width:"300px" }} onChange={handleChange} required />
                     </div>
                  <div>
                     <button className="btn blue darken-3" type="submit">Submit</button>
