@@ -8,5 +8,5 @@ import { Button } from 'reactstrap';
 // import * as serviceWorker from './serviceWorker';
 
 
-ReactDOM.render(<BrowserRouter>, <App />, </BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter> <App /> </BrowserRouter>, document.getElementById('root'));
 
