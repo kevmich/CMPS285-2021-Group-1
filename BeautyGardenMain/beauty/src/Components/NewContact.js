@@ -31,7 +31,7 @@ const NewContact = () => {
                 </div>
                 <div className="input-field" >
                 <label htmlFor="email">Email</label>
-                    <input type="email" name="email" value={newContact.email} onChange={handleChange} required />
+                    <input type="email" name="email" placeholder="example@gmail.com" value={newContact.email} onChange={handleChange} required />
                     {errors.email && <p>{errors.email}</p>}
                     </div>
                     <div className="input-field">
