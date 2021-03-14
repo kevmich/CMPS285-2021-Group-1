@@ -1,4 +1,7 @@
-.Homecolor {
-    background : lightgray;
-    color: orange;
+.Boxstyle {
+    background : rgba(224, 190, 126, 0.856);
+    
+    width: 1903px;
+    height: 1000px;
+
 }

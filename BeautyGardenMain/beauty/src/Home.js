@@ -1,10 +1,14 @@
 import React from "react";
 import ContactList from './ContactList';
+import "./Home.css"
 
 const Home = () => {
     return (
         <div className="App"> 
-        <textarea className="Homecolor"></textarea>
+        <div className="Boxstyle">
+            <h1> Our goal</h1>
+
+        </div>
         
         </div>
     )
