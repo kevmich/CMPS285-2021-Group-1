@@ -14,7 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
-
+using BeautyGardenMain.Data.Users;
 
 namespace BeautyGardenMain
 {
@@ -35,13 +35,17 @@ namespace BeautyGardenMain
             services.AddControllers();
 
             services.AddDbContext<DataContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
+                 options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<DataContext>();
-                
-            
+            services.AddIdentity<User, Role>()
+               .AddEntityFrameworkStores<DataContext>();
+
+
             services.AddSwaggerGen();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "V1" });
+            });
 
         }
 
@@ -79,5 +83,6 @@ namespace BeautyGardenMain
                 endpoints.MapControllers();
             });
         }
+
     }
 }

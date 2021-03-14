@@ -17,16 +17,16 @@ function ContactList(props) {
     }, []);
     
     const deleteContact = (id) => {
+        if (window.confirm('Delete?'))
         axios.delete("https://localhost:44381/api/UserContact?id="+id)
         .then(response => {
             if (response.data !=null) {
                 alert("Contact deleted successfully.");
-                
+                const remainingContact = data.filter((result) => result.id !== id)
+            setData(remainingContact);
             }
             
         });
-        const remainingContact = data.filter((result) => result.id !== id)
-            setData(remainingContact);
         
     };
    

@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import About from "./About";
 import Navigation from "./Navigation";
 import ListPage from './ListPage';
+import OfferedServices from './OfferedServices';
 
 import {BrowserRouter as Router,
   Switch,
@@ -32,6 +33,9 @@ const App = (props) => {
           </Route>
           <Route path="/listpage">
             <ListPage />
+          </Route>
+          <Route path="/Services">
+            <OfferedServices />
           </Route>
           <Route path="/">
             <Home />
