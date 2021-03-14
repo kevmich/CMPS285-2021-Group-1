@@ -4,7 +4,7 @@ import ContactList from './ContactList';
 const Home = () => {
     return (
         <div className="App"> 
-        Home page [under construction]
+        <textarea className="Homecolor"></textarea>
         
         </div>
     )
