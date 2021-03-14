@@ -4,7 +4,7 @@ import "./Home.css"
 
 const Home = () => {
     return (
-        <div className="App"> 
+        <div className="Boxstyle"> 
  
             <h1> Our goal</h1>
 
