@@ -1,10 +1,14 @@
 import React from "react";
 import ContactList from './ContactList';
+import "./Home.css"
 
 const Home = () => {
     return (
         <div className="App"> 
-        Hello! Welcome to The Beauty Garden. Pardon our dust, as we are currently under construction.
+        <div className="Boxstyle">
+            <h1> Our goal</h1>
+
+        </div>
         
         </div>
     )
