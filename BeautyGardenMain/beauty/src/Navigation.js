@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "./App.css"
 import {
   Collapse,
+  Container,
+  Row,
+  Col,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -14,6 +17,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import OfferedServices from './OfferedServices';
 
 
 
@@ -33,7 +37,7 @@ const Navigation = (props) => {
               <NavLink href="/Home/" title="Go to the homepage">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Services/" title="See what we offer">Services</NavLink>
+              <NavLink href="/Services" title="See what we offer">Services</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/About/" title="Learn about us">About</NavLink>
