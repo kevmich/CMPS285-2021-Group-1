@@ -1,0 +1,21 @@
+.AboutBoxOne {
+    background : rgba(212, 206, 193, 0.856);
+    
+    width: 1920px;
+    height: 100px;
+    text-align: center;
+    Border: 5px outset black;
+    border-bottom: 0px outset black;
+
+}
+
+.SectionStyle {
+    background : rgba(241, 218, 174, 0.856);
+    
+    width: 1920px;
+    height: 400px;
+    text-align: center;
+    Border: 5px outset black;
+    float: left;
+    border-bottom: 0px outset black;
+}
