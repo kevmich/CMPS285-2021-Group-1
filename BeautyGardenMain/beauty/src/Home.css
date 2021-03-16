@@ -1,7 +1,20 @@
-.Boxstyle {
-    background : rgba(224, 190, 126, 0.856);
+.OurGoal {
+    background : rgba(192, 201, 198, 0.856);
     
-    width: 1903px;
-    height: 1000px;
+    width: 2000px;
+    height: 100px;
+    text-align: center;
+    border: 5px outset black;
 
+}
+
+.BoxStyle {
+    background : #fae884da;
+    
+    width: 600px;
+    height: 900px;
+    border: 5px outset black;
+    margin: 15px;
+    float: left;
+    text-align: center;
 }

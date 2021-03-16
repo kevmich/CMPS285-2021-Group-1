@@ -4,12 +4,30 @@ import "./Home.css"
 
 const Home = () => {
     return (
-        <div className="Boxstyle"> 
- 
-            <h1> Our goal</h1>
+
+        <body>
+            
+
+             <div className="OurGoal">  
+                <h1>Logo Placeholder</h1>   
+             </div>
+
+             <div className="BoxStyle">
+                 <h1>Section 1</h1>
+             </div>
+
+             <div className="BoxStyle">
+                 <h1>Section 2</h1>
+             </div>
+
+             <div className="BoxStyle">
+                 <h1>Section 3</h1>
+             </div>
+        </body>
 
 
-        </div>
+
+        
     )
 }
 
