@@ -10,11 +10,11 @@ const About = () => {
         </div>
 
         <div className="SectionStyle">
-            <h1> Text Section</h1>
+            <h2> Text Section</h2>
         </div>
 
         <div className="SectionStyle">
-            <h1>pics + extra</h1>
+            <h2>pics + extra</h2>
         </div>
 
         </body>
