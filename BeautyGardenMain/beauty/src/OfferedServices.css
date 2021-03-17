@@ -1,4 +1,4 @@
-.AboutBoxOne {
+.Serve {
     background : rgba(246,236,227,255);
     
     width: auto;
@@ -10,11 +10,11 @@
 
 }
 
-.SectionStyle {
+.InfoBoxes {
     background : #f6ece3;
     
-    width: 550px;
-    height: 600px;
+    width: 300px;
+    height: 250px;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     margin: 25px;
@@ -23,3 +23,4 @@
     padding: 10px;
 
 }
+

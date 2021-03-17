@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "./App.css"
 import {
   Collapse,
+  Container,
+  Row,
+  Col,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -14,6 +17,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import OfferedServices from './OfferedServices';
 
 
 
@@ -25,21 +29,24 @@ const Navigation = (props) => {
   return (
     <div  className="App">
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">The Beauty Garden</NavbarBrand>
+        <NavbarBrand href="/" title="Go to the homepage">The Beauty Garden</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/Home/">Home</NavLink>
+              <NavLink href="/Home/" title="Go to the homepage">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Contact/">Contact</NavLink>
+              <NavLink href="/Services" title="See what we offer">Services</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/About/">About</NavLink>
+              <NavLink href="/About/" title="Learn about us">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/ListPage/">Contact List</NavLink>
+              <NavLink href="/Contact/" title="Contact us">Contact</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/ListPage/" title="View all inquiries">Contact List</NavLink>
             </NavItem>
             <NavItem></NavItem>
             <UncontrolledDropdown nav inNavbar>
