@@ -12,6 +12,10 @@ using Microsoft.EntityFrameworkCore;
 using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 using System.Linq.Expressions;
+using Microsoft.Extensions.Configuration;
+using System.Net;
+using System.Net.Mail;
+using SmtpClient = System.Net.Mail.SmtpClient;
 
 namespace BeautyGardenMain.Controllers
 {
@@ -57,8 +61,32 @@ namespace BeautyGardenMain.Controllers
                 Email = dto.Email,
                 Comment = dto.Comment
             });
+            var builder = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json");
+            var config = builder.Build();
 
-           
+            var smtpClient = new SmtpClient(config["Smtp:Host"])
+            {
+                Port = int.Parse(config["Smtp:Port"]),
+                Credentials = new NetworkCredential(config["Smtp:Username"], config["Smtp:Password"]),
+                EnableSsl = true,
+            };
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress("beatuygs@gmail.com"),
+                Subject = "New Contact Submitted",
+                Body = @$"<html>
+                           <body>
+                            <section><b>Name:</b> {dto.FullName}</section>
+                             <section><b>Phone Number:</b> {dto.PhoneNumber}</section>
+                             <section><b>Email:</b> {dto.Email}</section>
+                             <section><b>Comment:</b> {dto.Comment}</section>
+                           </body>
+                           </html>",
+                IsBodyHtml = true,
+            };
+            mailMessage.To.Add("beatuygs@gmail.com");
+            smtpClient.Send(mailMessage);
             dataContext.SaveChanges();
             return Created(string.Empty, dto);
 
