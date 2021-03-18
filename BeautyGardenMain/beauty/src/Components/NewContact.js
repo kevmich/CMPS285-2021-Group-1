@@ -16,9 +16,10 @@ const NewContact = () => {
     
 
     return (
-        <body>
-            <div className="container" >
-                <form className='white' onSubmit={handleSubmit}>                       
+        
+        <div className="container" >
+            <form className='white' onSubmit={handleSubmit}>
+                <body>                 
                     <div className="input-field">
                 
                         <label htmlFor="fullName">Full Name</label>
@@ -47,9 +48,9 @@ const NewContact = () => {
                     <div>
                         <button className="btn blue darken-3" type="submit">Submit</button>
                     </div>
-                </form>
-            </div>
-        </body>
+                </body>  
+            </form>
+        </div>
     );
 }
 export default NewContact;
