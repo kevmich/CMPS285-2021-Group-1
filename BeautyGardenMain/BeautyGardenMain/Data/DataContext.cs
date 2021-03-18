@@ -22,6 +22,7 @@ namespace BeautyGardenMain.Data
         {
 
         }
+        public DbSet<Post> Post { get; set; }
         public DbSet<UserContact> UserContact { get; set; }
         //public DbSet<Post> Posts { get; set; }
         //DbSet go here--------

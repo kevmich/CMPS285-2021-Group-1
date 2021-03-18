@@ -18,10 +18,5 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entity\" />
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 
 </Project>

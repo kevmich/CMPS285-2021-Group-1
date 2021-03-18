@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BeautyGardenMain",
+    "\\BeautyGardenMain\\BeautyGardenMain",
+    "\\BeautyGardenMain\\BeautyGardenMain\\clientapp",
+    "\\BeautyGardenMain\\BeautyGardenMain\\Controllers",
+    "\\BeautyGardenMain\\BeautyGardenMain\\Entity",
+    "\\BeautyGardenMain\\BeautyGardenMain\\Entity\\Posts",
+    "\\BeautyGardenMain\\BeautyGardenMain\\Entity\\UserContacts",
+    "\\BeautyGardenMain\\BeautyGardenMain\\Entity\\Users",
+    "\\BeautyGardenMain\\BeautyGardenMain\\Properties"
+  ],
+  "SelectedNode": "\\BeautyGardenMain\\BeautyGardenMain.sln",
+  "PreviewInSolutionExplorer": false
+}
