@@ -67,22 +67,5 @@ namespace BeautyGardenMain.Controllers
             await userManager.AddToRoleAsync(user, dto.Role);
             return Ok();
         }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }//end class
 }//end namespace
