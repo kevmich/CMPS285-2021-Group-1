@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oE8rAHnur5G8fVh6pZrGnqNnEsJhyd/0U04A/LfeY11W6VHK2Ukf9tQLxMTXWfB6eJHCdPLLFZ5DPY4z74HhDg==",
+  "dgSpecHash": "eQR0GBumM1PgHUg6dtTf/oiBVJUV2RloPylyn1XZ03iLB0a7XODya78NgLa9z6e3NnAlV0tGAYOE7f7OUiQSsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\laqua\\Source\\Repos\\kevmich\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
+  "projectFilePath": "C:\\Users\\laqua\\Source\\Repos\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laqua\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\laqua\\.nuget\\packages\\mailkit\\2.10.1\\mailkit.2.10.1.nupkg.sha512",
