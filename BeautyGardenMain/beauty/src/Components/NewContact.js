@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import validate from "../validateInfo";
 import useForm from '../useForm'
 import './NewContact.css';
 
