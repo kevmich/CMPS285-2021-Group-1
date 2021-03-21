@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-
+import axios from 'axios';
+import validate from "../validateInfo";
 import useForm from '../useForm'
 import './NewContact.css';
 
-
-
-
 const NewContact = () => {
-    const { handleChange, newContact, handleSubmit } = useForm();
+    const { handleChange, newContact, handleSubmit, errors } = useForm(validate);
    
 
     
@@ -16,41 +14,43 @@ const NewContact = () => {
 
        
     
-    
+
     return (
-   
-        <body>
-            <div className="container" >
-                <form className='white' onSubmit={handleSubmit}>                       
+        
+        <div className="container" >
+            <form className='white' onSubmit={handleSubmit}>
+                <body>                 
                     <div className="input-field">
                 
                         <label htmlFor="fullName">Full Name</label>
-                        <input type="text" name="fullName" value={newContact.fullName} onChange={handleChange}  /> 
-                    <div style ={{ color: "red "}}>{newContact.nameError}</div>
+                        <input type="text" name="fullName" value={newContact.fullName} onChange={handleChange} required /> 
+                    
                     </div>
                     <div className="input-field">
                     <label htmlFor="text">Phone Number</label>
-                        <input type="text" name="phoneNumber"  maxLength = {10} value={newContact.phoneNumber} onChange={handleChange}  />
-                        <div style ={{ color: "red "}}>{newContact.phoneError}</div>
+                        <input type="text" name="phoneNumber" pattern="[0-9]+" value={newContact.phoneNumber} onChange={handleChange} required />
+                    
                     </div>
                     <div className="input-field" >
                     <label htmlFor="email">Email</label>
-                        <input type="text" name="email" placeholder="example@gmail.com" value={newContact.email} onChange={handleChange}  />
-                        <div style ={{ color: "red "}}>{newContact.emailError}</div>
+                        <input type="email" name="email" placeholder="example@gmail.com" value={newContact.email} onChange={handleChange} required />
+                        {errors.email && <p>{errors.email}</p>}
                         </div>
                         <div className="input-field">
                     <label htmlFor="comment">Comment</label>
-                        <textarea type="text" name="comment" placeholder ="What would you like to know about?" value={newContact.comment} onChange={handleChange}  />
-                             <div style ={{ color: "red "}}>{newContact.commentError}</div>
+                        <textarea type="text" name="comment" placeholder ="What would you like to know about?" value={newContact.comment}
+                            styles={{
+                                width:"300px"
+                                
+                                
+                            }} onChange={handleChange} required />
                         </div>
                     <div>
                         <button className="btn blue darken-3" type="submit">Submit</button>
                     </div>
-                </form>
-                
-            </div>
-        </body>
-    
+                </body>  
+            </form>
+        </div>
     );
 }
 export default NewContact;

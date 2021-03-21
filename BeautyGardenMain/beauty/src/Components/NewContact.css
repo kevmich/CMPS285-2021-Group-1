@@ -19,7 +19,11 @@
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     padding: 10px;
-    float: left;
+    margin-top: 75px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    overflow: hidden;
 
 }
 
