@@ -5,6 +5,7 @@ import About from "./About";
 import Navigation from "./Navigation";
 import ListPage from './ListPage';
 import OfferedServices from './OfferedServices';
+import Login from './Login';
 
 import {BrowserRouter as Router,
   Switch,
@@ -36,6 +37,9 @@ const App = (props) => {
           </Route>
           <Route path="/Services">
             <OfferedServices />
+          </Route>
+          <Route path="/Login">
+            <Login />
           </Route>
           <Route path="/">
             <Home />
