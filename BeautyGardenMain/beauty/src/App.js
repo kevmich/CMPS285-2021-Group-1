@@ -35,7 +35,7 @@ const App = (props) => {
           <Route path="/listpage">
             <ListPage />
           </Route>
-          <Route path="/Services">
+          <Route path="/services">
             <OfferedServices />
           </Route>
           <Route path="/Login">
@@ -43,6 +43,9 @@ const App = (props) => {
           </Route>
           <Route path="/">
             <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
          
         </Switch>
