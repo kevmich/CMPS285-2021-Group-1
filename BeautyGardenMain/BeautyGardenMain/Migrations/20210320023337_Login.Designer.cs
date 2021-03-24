@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeautyGardenMain.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210318174852_Login")]
+    [Migration("20210320023337_Login")]
     partial class Login
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
