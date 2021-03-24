@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\laqua\\Source\\Repos\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj": {}
+    "C:\\Users\\laqua\\Source\\Repos\\kevmich\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\laqua\\Source\\Repos\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj": {
+    "C:\\Users\\laqua\\Source\\Repos\\kevmich\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\laqua\\Source\\Repos\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
+        "projectUniqueName": "C:\\Users\\laqua\\Source\\Repos\\kevmich\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
         "projectName": "BeautyGardenMain",
-        "projectPath": "C:\\Users\\laqua\\Source\\Repos\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
+        "projectPath": "C:\\Users\\laqua\\Source\\Repos\\kevmich\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\BeautyGardenMain.csproj",
         "packagesPath": "C:\\Users\\laqua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\laqua\\Source\\Repos\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\obj\\",
+        "outputPath": "C:\\Users\\laqua\\Source\\Repos\\kevmich\\CMPS285-2021-Group-1\\BeautyGardenMain\\BeautyGardenMain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\laqua\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -129,7 +129,7 @@ namespace BeautyGardenMain
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetService<DataContext>();       //Builds database to execute migrations
-                context.Database.Migrate();
+                //context.Database.Migrate();
             }
         }//end MigrateDb
 
