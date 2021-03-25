@@ -8,21 +8,26 @@ const Home = () => {
         <body>
             
 
-             <div className="OurGoal">  
+             <div className="LogoOutline">  
                 <h1>Logo Placeholder</h1>   
              </div>
 
-             <div className="BoxStyle">
-                 <h2>Home1</h2>
+             <div className="ImageOutline">
+                 <h2>Background Image(s)</h2>
+                 <div className="BookingLink">
+                     Booking Link placeholder
+                 </div>
              </div>
 
-             <div className="BoxStyle">
-                 <h2>Home2</h2>
+
+             <div className="QuoteBox">
+                 QUOTE Box
              </div>
 
-             <div className="BoxStyle">
-                 <h2>Home3</h2>
+             <div className="MoreImages">
+                 More images Box
              </div>
+
         </body>
 
 
