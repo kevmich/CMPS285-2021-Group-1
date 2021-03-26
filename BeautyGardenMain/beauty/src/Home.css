@@ -1,25 +1,54 @@
-.OurGoal {
+.LogoOutline {
     background : rgba(246,236,227,255);
     
     width: auto;
-    height: 100px;
+    height: 200px;
     text-align: center;
     border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-bottom: none;
     padding: 10px;
 
 }
 
-.BoxStyle {
+.ImageOutline {
     background: #f6ece3;
     
-    width: 550px;
-    height: 600px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    margin: 25px;
-    float: left;
+    width: auto;
+    height: 700px;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
     text-align: center;
     padding: 10px;
+
+}
+
+
+.BookingLink {
+    background: rgb(240, 223, 191);
+    width: auto;
+    height: 450px;
+    float:unset;
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: 50px;
+    border: 2px solid black;
+
+}
+
+
+.QuoteBox {
+    Background: #f6ece3;
+    border-bottom: 2px;
+    border-top: 0px;
+    Width: auto;
+    Height: 400px;
+
+}
+
+.MoreImages {
+    Background: #f6ece3;
+    Border-top: 2px solid black;
+    Width: auto;
+    Height: 400px;
 
 }
