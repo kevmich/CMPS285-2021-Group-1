@@ -20,7 +20,7 @@ const useForm = () => {
        
         setNewContact({...newContact, [name]: value});
         
-        console.log(newContact);
+        
         
     }
 
@@ -91,7 +91,7 @@ const useForm = () => {
         const isValid = validate();
         if (isValid){
             setLoading(true);
-            axios.post('https://localhost:44381/api/UserContact', newContact)
+            axios.post('/api/UserContact', newContact)
             .then(function (response) {
                  console.log(response)
             if (response !=null) {

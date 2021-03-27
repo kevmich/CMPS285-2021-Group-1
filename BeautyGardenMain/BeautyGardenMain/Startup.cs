@@ -13,8 +13,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Cors;
 using BeautyGardenMain.Data.Users;
+using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 
 namespace BeautyGardenMain
 {
@@ -30,7 +30,7 @@ namespace BeautyGardenMain
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            
 
             services.AddControllers();
 
@@ -40,6 +40,10 @@ namespace BeautyGardenMain
             services.AddIdentity<User, Role>()
                .AddEntityFrameworkStores<DataContext>();
 
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "beauty/build";
+            });
 
             services.AddSwaggerGen();
             services.AddSwaggerGen(c =>
@@ -68,23 +72,31 @@ namespace BeautyGardenMain
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+
             });
 
             app.UseHttpsRedirection();
-
+            app.UseStaticFiles();
+            app.UseSpaStaticFiles();
             app.UseRouting();
 
-            app.UseCors(x => x
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .SetIsOriginAllowed(origin => true)
-                .AllowCredentials());
+            
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSpa(spa =>
+            {
+                spa.Options.SourcePath = "beauty";
+
+                if (env.IsDevelopment())
+                {
+                    spa.UseReactDevelopmentServer(npmScript: "start");
+                }
             });
         }//end Configure
         private static async Task AddRoles(IApplicationBuilder app)
