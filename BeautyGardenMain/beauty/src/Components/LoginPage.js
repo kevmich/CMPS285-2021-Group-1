@@ -22,7 +22,7 @@ const LoginPage = () => {
              
                     <div className="input-field" >
                     <label htmlFor="email">Email</label>
-                        <input type="text" name="email" placeholder="example@gmail.com" value={newContact.email} onChange={handleChange}  />
+                        <input type="text" name="email" placeholder="example@yahoo.com" value={newContact.email} onChange={handleChange}  />
                         <div style ={{ color: "red "}}>{newContact.emailError}</div>
                         </div>
                         <div className="input-field">
