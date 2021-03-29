@@ -6,15 +6,65 @@ const About = () => {
 
         <body>
         <div className="AboutBoxOne"> 
-            <h1>Our goal</h1>
+            <h2>MAKING A POSITIVE IMPACT IS MY GOAL</h2>
         </div>
 
-        <div className="SectionStyle">
-            <h2> Text Section</h2>
+        <div className="TopText">
+            <h5>I believe living a healthy lifestyle begins with maintaining a strong and fit body</h5>
+            <h5>My aim is to help you identify your fitness goals, design an exercise program that</h5>
+            <h5>firts your needs and guide you through every exercise, every workour. My holistic</h5>
+            <h5>approach to fitness and health will have you feeling great and seeing results in no time</h5>
         </div>
 
-        <div className="SectionStyle">
-            <h2>pics + extra</h2>
+        <div>
+            <div className="LeftBox">
+                Services: one
+            </div>
+
+
+            <div className="RightBox">
+                IMAGE one
+            </div>
+        </div>
+
+
+        <div>
+            <div className="LeftBox">
+                Services: two
+            </div>
+
+
+            <div className="RightBox">
+                IMAGE two
+            </div>
+        </div>
+
+
+        <div>
+            <div className="LeftBox">
+                Services: three
+            </div>
+
+
+            <div className="RightBox">
+                IMAGE three
+            </div>
+        </div>
+
+
+        <div>
+            <div className="LeftBox">
+                Services: four
+            </div>
+
+
+            <div className="RightBox">
+                IMAGE four
+            </div>
+        </div>
+        
+        <div className="TopText">
+                extra box 
         </div>
 
         </body>
