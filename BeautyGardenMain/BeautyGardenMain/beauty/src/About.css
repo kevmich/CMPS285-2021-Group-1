@@ -1,11 +1,11 @@
 .AboutBoxOne {
-    background : rgba(246,236,227,255);
+    background : #f6ece3;
     
     width: auto;
     height: 100px;
     text-align: center;
     border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-bottom: 1px solid black;
     padding: 10px;
 
 }
@@ -22,4 +22,44 @@
     text-align: center;
     padding: 10px;
 
+}
+
+.TopText {
+    background : #f6ece3;
+    
+    width: auto;
+    height: 300px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    font-family: cursive;
+    /* text-decoration: underline; */
+
+}
+
+.LeftBox{
+    background : #f6ece3;
+    
+    width: 70vw;
+    height: 400px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    border-left: 1px solid black;
+    border-right: 3px solid black;
+    float: left;
+
+}
+.RightBox{
+    background : #f6ece3;
+    
+    width: 29vw;
+    height: 400px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    border-left: 3px solid black;
+    border-right: 2px solid black;
+    float: right;
 }
