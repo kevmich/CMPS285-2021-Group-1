@@ -19,38 +19,40 @@ const App = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navigation />
-      <Router>
+    <div classname="NavBar">
       <div>
+        <Navigation />
+        <Router>
+        <div>
 
 
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/listpage">
-            <ListPage />
-          </Route>
-          <Route path="/services">
-            <OfferedServices />
-          </Route>
-          <Route path="/Login">
-            <Login />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-         
-        </Switch>
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/listpage">
+              <ListPage />
+            </Route>
+            <Route path="/services">
+              <OfferedServices />
+            </Route>
+            <Route path="/Login">
+              <Login />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+          
+          </Switch>
+        </div>
+      </Router>
       </div>
-    </Router>
     </div>
   );
 }

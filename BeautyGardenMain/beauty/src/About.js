@@ -3,7 +3,7 @@ import "./About.css"
 
 const About = () => {
     return (
-
+        
         <body>
         <div className="AboutBoxOne"> 
             <h2>MAKING A POSITIVE IMPACT IS MY GOAL</h2>
@@ -68,6 +68,7 @@ const About = () => {
         </div>
 
         </body>
+        
     )
 }
 

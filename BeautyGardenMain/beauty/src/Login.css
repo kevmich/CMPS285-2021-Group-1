@@ -1,3 +1,5 @@
+
+
 .OurGoal {
     background : rgba(246,236,227,255);
     
@@ -7,6 +9,10 @@
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
 
 }
 
@@ -21,5 +27,9 @@
     float: left;
     text-align: center;
     padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
 
 }

@@ -1,3 +1,5 @@
+
+
 .LogoOutline {
     background : rgba(246,236,227,255);
     
@@ -7,6 +9,9 @@
     border-top: 5px solid black;
     border-bottom: none;
     padding: 10px;
+
+    text-align: center;
+    font-family: 'Cinzel', serif;
 
 }
 
@@ -19,6 +24,9 @@
     border-bottom: 2px solid black;
     text-align: center;
     padding: 10px;
+
+    text-align: center;
+    font-family: 'Cinzel', serif;
 
 }
 
@@ -33,6 +41,10 @@
     margin-top: 50px;
     border: 2px solid black;
 
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
 }
 
 
@@ -43,6 +55,10 @@
     Width: auto;
     Height: 400px;
 
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
 }
 
 .MoreImages {
@@ -50,5 +66,9 @@
     Border-top: 2px solid black;
     Width: auto;
     Height: 400px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
 
 }
