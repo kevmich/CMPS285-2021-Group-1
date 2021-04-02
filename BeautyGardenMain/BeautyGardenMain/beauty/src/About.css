@@ -8,6 +8,10 @@
     border-bottom: 1px solid black;
     padding: 10px;
 
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
 }
 
 .SectionStyle {
@@ -21,6 +25,10 @@
     float: left;
     text-align: center;
     padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
 
 }
 
@@ -36,6 +44,10 @@
     font-family: cursive;
     /* text-decoration: underline; */
 
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
 }
 
 .LeftBox{
@@ -50,6 +62,10 @@
     border-right: 3px solid black;
     float: left;
 
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
 }
 .RightBox{
     background : #f6ece3;
@@ -62,4 +78,9 @@
     border-left: 3px solid black;
     border-right: 2px solid black;
     float: right;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
 }
