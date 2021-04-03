@@ -43,29 +43,6 @@ const Navigation = (props) => {
 
 
 
-            <NavItem>
-              
-            </NavItem>
-
-
-
-            <NavItem>
-              <NavLink href="/About/" title="Learn about us">About</NavLink>
-            </NavItem>
-
-
-
-            <NavItem>
-              <NavLink href="/Contact/" title="Contact us">Contact</NavLink>
-            </NavItem>
-
-
-
-            <NavItem>
-              <NavLink href="/ListPage/" title="View all inquiries">Contact List</NavLink>
-            </NavItem>
-
-
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Services
@@ -99,6 +76,27 @@ const Navigation = (props) => {
 
               </DropdownMenu>
             </UncontrolledDropdown>
+
+
+            
+            <NavItem>
+              <NavLink href="/About/" title="Learn about us">About</NavLink>
+            </NavItem>
+
+
+
+            <NavItem>
+              <NavLink href="/Contact/" title="Contact us">Contact</NavLink>
+            </NavItem>
+
+
+
+            <NavItem>
+              <NavLink href="/ListPage/" title="View all inquiries">Contact List</NavLink>
+            </NavItem>
+
+
+
 
           </Nav>
 

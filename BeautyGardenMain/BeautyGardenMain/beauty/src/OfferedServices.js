@@ -5,28 +5,93 @@ const OfferedServices = () => {
     return (
         <body>
             <div className="Serve"> 
-                <h1>What we offer!</h1>
-            
+                <h1>Eyelash Extensions</h1>            
             </div>
-            <div className="InfoBoxes">
-                <h2>Services1</h2>
+
+            <div className="OpenSpace">
+                
             </div>
-            <div className="InfoBoxes">
-                <h2>Services2</h2>
+
+
+            <div className="TitleStyling">
+                <h2>Signature Style</h2>
             </div>
-            <div className="InfoBoxes">
-                <h2>Services3</h2>
+
+            <div className="ServiceImages">
+                PICS HERE
             </div>
-            <div className="InfoBoxes">
-                <h2>Services4</h2>
+
+            <div className="TitleStyling">
+                <h2>Prices</h2>
             </div>
-            <div className="InfoBoxes">
-                <h2>Services5</h2>
+
+
+         <div className="tableContainer">
+
+             <div className="leftPrice">
+                <h1 className="PriceTitle"> classic </h1>
+                <h3>Full Set</h3>
+                <h3>Two Week Refill</h3>
+                <h3>Three Week Refill</h3>
+             </div>                
+             <div className="rightPrice">
+                <h1>  [empty space here]  </h1>
+                <h3>115</h3>
+                <h3>115</h3>
+                <h3>115</h3>
+             </div>
+
+
+             <div className="leftPrice">
+                <h1 className="PriceTitle"> classic </h1>
+                <h3>Full Set</h3>
+                <h3>Two Week Refill</h3>
+                <h3>Three Week Refill</h3>
+             </div>                
+             <div className="rightPrice">
+                <h1>  [empty space here]  </h1>
+                <h3>115</h3>
+                <h3>115</h3>
+                <h3>115</h3>
+             </div>
+
+             <div className="leftPrice">
+                <h1 className="PriceTitle"> classic </h1>
+                <h3>Full Set</h3>
+                <h3>Two Week Refill</h3>
+                <h3>Three Week Refill</h3>
+             </div>                
+             <div className="rightPrice">
+                <h1>  [empty space here]  </h1>
+                <h3>115</h3>
+                <h3>115</h3>
+                <h3>115</h3>
+             </div>
+
+             <div className="leftPrice">
+                <h1 className="PriceTitle"> classic </h1>
+                <h3>Full Set</h3>
+                <h3>Two Week Refill</h3>
+                <h3>Three Week Refill</h3>
+             </div>                
+             <div className="rightPrice">
+                <h1>  [empty space here]  </h1>
+                <h3>115</h3>
+                <h3>115</h3>
+                <h3>115</h3>
+             </div>
+
+
+     
+         </div>
+
+         <div className="TitleStyling">
+            <h2>Frequently asked questions</h2>
+         </div>
+            <div className="FAQ">
+                    FAQ HERE
             </div>
-            <div className="InfoBoxes">
-                <h2>Services6</h2>
-            </div>
-        </body>
+     </body>
     )
 }
 
