@@ -5,7 +5,7 @@ const FaceNWax = () => {
     return (
         <body>
             <div>
-                Lip filler page
+                Face and Wax page
             </div>
      </body>
     )

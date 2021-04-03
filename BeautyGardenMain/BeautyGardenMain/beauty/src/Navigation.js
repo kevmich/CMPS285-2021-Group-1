@@ -18,9 +18,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import "./Navigation.css"
-import OfferedServices from './OfferedServices';
-
-
+import Button from './Button'
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,79 +32,59 @@ const Navigation = (props) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
 
-
           <Nav className="mr-auto" navbar>
 
             <NavItem>
-              <NavLink href="/Home/" title="Go to the homepage">Home</NavLink>
+              <NavLink href="/" title="Go to the homepage">Home</NavLink>
             </NavItem>
-
-
 
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Services
               </DropdownToggle>
-
-            
               <DropdownMenu right>
 
-              
                 <DropdownItem>
-                <NavLink href="/Services/" title="See what we offer">Lash Extensions</NavLink>
+                <NavLink href="/lash-extensions" title="See what we offer">Lash Extensions</NavLink>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink href="/Services/" title="See what we offer">Teeth Treatments</NavLink>
+                <NavLink href="/teeth-treatment" title="See what we offer">Teeth Treatments</NavLink>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink href="/Services/" title="See what we offer">Needle Free Lip Fillers</NavLink>
+                <NavLink href="/lip-filler" title="See what we offer">Needle Free Lip Fillers</NavLink>
                 </DropdownItem>
                
                 <DropdownItem>
-                <NavLink href="/Services/" title="See what we offer">Needle Free Fat Dissolve</NavLink>
+                <NavLink href="/fat-dissolve" title="See what we offer">Needle Free Fat Dissolve</NavLink>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink href="/Services/" title="See what we offer">Facials and Waxing</NavLink>
+                <NavLink href="/face-and-wax" title="See what we offer">Facials and Waxing</NavLink>
                 </DropdownItem>
-
-
 
               </DropdownMenu>
             </UncontrolledDropdown>
-
-
-            
+          
             <NavItem>
-              <NavLink href="/About/" title="Learn about us">About</NavLink>
+              <NavLink href="/about" title="Learn about us">About</NavLink>
             </NavItem>
 
-
-
             <NavItem>
-              <NavLink href="/Contact/" title="Contact us">Contact</NavLink>
+              <NavLink href="/contact-us" title="Contact us">Contact</NavLink>
             </NavItem>
 
-
-
             <NavItem>
-              <NavLink href="/ListPage/" title="View all inquiries">Contact List</NavLink>
+              <NavLink href="/contact-list" title="View all inquiries">Contact List</NavLink>
             </NavItem>
-
-
-
 
           </Nav>
 
-
           <NavbarText>
-            Login Button Here!
-
+              <NavLink href="/login" title="Login as admin"><Button /></NavLink>
           </NavbarText>
-         
-          
+                  
         </Collapse>
       </Navbar>
     </div>

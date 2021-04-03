@@ -5,7 +5,7 @@ const FatDissolve = () => {
     return (
         <body>
             <div>
-                Lip filler page
+                Fat dissolve page
             </div>
      </body>
     )
