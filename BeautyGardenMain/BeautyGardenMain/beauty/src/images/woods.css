@@ -29,7 +29,7 @@
   justify-content: center;
 }
 
-.MoreImages:hover .woods_overlay {
+.ImageRow:hover .woods_overlay {
   opacity: 1;
 }
 
