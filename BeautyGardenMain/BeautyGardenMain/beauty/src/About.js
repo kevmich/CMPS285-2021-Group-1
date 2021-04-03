@@ -62,9 +62,15 @@ const About = () => {
                 IMAGE four
             </div>
         </div>
-        
-        <div className="TopText">
-                extra box 
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div className="TestTest">
+            Test
         </div>
 
         </body>

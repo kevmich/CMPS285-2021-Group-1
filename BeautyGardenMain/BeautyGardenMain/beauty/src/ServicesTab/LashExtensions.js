@@ -1,11 +1,11 @@
 import React from 'react';
-import './OfferedServices.css'
+import './LashExtensions.css'
 
-const OfferedServices = () => {
+const LashExtensions = () => {
     return (
         <body>
             <div className="Serve"> 
-                <h1>Eyelash Extensions</h1>            
+                <h1>Eyelash Extensions TEST!!!</h1>            
             </div>
 
             <div className="OpenSpace">
@@ -95,4 +95,4 @@ const OfferedServices = () => {
     )
 }
 
-export default OfferedServices;
+export default LashExtensions;

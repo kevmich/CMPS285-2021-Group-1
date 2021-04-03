@@ -14,21 +14,74 @@
 
 }
 
-.InfoBoxes {
-    background : #f6ece3;
-    
-    width: 300px;
-    height: 250px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    margin: 25px;
-    float: left;
-    text-align: center;
-    padding: 10px;
+.TitleStyling
+{
+    background:#f6ece3;
+    width: auto;
+    height: 50px;
+    Border: 2px solid black;
+    border-top: none;
 
     /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
-
 }
 
+.OpenSpace{
+    background:#f6ece3;
+    width: auto;
+    height: 200px;
+}
+
+.ServiceImages{
+    background: #f6ece3;
+    width: auto;
+    height: 600px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.PriceTitle{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+  .rightPrice{
+    background: #f6ece3;
+    width: 30%;
+    height:300px;
+    margin-left: none;
+    margin-right: 20%;
+    text-align: right;
+    float: right;
+
+  }
+
+  .leftPrice{
+    background: #f6ece3;
+    width: 30%;
+    height:300px;
+    margin-left: 20%;
+    margin-right: none;
+    text-align: left;
+    float: left;
+
+  }
+
+  .tableContainer{
+      background:#f6ece3;
+      height:1400px;
+      width: 100%;
+  }
+
+  .FAQ{
+      background: #f6ece3;
+      width: auto;
+      height: 600px;
+  
+      /* Text Styling Here */
+      text-align: center;
+      font-family: 'Cinzel', serif;
+  }

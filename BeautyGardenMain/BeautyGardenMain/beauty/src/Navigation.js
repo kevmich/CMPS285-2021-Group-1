@@ -17,10 +17,8 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-
-import OfferedServices from './OfferedServices';
-
-
+import "./Navigation.css"
+import Button from './Button'
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,44 +31,60 @@ const Navigation = (props) => {
         <NavbarBrand href="/" title="Go to the homepage">The Beauty Garden</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
+
           <Nav className="mr-auto" navbar>
+
             <NavItem>
-              <NavLink href="/Home/" title="Go to the homepage">Home</NavLink>
+              <NavLink href="/" title="Go to the homepage">Home</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/Services" title="See what we offer">Services</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/About/" title="Learn about us">About</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/Contact/" title="Contact us">Contact</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/ListPage/" title="View all inquiries">Contact List</NavLink>
-            </NavItem>
-            <NavItem></NavItem>
+
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Meet The team
+                Services
               </DropdownToggle>
               <DropdownMenu right>
+
                 <DropdownItem>
-                  Name1
+                <NavLink href="/lash-extensions" title="See what we offer">Lash Extensions</NavLink>
                 </DropdownItem>
+
                 <DropdownItem>
-                  Name2
+                <NavLink href="/teeth-treatment" title="See what we offer">Teeth Treatments</NavLink>
                 </DropdownItem>
-                <DropdownItem divider />
+
                 <DropdownItem>
-                  Reset
+                <NavLink href="/lip-filler" title="See what we offer">Needle Free Lip Fillers</NavLink>
                 </DropdownItem>
+               
+                <DropdownItem>
+                <NavLink href="/fat-dissolve" title="See what we offer">Needle Free Fat Dissolve</NavLink>
+                </DropdownItem>
+
+                <DropdownItem>
+                <NavLink href="/face-and-wax" title="See what we offer">Facials and Waxing</NavLink>
+                </DropdownItem>
+
               </DropdownMenu>
             </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Coming soon!</NavbarText>
-         
           
+            <NavItem>
+              <NavLink href="/about" title="Learn about us">About</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="/contact-us" title="Contact us">Contact</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="/contact-list" title="View all inquiries">Contact List</NavLink>
+            </NavItem>
+
+          </Nav>
+
+          <NavbarText>
+              <NavLink href="/login" title="Login as admin"><Button /></NavLink>
+          </NavbarText>
+                  
         </Collapse>
       </Navbar>
     </div>
