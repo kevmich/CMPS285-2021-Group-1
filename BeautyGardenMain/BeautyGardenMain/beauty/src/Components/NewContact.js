@@ -3,7 +3,7 @@ import useForm from '../useForm'
 import './NewContact.css';
 
 const NewContact = () => {
-    const { handleChange, newContact, handleSubmit, errors } = useForm();
+    const { handleChange, newContact, handleSubmit, isLoading } = useForm();
    
 
     
@@ -41,7 +41,10 @@ const NewContact = () => {
                             <div style ={{ color: "red "}}>{newContact.commentError}</div>
                         </div>
                     <div>
-                        <button className="btn blue darken-3" type="submit">Submit</button>
+                        { !isLoading && <button className="btn blue darken-3" type="submit">Submit</button> }
+                        { isLoading && <button className="btn blue darken-3" disabled>
+                            <i className = "fas fa-spinner fa-spin"></i> Submitting...
+                        </button>}
                     </div>
                 </body>  
             </form>

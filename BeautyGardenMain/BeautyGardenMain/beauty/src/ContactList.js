@@ -9,7 +9,7 @@ function ContactList(props) {
 
     useEffect (() => {
         const GetData = async () => {
-            const result = await axios("https://localhost:44381/api/UserContact");
+            const result = await axios("/api/UserContact");
             setData(result.data);
         };
 
@@ -39,7 +39,7 @@ function ContactList(props) {
                          <i className="fa fa-align-justify"></i> Contact List 
                         </CardHeader>
                     <CardBody>
-                        <Table striped hover bordered light responsive size="sm"> 
+                        <Table striped hover bordered responsive size="sm"> 
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -58,7 +58,7 @@ function ContactList(props) {
                                             <td>{item.email}</td>
                                             <td>{item.comment}</td>
                                             <td>
-                                                <div class="btn-group">
+                                                <div className="btn-group">
                                                 <button className="btn btn-secondary" onClick={deleteContact.bind(this, item.id)  
                                                  }>Delete</button>
                                                 </div>
