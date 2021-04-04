@@ -1,0 +1,77 @@
+.TeethMainTitle{
+    background : rgba(246,236,227,255);
+    
+    width: auto;
+    height: 100px;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.TeethTitles
+{
+    background:#f6ece3;
+    width: auto;
+    height: 50px;
+    Border: 2px solid #000000;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.TeethImages{
+    background: #f6ece3;
+    width: auto;
+    height: 600px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.TtableContainer{
+    background:#f6ece3;
+    height:300px;
+    width: 100%;
+}
+
+.TrightPrice{
+    background: #f6ece3;
+    width: 30%;
+    height:300px;
+    margin-left: none;
+    margin-right: 20%;
+    text-align: right;
+    float: right;
+    border: 2px solid black;
+
+  }
+
+  .TleftPrice{
+    background: #f6ece3;
+    width: 30%;
+    height:300px;
+    margin-left: 20%;
+    margin-right: none;
+    text-align: left;
+    float: left;
+    border: 2px solid black;
+
+  }
+
+  .TTFAQ{
+    background: #f6ece3;
+    width: auto;
+    height: 600px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}

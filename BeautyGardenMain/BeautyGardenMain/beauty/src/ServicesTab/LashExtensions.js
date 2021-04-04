@@ -4,7 +4,7 @@ import './LashExtensions.css'
 const LashExtensions = () => {
     return (
         <body>
-            <div className="Serve"> 
+            <div className="MainTitle"> 
                 <h1>Eyelash Extensions TEST!!!</h1>            
             </div>
 
