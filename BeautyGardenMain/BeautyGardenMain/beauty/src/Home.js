@@ -2,7 +2,7 @@ import React from "react";
 import woods from "./images/woods.jpg";
 import "./Home.css"
 import "../src/images/woods.css";
-import logoImg from "./images/TBG-image-0.png";
+import logoImg from "./images/TBG_Logo_2.png";
 
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
             
 
              <div className="LogoOutline">  
-                <img src={ logoImg } alt="TBG-image-0" />
+                <img src={ logoImg } alt="TBG_Logo_2.png" />
              </div>
 
              <div className="ImageOutline">
