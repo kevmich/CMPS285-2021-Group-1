@@ -2,6 +2,7 @@ import React from "react";
 import woods from "./images/woods.jpg";
 import "./Home.css"
 import "../src/images/woods.css";
+import logoImg from "./images/TBG-image-0.png";
 
 const Home = () => {
     return (
@@ -10,7 +11,7 @@ const Home = () => {
             
 
              <div className="LogoOutline">  
-                <h1>Logo Placeholder</h1>   
+                <img src={ logoImg } alt="TBG-image-0" />
              </div>
 
              <div className="ImageOutline">
