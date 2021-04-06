@@ -3,6 +3,7 @@ import woods from "./images/woods.jpg";
 import "./Home.css"
 import "../src/images/woods.css";
 import logoImg from "./images/TBG_Logo_2.png";
+import logoImg2 from "./images/tbg-booking-bg.png";
 import Booking from "./Components/BookingButton.js";
 
 const Home = () => {
@@ -18,9 +19,10 @@ const Home = () => {
              <div className="ImageOutline">
                  <h2>Background Image(s)</h2>
                  <div className="BookingLink">
-                    <a className="linkToBooking" href='https://square.site/book/VKYEJ3SQ1VFW7/the-beauty-garden-slidell-la'>
+                    <a href='https://square.site/book/VKYEJ3SQ1VFW7/the-beauty-garden-slidell-la'>
                         <Booking />
                     </a>
+                    
                  </div>
              </div>
 
