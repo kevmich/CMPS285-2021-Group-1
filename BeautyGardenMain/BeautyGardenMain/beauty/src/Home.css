@@ -1,0 +1,78 @@
+
+
+.LogoOutline {
+    background: #e2d2c5;
+    
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-top: 4px solid black;
+    border-bottom: 3px solid black;
+    padding: 0px;
+
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.ImageOutline {
+    background: #f6ece3;
+    
+    width: auto;
+    height: 700px;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 10px;
+
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+
+.BookingLink {
+    background: #e2d2c5;
+    border-radius: 35px;
+    
+    width: auto;
+    min-width: 300px;
+    max-width: 800px;
+    height: 450px;
+    float:unset;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    border: 3px solid black;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+
+.QuoteBox {
+    Background: #f6ece3;
+    border-bottom: 2px;
+    border-top: 0px;
+    Width: auto;
+    Height: 400px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.MoreImages {
+    Background: #f6ece3;
+    Border-top: 2px solid black;
+    Width: auto;
+    Height: 400px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}

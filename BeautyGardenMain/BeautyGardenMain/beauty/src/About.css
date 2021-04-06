@@ -1,0 +1,110 @@
+.AboutBoxOne {
+    background : #f6ece3;
+    
+    width: auto;
+    height: 100px;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.SectionStyle {
+    background : #f6ece3;
+    
+    width: 550px;
+    height: 600px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin: 25px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.TopText {
+    background : #f6ece3;
+    
+    width: auto;
+    height: 300px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    font-family: cursive;
+    /* text-decoration: underline; */
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.LeftBox{
+    background : #f6ece3;
+    
+    width: 70%;
+    height: 400px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    border-left: 1px solid black;
+    border-right: 3px solid black;
+    float: left;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+.RightBox{
+    background : #f6ece3;
+    
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    border-left: 3px solid black;
+    border-right: 2px solid black;
+    float: right;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+
+.BottomText {
+    background : #f6ece3;
+    
+    width: auto;
+    height: 300px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    font-family: cursive;
+    /* text-decoration: underline; */
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.TestTest{
+    width: auto;
+    height:400px;
+    border: 1px solid black;
+}

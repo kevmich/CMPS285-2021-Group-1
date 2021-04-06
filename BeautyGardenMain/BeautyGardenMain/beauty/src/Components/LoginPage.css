@@ -1,0 +1,69 @@
+.ContactTitle {
+    background : rgba(246,236,227,255);
+    
+    width: auto;
+    height: 100px;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.white {
+    background : rgba(246,236,227,255);
+    
+    height: auto;
+    width: 300px;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    margin-top: 75px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    overflow: hidden;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.input-field {
+    background : rgba(246,236,227,255);
+    
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    margin: auto;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.btn {
+    background : rgba(246,236,227,255);
+    
+    height: auto;
+    width: auto;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 20px;
+    float: right;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
