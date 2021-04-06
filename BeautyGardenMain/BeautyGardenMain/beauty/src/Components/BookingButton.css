@@ -1,0 +1,27 @@
+:root {
+    --primary: #e2d2c5;
+}
+
+.bookingBtn {
+    margin: 50px;
+    width: 225px;
+    height: 75px;
+    border: 4px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.bookingBtn:hover {
+    padding: 5px 15px;
+    width: 250px;
+    transition: 0.3s ease-out;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 2px solid black;
+}
