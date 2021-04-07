@@ -1,0 +1,87 @@
+.FaceWaxTitles{
+    background:#e2d2c5;
+    width: auto;
+    height: 50px;
+    Border: 2px solid black;
+
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.FaceContainer{
+background:#e2d2c5;
+width: auto;
+height: 700px;
+
+}
+
+.FaceleftBox{
+    background: #e2d2c5;
+    width: 20%;
+    height:250px;
+    margin-left: 20%;
+    margin-right: none;
+    text-align: left;
+    float: left;
+    margin-bottom: 50px; 
+    margin-top: 20px;  
+    border: 5px solid black;
+  }
+
+
+
+.FacerightBox{
+    background: #e2d2c5;
+    width: 30%;
+    height:600px;
+    margin-left: none;
+    margin-right: 30%;
+    text-align: right;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+
+  }
+
+
+.WaxContainer{
+background:#e2d2c5;
+width: auto;
+height: 500px;
+}
+
+.WaxleftBox{
+    background: #e2d2c5;
+    width: 40%;
+    height:400px;
+    margin-left: 10%;
+    margin-right: none;
+    text-align: left;
+    float: left;
+    margin-bottom: 50px; 
+    margin-top: 20px;  
+    border: 5px solid black;
+  }
+
+
+
+.WaxrightBox{
+    background: #e2d2c5;
+    width: 40%;
+    height:600px;
+    margin-left: none;
+    margin-right: 10%;
+    text-align: right;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+
+  }
+
+.bodyColor{
+    background: #e2d2c5;
+}
