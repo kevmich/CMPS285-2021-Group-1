@@ -1,0 +1,27 @@
+:root {
+    --primary: rgb(0, 0, 0);
+}
+
+.loginBtn {
+    margin: 0px;
+    width: 100px;
+    height: 40px;
+    border: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.loginBtn:hover {
+    padding: 0px;
+    width: 115px;
+    transition: 0.3s ease-out;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 2px solid black;
+}
