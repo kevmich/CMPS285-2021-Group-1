@@ -36,7 +36,7 @@
 .ServiceImages{
     background: #e2d2c5;
     width: auto;
-    height: 600px;
+    height: auto;
 
     /* Text Styling Here */
     text-align: center;
