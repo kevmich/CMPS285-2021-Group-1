@@ -3,6 +3,7 @@ import woods from "./images/woods.jpg";
 import "./Home.css"
 import "../src/images/woods.css";
 
+
 const Home = () => {
     return (
 
@@ -23,14 +24,14 @@ const Home = () => {
 
              <div className="QuoteBox">
                  QUOTE Box
-             </div>
+            </div>
                   
               <div className="MoreImages">
                   More images Box
               <div className="ImageRow">
               <img className="woods" src={woods}></img>
               <div className="woods_overlay">
-                  <div className= 'woods_review'>This is a review. I love this place. 5 stars. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+                  <div className= 'woods_review'>This is a review. I love this place. 5 stars.</div>
               </div>
               </div> 
               </div>

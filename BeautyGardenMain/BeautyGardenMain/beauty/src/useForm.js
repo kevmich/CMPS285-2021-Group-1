@@ -49,6 +49,8 @@ const useForm = () => {
         if(!newContact.fullName) {
             nameError = "Please fill in this field.";
             
+            } else if (!/^[a-zA-Z]+$/.test(newContact.fullName)){
+                nameError = "Please only use letters.";
             }
 
         if(!newContact.phoneNumber) {
