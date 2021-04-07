@@ -1,5 +1,6 @@
 import React from 'react';
 import './TeethTreatments.css'
+import teeth1 from '../images/teeth1.jpg';
 
 const TeethTreatments = () => {
     return (
@@ -9,7 +10,7 @@ const TeethTreatments = () => {
             </div>
 
             <div className="TeethImages">
-                <h2>Images/examples</h2>
+            <img className="teeth1" src={ teeth1 } alt="teeth1.jpg" />
             </div>
 
 
