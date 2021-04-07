@@ -1,5 +1,5 @@
 .TeethMainTitle{
-    background : rgba(246,236,227,255);
+    background : #e2d2c5;;
     
     width: auto;
     height: 100px;
@@ -16,7 +16,7 @@
 
 .TeethTitles
 {
-    background:#f6ece3;
+    background:#e2d2c5;
     width: auto;
     height: 50px;
     Border: 2px solid #000000;
@@ -27,7 +27,7 @@
 }
 
 .TeethImages{
-    background: #f6ece3;
+    background: #e2d2c5;
     width: auto;
     height: 600px;
 
@@ -37,13 +37,13 @@
 }
 
 .TtableContainer{
-    background:#f6ece3;
+    background:#e2d2c5;
     height:300px;
     width: 100%;
 }
 
 .TrightPrice{
-    background: #f6ece3;
+    background: #e2d2c5;
     width: 30%;
     height:300px;
     margin-left: none;
@@ -55,7 +55,7 @@
   }
 
   .TleftPrice{
-    background: #f6ece3;
+    background: #e2d2c5;
     width: 30%;
     height:300px;
     margin-left: 20%;
@@ -67,7 +67,7 @@
   }
 
   .TTFAQ{
-    background: #f6ece3;
+    background: #e2d2c5;
     width: auto;
     height: 600px;
 
