@@ -1,10 +1,13 @@
 import React from 'react';
 import './LashExtensions.css'
+import lash1 from "../images/lash1.jpg";
+import lash2 from "../images/lash2.jpg";
+import lash3 from "../images/lash3.jpg";
 
 const LashExtensions = () => {
     return (
         <body>
-            <div className="Serve"> 
+            <div className="MainTitle"> 
                 <h1>Eyelash Extensions TEST!!!</h1>            
             </div>
 
@@ -18,7 +21,9 @@ const LashExtensions = () => {
             </div>
 
             <div className="ServiceImages">
-                PICS HERE
+               <img className="lash2" src={ lash2 } alt="lash2.jpg" />
+               <img className="lash1" src={ lash1 } alt="lash1.jpg" />
+               <img className="lash3" src={ lash3 } alt="lash3.jpg" />
             </div>
 
             <div className="TitleStyling">

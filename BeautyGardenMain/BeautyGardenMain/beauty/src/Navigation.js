@@ -18,8 +18,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import "./Navigation.css"
-import Button from './Button'
-import SocialButtons from "./Components/SocialButtons";
+import Button from './loginButton'
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,9 +80,9 @@ const Navigation = (props) => {
             </NavItem>
 
           </Nav>
-          <SocialButtons />
+
           <NavbarText>
-              <NavLink href="/login" title="Login as admin"><Button /></NavLink>
+              <NavLink className="loginButton" href="/login" title="Login as admin"><Button /></NavLink>
           </NavbarText>
                   
         </Collapse>
