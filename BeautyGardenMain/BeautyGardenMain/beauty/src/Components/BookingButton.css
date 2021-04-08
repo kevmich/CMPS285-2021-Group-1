@@ -3,8 +3,7 @@
 }
 
 .bookingBtn {
-    margin-top: 175px;
-    margin-bottom: 175px;
+
     width: 225px;
     height: 75px;
     border: 4px;
@@ -15,6 +14,8 @@
     cursor: pointer;
     border-radius: 15px;
     background-color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .bookingBtn:hover {

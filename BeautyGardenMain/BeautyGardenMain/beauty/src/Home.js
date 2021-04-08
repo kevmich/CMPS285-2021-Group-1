@@ -20,10 +20,35 @@ const Home = () => {
              <div className="ImageOutline">
                  <h2>Background Image(s)</h2>
                  <div className="BookingLink">
+
+                     <div className="BookTopText">
+
+                     <h4> The Beauty Garden is your ultimate source in the </h4>
+                     <h4> Northshore area for clean beauty products, cutting </h4>     
+                     <h4> edge beauty technology and stunning results without </h4>    
+                     <h4> invasive surgical prodcedures.</h4> 
+                     
+                     </div>
+ 
+
+                     
                      
                     <a href='https://square.site/book/VKYEJ3SQ1VFW7/the-beauty-garden-slidell-la'>
                         <Booking />
                     </a>
+
+                    <h4>
+                        Our goal is to provide the highest quality, most
+                        affordable beauty services on the Northshoe.
+                        From the moment you walk into your bouquet salon, 
+                        you will receive exceptional customer service
+                        and a personalized experiences.
+
+                    </h4>
+
+                    <h4>
+                        We can't wait to meet you!
+                    </h4>
                     
                  </div>
              </div>
