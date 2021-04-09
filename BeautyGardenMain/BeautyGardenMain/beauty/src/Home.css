@@ -1,5 +1,7 @@
 
-
+.HomeBody{
+    background: #e2d2c5;
+}
 .LogoOutline {
     background: #e2d2c5;
     
@@ -69,7 +71,7 @@
     Background: #e2d2c5;
     Border-top: 2px solid black;
     Width: auto;
-    Height: 400px;
+    Height: 600px;
 
     /* Text Styling Here */
     text-align: center;
@@ -85,3 +87,34 @@
 .BookBotText{
     margin-top: 10px;
 }
+
+.DividerLine{
+    background: #6d3d16;
+    height: 2px;
+    width: 400px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.QuoteFont1{
+color:black;
+font-family: 'Dancing Script', cursive;
+font-family: 'Playfair Display', serif;
+font-size: 300%;
+
+
+}
+
+.QuoteCurs1{
+    color:goldenrod;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.QuoteCurs2{
+    color:goldenrod;
+    text-align: right;
+    margin-right: 20%;
+    font-family: 'Dancing Script', cursive;
+}
+
