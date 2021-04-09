@@ -19,6 +19,7 @@ import {
 } from 'reactstrap';
 import "./Navigation.css"
 import Button from './loginButton'
+import SocialButtons from "./Components/SocialButtons";
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,7 +81,7 @@ const Navigation = (props) => {
             </NavItem>
 
           </Nav>
-
+          <SocialButtons />
           <NavbarText>
               <NavLink className="loginButton" href="/login" title="Login as admin"><Button /></NavLink>
           </NavbarText>

@@ -16,7 +16,7 @@
 }
 
 .ImageOutline {
-    background: #f6ece3;
+    background: #e2d2c5;
     
     width: auto;
     height: 700px;
@@ -32,7 +32,7 @@
 
 
 .BookingLink {
-    background: #e2d2c5;
+    background: #eee4e2;
     border-radius: 35px;
     
     width: auto;
@@ -53,7 +53,7 @@
 
 
 .QuoteBox {
-    Background: #f6ece3;
+    Background: #e2d2c5;
     border-bottom: 2px;
     border-top: 0px;
     Width: auto;
@@ -66,7 +66,7 @@
 }
 
 .MoreImages {
-    Background: #f6ece3;
+    Background: #e2d2c5;
     Border-top: 2px solid black;
     Width: auto;
     Height: 400px;
@@ -75,4 +75,13 @@
     text-align: center;
     font-family: 'Cinzel', serif;
 
+}
+
+.BookTopText{
+    margin-top: 10px;
+
+}
+
+.BookBotText{
+    margin-top: 10px;
 }

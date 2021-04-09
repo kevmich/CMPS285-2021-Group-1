@@ -16,6 +16,8 @@ const About = () => {
             <h5>approach to fitness and health will have you feeling great and seeing results in no time</h5>
         </div>
 
+
+    <div className="ProfileContainer">
         <div>
             <div className="LeftBox">
                 Services: one
@@ -62,15 +64,9 @@ const About = () => {
                 IMAGE four
             </div>
         </div>
-
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-
-        <div className="TestTest">
-            Test
+    </div>
+        <div className="BottomText">
+            Placeholder for whatever is at the bottom
         </div>
 
         </body>
