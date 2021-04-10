@@ -118,3 +118,9 @@ font-size: 300%;
     font-family: 'Dancing Script', cursive;
 }
 
+.review {
+    height: 500px;
+    margin: 20px;
+    border-radius: 15px;
+}
+

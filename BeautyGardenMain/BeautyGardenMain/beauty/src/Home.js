@@ -5,6 +5,9 @@ import "../src/images/woods.css";
 import logoImg from "./images/TBG_Logo_2.png";
 import logoImg2 from "./images/tbg-booking-bg.png";
 import Booking from "./Components/BookingButton.js";
+import review1 from "./images/review1.png";
+import review2 from "./images/review2.png";
+import review3 from "./images/review3.png";
 
 
 const Home = () => {
@@ -78,21 +81,21 @@ const Home = () => {
 
 
               <div className="ImageRow">
-              <img className="woods" src={woods}></img>
+                <img className="review" src={ review1 } alt="review1.png" />
               <div className="woods_overlay">
                   <div className= 'woods_review'>This is a review. I love this place. 5 stars.</div>
               </div>
               </div> 
 
               <div className="ImageRow">
-              <img className="woods" src={woods}></img>
+                <img className="review" src={ review2 } alt="review1.png" />
               <div className="woods_overlay">
                   <div className= 'woods_review'>Second Review</div>
               </div>
               </div> 
 
               <div className="ImageRow">
-              <img className="woods" src={woods}></img>
+                <img className="review" src={ review3 } alt="review3.png" />
               <div className="woods_overlay">
                   <div className= 'woods_review'>Third Review</div>
               </div>
