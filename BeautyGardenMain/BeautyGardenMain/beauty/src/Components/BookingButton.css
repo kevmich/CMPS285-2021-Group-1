@@ -4,26 +4,24 @@
 
 .bookingBtn {
 
+    margin: 1rem;
+    transition: transform 250ms;
+    display: inline-block;
     width: 225px;
     height: 75px;
     border: 4px;
     outline: none;
     border: none;
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: black;
     cursor: pointer;
     border-radius: 15px;
-    background-color: black;
+    background-color: #e0d2c5;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .bookingBtn:hover {
-    padding: 5px 15px;
-    width: 250px;
-    transition: 0.3s ease-out;
-    background-color: rgb(37, 37, 37);
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    border: 2px solid black;
+    transform: translateY(-2px);
+    background-color: #c4ad75;
 }

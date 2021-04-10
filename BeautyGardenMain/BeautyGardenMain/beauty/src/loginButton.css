@@ -3,25 +3,18 @@
 }
 
 .loginBtn {
-    margin: 0px;
+    margin: 1rem;
+    transition: transform 250ms;
     width: 100px;
     height: 40px;
-    border: 4px;
-    outline: none;
     border: none;
     font-size: 18px;
-    color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 15px;
-    background-color: black;
 }
 
 .loginBtn:hover {
-    padding: 0px;
-    width: 115px;
-    transition: 0.3s ease-out;
-    background-color: rgb(37, 37, 37);
-    color: rgb(255, 255, 255);
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
     border-radius: 15px;
-    border: 2px solid black;
 }
