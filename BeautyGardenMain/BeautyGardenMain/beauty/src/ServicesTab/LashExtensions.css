@@ -1,3 +1,6 @@
+.bodyColor{
+    background: #e2d2c5;
+}
 .MainTitle{
     background : #e2d2c5;;
     
@@ -45,7 +48,9 @@
 
 .PriceTitle{
     text-align: left;
-    font-family: 'Courier New', Courier, monospace;
+    Color: #9b895b;
+    font-family: 'Bitter', serif;
+    
 }
 
   .rightPrice{
@@ -72,7 +77,7 @@
 
   .tableContainer{
       background:#e2d2c5;
-      height:1400px;
+      height:1300px;
       width: 100%;
   }
 
@@ -82,9 +87,15 @@
       height: 600px;
   
       /* Text Styling Here */
-      text-align: center;
+      text-align: Left;
       font-family: 'Cinzel', serif;
+      margin-left: 15%;
+      margin-right: 15%;
   }
+
+.text2{
+    font-weight: bold;
+}
 
 .lash1 {
     height: 500px;
