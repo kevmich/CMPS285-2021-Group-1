@@ -4,16 +4,19 @@ import "./About.css"
 const About = () => {
     return (
         
-        <body>
+        <body className="AboutBody">
         <div className="AboutBoxOne"> 
             <h2>MAKING A POSITIVE IMPACT IS MY GOAL</h2>
         </div>
 
         <div className="TopText">
-            <h5>I believe living a healthy lifestyle begins with maintaining a strong and fit body</h5>
-            <h5>My aim is to help you identify your fitness goals, design an exercise program that</h5>
-            <h5>firts your needs and guide you through every exercise, every workour. My holistic</h5>
-            <h5>approach to fitness and health will have you feeling great and seeing results in no time</h5>
+            <div className="TextMargin">            
+            <h4>  The Beauty Garden Aesthetics & Academy is comprised of a team of highly educated and talented</h4>
+            <h4>  Estheticians & Master Trainers. Determined to bring you the most current skincare solutions that </h4>  
+            <h4>  will provide you with long lasting results. At The Beauty Garden, we use the most effective </h4>
+            <h4>  tools, techniques, and technology as we are committed to providing you with innovative trainings and services. </h4>
+            </div>
+            
         </div>
 
 
