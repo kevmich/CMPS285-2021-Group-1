@@ -5,6 +5,7 @@
 .navBar {
     min-height: 100px;
     width: auto;
+    z-index: 99999;
     
 }
 
