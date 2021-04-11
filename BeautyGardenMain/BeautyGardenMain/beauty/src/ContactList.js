@@ -1,7 +1,8 @@
 import React from 'react'
-import { Card, CardBody, CardHeader, Col, NavItem, Row, Table } from 'reactstrap'; 
+import Linkify from "react-linkify";
 import axios from 'axios';
 import {useState, useEffect } from 'react'
+import "./ContactList.css"
 
 function ContactList(props) {
     const [data, setData] = useState({});
@@ -30,7 +31,46 @@ function ContactList(props) {
         
     };
    
-    return (
+    
+        return (
+          <div className="container-fluid">
+            <div className="row mt-3"><div className="col-lg-12">
+              <div className="card">
+                <div className="card-header">
+                  Contact List
+                </div>
+                <div className="card-body">
+                  <table className="table table-hover">
+                    <thead className="thead-dark"><tr><th>Name</th><th>Phone Number</th><th>Email</th><th>Comment</th><th></th></tr></thead>
+                    <tbody>
+                                {
+                                   data.map && data.map((item, idx) => {
+                                        return <tr key = {item.id}>
+                                            
+                                            <td>{item.fullName}</td>
+                                            <td>{item.phoneNumber}</td>
+                                            <td><Linkify>{item.email}</Linkify></td>
+                                            <td>{item.comment}</td>
+                                            <td>
+                                                <div className="btn-group">
+                                                <button className="btn btn-secondary" onClick={deleteContact.bind(this, item.id)  
+                                                 }>Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    })}
+                                </tbody>
+                  </table>
+                
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+       );
+      }
+    
+   /* return (
         <div className="animated fadeIn" >
             <Row>
                 <Col>
@@ -73,5 +113,5 @@ function ContactList(props) {
             </Row>
         </div>
     )
-}
+}*/
 export default ContactList;
