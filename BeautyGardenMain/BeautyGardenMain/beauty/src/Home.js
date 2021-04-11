@@ -1,10 +1,8 @@
 import React from "react";
-import woods from "./images/woods.jpg";
 import "./Home.css"
 import "../src/images/woods.css";
 import logoImg from "./images/TBG_Logo_2.png";
-import logoImg2 from "./images/tbg-booking-bg.png";
-import Booking from "./Components/BookingButton.js";
+import Booking from "./Buttons/BookingButton.js";
 import review1 from "./images/review1.png";
 import review2 from "./images/review2.png";
 import review3 from "./images/review3.png";

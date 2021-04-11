@@ -17,9 +17,11 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import "./Navigation.css"
-import Button from './loginButton'
-import SocialButtons from "./Components/SocialButtons";
+
+import loginButton from './Buttons/loginButton';
+import SocialButtons from "./Buttons/SocialButtons";
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,14 +31,16 @@ const Navigation = (props) => {
   return (
     <div  className="App">
       <Navbar className="navBar" color="light" light expand="md">
-        <NavbarBrand href="/" title="Go to the homepage">The Beauty Garden</NavbarBrand>
+        <NavbarBrand href="/" title="Go to the homepage">The Beauty Garden</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
 
           <Nav className="mr-auto" navbar>
 
-            <NavItem>
-              <NavLink className="home" href="/" title="Go to the homepage">Home</NavLink>
+            <NavItem className="homeBtn">
+              <Link className="home" to="/" title="Go to the homepage">
+                Home
+              </Link>
             </NavItem>
 
             <UncontrolledDropdown className="services" nav inNavbar>
@@ -46,45 +50,47 @@ const Navigation = (props) => {
               <DropdownMenu right>
 
                 <DropdownItem>
-                <NavLink className="servicesDrop" href="/lash-extensions" title="See what we offer">Lash Extensions</NavLink>
+                  <Link className="servicesDrop" to="/lash-extensions" title="See what we offer">Lash Extensions</ Link>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink className="servicesDrop" href="/teeth-treatment" title="See what we offer">Teeth Treatments</NavLink>
+                  <Link className="servicesDrop" to="/teeth-treatment" title="See what we offer">Teeth Treatments</ Link>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink className="servicesDrop" href="/lip-filler" title="See what we offer">Needle Free Lip Fillers</NavLink>
+                  <Link className="servicesDrop" to="/lip-filler" title="See what we offer">Needle Free Lip Fillers</Link>
                 </DropdownItem>
                
                 <DropdownItem>
-                <NavLink className="servicesDrop" href="/fat-dissolve" title="See what we offer">Needle Free Fat Dissolve</NavLink>
+                  <Link className="servicesDrop" to="/fat-dissolve" title="See what we offer">Needle Free Fat Dissolve</Link>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink className="servicesDrop" href="/face-and-wax" title="See what we offer">Facials and Waxing</NavLink>
+                  <Link className="servicesDrop" to="/face-and-wax" title="See what we offer">Facials and Waxing</Link>
                 </DropdownItem>
 
               </DropdownMenu>
             </UncontrolledDropdown>
           
-            <NavItem>
-              <NavLink className="about" href="/about" title="Learn about us">About</NavLink>
+            <NavItem className="aboutBtn">
+              <Link className="about" to="/about" title="Learn about us">About</Link>
             </NavItem>
 
             <NavItem>
-              <NavLink className="contact" href="/contact-us" title="Contact us">Contact</NavLink>
+              <Link className="contact" to="/contact-us" title="Contact us">Contact</Link>
             </NavItem>
 
             <NavItem>
-              <NavLink className="contactList" href="/contact-list" title="View all inquiries">Contact List</NavLink>
+              <Link className="contactList" to="/contact-list" title="View all inquiries">Contact List</Link>
             </NavItem>
 
           </Nav>
           <SocialButtons />
-          <NavItem>
-              <NavLink className="loginbutton" href="/login" title="Login"></NavLink>
-            </NavItem>
+          <NavbarText>
+              <Link className="loginButton" to="/login" title="Login as admin">
+                <loginButton className="loginBtn">Login</loginButton>
+              </Link>
+          </NavbarText>
                   
         </Collapse>
       </Navbar>
