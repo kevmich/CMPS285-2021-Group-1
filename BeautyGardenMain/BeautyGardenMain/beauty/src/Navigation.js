@@ -86,11 +86,9 @@ const Navigation = (props) => {
 
           </Nav>
           <SocialButtons />
-          <NavbarText>
-              <Link className="loginButton" to="/login" title="Login as admin">
-                <loginButton className="loginBtn">Login</loginButton>
-              </Link>
-          </NavbarText>
+          <NavItem>
+              <Link className="login" to="/login" title="View all inquiries"></Link>
+            </NavItem>
                   
         </Collapse>
       </Navbar>
