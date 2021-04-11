@@ -6,8 +6,12 @@ const Contact = () => {
     return (
         <div className="ContactTitle"> 
             <h1>Contact Us!</h1>
+            
             <NewContact />
         </div>
+            
+        
+        
     )
 }
 

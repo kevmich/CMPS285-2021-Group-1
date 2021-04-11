@@ -10,6 +10,7 @@ import FatDissolve from './ServicesTab/FatDissolve';
 import LashExtensions from './ServicesTab/LashExtensions';
 import LipFiller from './ServicesTab/LipFillers';
 import TeethTreatment from './ServicesTab/TeethTreatments';
+import Footer from "./Components/Footer";
 
 import {BrowserRouter as Router,
   Switch,
@@ -24,10 +25,10 @@ const App = (props) => {
 
   return (
     <div classname="NavBar">
-      <div>
+      <div className="pageContainer">
         <Router>
         <Navbar />
-        <div>
+        <div className="contentWrap">
           <Switch>
             <Route exact path='/' exact component={Home} />
             <Route path='/contact-us' exact component={Contact} />
@@ -41,9 +42,13 @@ const App = (props) => {
             <Route path='/teeth-treatment' exact component={TeethTreatment} />
           </Switch>
         </div>
+        
       </Router>
+      <Footer />
       </div>
+     
     </div>
+    
   );
 }
 

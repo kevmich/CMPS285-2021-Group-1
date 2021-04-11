@@ -1,0 +1,14 @@
+.mainFooter {
+    color: black;
+    background-color: lightgrey;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+  }
+
+
