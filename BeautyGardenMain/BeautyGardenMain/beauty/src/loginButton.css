@@ -1,0 +1,20 @@
+:root {
+    --primary: rgb(0, 0, 0);
+}
+
+.loginBtn {
+    margin: 1rem;
+    transition: transform 250ms;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.loginBtn:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}

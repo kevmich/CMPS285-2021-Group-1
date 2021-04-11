@@ -2,11 +2,113 @@
     font-family: 'Cinzel', serif;
 }
 
-.mr-auto {
+.navBar {
+    height: auto;
+    min-height: 100px;
+    width: auto;
     
+}
+
+.mr-auto {
+
     /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
     
 
+}
+
+.home {
+    margin: 1rem;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.home:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}
+
+.services {
+    margin: 1rem;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.services:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}
+
+.servicesDrop {
+    margin: 8px;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.servicesDrop:hover {
+    transform: translateY(-2px);
+    
+}
+
+.about {
+    margin: 1rem;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.about:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}
+
+.contact {
+    margin: 1rem;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.contact:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}
+
+.contactList {
+    margin: 1rem;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.contactList:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
 }

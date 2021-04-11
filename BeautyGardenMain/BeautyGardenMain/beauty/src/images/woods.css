@@ -1,13 +1,16 @@
 .ImageRow {
   position: relative;
   width: 400px;
+  float: left;
+  height: 500px;
+  
+  margin-left: 10%;
+  margin-top: 25px;
 
 }
 
 .woods {
-  display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
 }
 
 .woods_overlay {
@@ -27,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .ImageRow:hover .woods_overlay {

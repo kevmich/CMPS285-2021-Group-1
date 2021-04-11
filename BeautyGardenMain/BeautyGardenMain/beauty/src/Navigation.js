@@ -18,7 +18,8 @@ import {
   NavbarText
 } from 'reactstrap';
 import "./Navigation.css"
-import Button from './Button'
+import Button from './loginButton'
+import SocialButtons from "./Components/SocialButtons";
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,62 +28,62 @@ const Navigation = (props) => {
 
   return (
     <div  className="App">
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/" title="Go to the homepage">The Beauty Garden</NavbarBrand>
+      <Navbar className="navBar" color="light" light expand="md">
+        <NavbarBrand href="/" title="Go to the homepage">The Beauty Garden</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
 
           <Nav className="mr-auto" navbar>
 
             <NavItem>
-              <NavLink href="/" title="Go to the homepage">Home</NavLink>
+              <NavLink className="home" href="/" title="Go to the homepage">Home</NavLink>
             </NavItem>
 
-            <UncontrolledDropdown nav inNavbar>
+            <UncontrolledDropdown className="services" nav inNavbar>
               <DropdownToggle nav caret>
                 Services
               </DropdownToggle>
               <DropdownMenu right>
 
                 <DropdownItem>
-                <NavLink href="/lash-extensions" title="See what we offer">Lash Extensions</NavLink>
+                <NavLink className="servicesDrop" href="/lash-extensions" title="See what we offer">Lash Extensions</NavLink>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink href="/teeth-treatment" title="See what we offer">Teeth Treatments</NavLink>
+                <NavLink className="servicesDrop" href="/teeth-treatment" title="See what we offer">Teeth Treatments</NavLink>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink href="/lip-filler" title="See what we offer">Needle Free Lip Fillers</NavLink>
+                <NavLink className="servicesDrop" href="/lip-filler" title="See what we offer">Needle Free Lip Fillers</NavLink>
                 </DropdownItem>
                
                 <DropdownItem>
-                <NavLink href="/fat-dissolve" title="See what we offer">Needle Free Fat Dissolve</NavLink>
+                <NavLink className="servicesDrop" href="/fat-dissolve" title="See what we offer">Needle Free Fat Dissolve</NavLink>
                 </DropdownItem>
 
                 <DropdownItem>
-                <NavLink href="/face-and-wax" title="See what we offer">Facials and Waxing</NavLink>
+                <NavLink className="servicesDrop" href="/face-and-wax" title="See what we offer">Facials and Waxing</NavLink>
                 </DropdownItem>
 
               </DropdownMenu>
             </UncontrolledDropdown>
           
             <NavItem>
-              <NavLink href="/about" title="Learn about us">About</NavLink>
+              <NavLink className="about" href="/about" title="Learn about us">About</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/contact-us" title="Contact us">Contact</NavLink>
+              <NavLink className="contact" href="/contact-us" title="Contact us">Contact</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/contact-list" title="View all inquiries">Contact List</NavLink>
+              <NavLink className="contactList" href="/contact-list" title="View all inquiries">Contact List</NavLink>
             </NavItem>
 
           </Nav>
-
+          <SocialButtons />
           <NavbarText>
-              <NavLink href="/login" title="Login as admin"><Button /></NavLink>
+              <NavLink className="loginButton" href="/login" title="Login as admin"><Button /></NavLink>
           </NavbarText>
                   
         </Collapse>

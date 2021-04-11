@@ -4,7 +4,6 @@ import Contact from "./Contact";
 import About from "./About";
 import Navigation from "./Navigation";
 import ListPage from './ListPage';
-import OfferedServices from './OfferedServices';
 import Login from './Login';
 import FaceNWax from './ServicesTab/FaceNWax';
 import FatDissolve from './ServicesTab/FatDissolve';
@@ -32,7 +31,6 @@ const App = (props) => {
         <div>
           <Switch>
             <Route path='/' exact component={Home} />
-            <Route path='/services' exact component={OfferedServices} />
             <Route path='/contact-us' exact component={Contact} />
             <Route path='/contact-list' exact component={ListPage} />
             <Route path='/login' exact component={Login} />

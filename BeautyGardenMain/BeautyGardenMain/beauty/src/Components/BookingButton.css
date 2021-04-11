@@ -1,0 +1,27 @@
+:root {
+    --primary: #e2d2c5;
+}
+
+.bookingBtn {
+
+    margin: 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    width: 225px;
+    height: 75px;
+    border: 4px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #e0d2c5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bookingBtn:hover {
+    transform: translateY(-2px);
+    background-color: #c4ad75;
+}

@@ -1,0 +1,18 @@
+a.social {
+    margin: 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover{
+    transform: translateY(-2px);
+
+}
+
+a.facebook {
+    color: #4968ad
+}
+
+a.instagram {
+    color: black;
+}

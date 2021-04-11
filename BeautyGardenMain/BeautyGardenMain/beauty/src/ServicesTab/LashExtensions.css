@@ -1,0 +1,116 @@
+.bodyColor{
+    background: #e2d2c5;
+}
+.MainTitle{
+    background : #e2d2c5;;
+    
+    width: auto;
+    height: 100px;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.TitleStyling
+{
+    background:#e2d2c5;
+    width: auto;
+    height: 50px;
+    Border: 2px solid black;
+
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.OpenSpace{
+    background:#e2d2c5;
+    width: auto;
+    height: 200px;
+}
+
+.ServiceImages{
+    background: #e2d2c5;
+    width: auto;
+    height: auto;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.PriceTitle{
+    text-align: left;
+    Color: #9b895b;
+    font-family: 'Bitter', serif;
+    
+}
+
+  .rightPrice{
+    background: #e2d2c5;
+    width: 30%;
+    height:300px;
+    margin-left: none;
+    margin-right: 20%;
+    text-align: right;
+    float: right;
+
+  }
+
+  .leftPrice{
+    background: #e2d2c5;
+    width: 30%;
+    height:300px;
+    margin-left: 20%;
+    margin-right: none;
+    text-align: left;
+    float: left;
+
+  }
+
+  .tableContainer{
+      background:#e2d2c5;
+      height:1300px;
+      width: 100%;
+  }
+
+  .FAQ{
+      background: #e2d2c5;
+      width: auto;
+      height: 600px;
+  
+      /* Text Styling Here */
+      text-align: Left;
+      font-family: 'Cinzel', serif;
+      margin-left: 15%;
+      margin-right: 15%;
+  }
+
+.text2{
+    font-weight: bold;
+}
+
+.lash1 {
+    height: 500px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.lash2 {
+    height: 500px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.lash3 {
+    height: 500px;
+    margin: 20px;
+    border-radius: 15px;
+}
