@@ -26,11 +26,11 @@ const App = (props) => {
   return (
     <div classname="NavBar">
       <div>
-        <Navbar />
         <Router>
+        <Navbar />
         <div>
           <Switch>
-            <Route path='/' exact component={Home} />
+            <Route exact path='/' exact component={Home} />
             <Route path='/contact-us' exact component={Contact} />
             <Route path='/contact-list' exact component={ListPage} />
             <Route path='/login' exact component={Login} />
