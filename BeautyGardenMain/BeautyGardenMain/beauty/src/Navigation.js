@@ -84,12 +84,12 @@ const Navigation = (props) => {
               <Link className="contactList" to="/contact-list" title="View all inquiries">Contact List</Link>
             </NavItem>
 
+            <NavItem>
+              <Link className="login" to="/login" title="login"></Link>
+            </NavItem>  
           </Nav>
           <SocialButtons />
-          <NavItem>
-              <Link className="login" to="/login" title="View all inquiries"></Link>
-            </NavItem>
-                  
+           
         </Collapse>
       </Navbar>
     </div>
