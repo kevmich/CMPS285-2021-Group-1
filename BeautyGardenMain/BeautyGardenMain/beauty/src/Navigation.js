@@ -81,7 +81,9 @@ const Navigation = (props) => {
 
           </Nav>
 
-         
+          <NavbarText>
+              <NavLink href="/login" title="Login as admin"><Button /></NavLink>
+          </NavbarText>
                   
         </Collapse>
       </Navbar>

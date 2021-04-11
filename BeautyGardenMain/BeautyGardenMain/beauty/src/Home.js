@@ -1,8 +1,7 @@
 import React from "react";
-import TBG from "./images/TBG-Logo.jpg";
 import woods from "./images/woods.jpg";
 import "./Home.css"
-import "../src/images/TBG-Logo.css";
+import "../src/images/woods.css";
 
 const Home = () => {
     return (
@@ -11,11 +10,8 @@ const Home = () => {
             
 
              <div className="LogoOutline">  
-             <div className="ImageRow">
-              <img className="TBG-Logo" src={TBG}></img> 
+                <h1>Logo Placeholder</h1>   
              </div>
-             </div>
-             
 
              <div className="ImageOutline">
                  <h2>Background Image(s)</h2>
