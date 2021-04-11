@@ -3,7 +3,6 @@
 }
 
 .navBar {
-    height: auto;
     min-height: 100px;
     width: auto;
     z-index: 99999;
@@ -20,7 +19,8 @@
 }
 
 .home {
-    margin: 1rem;
+    color: black;
+    margin: none;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -36,7 +36,8 @@
 }
 
 .services {
-    margin: 1rem;
+    color: black;
+    margin: none;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -52,7 +53,8 @@
 }
 
 .servicesDrop {
-    margin: 8px;
+    color: black;
+    margin: none;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -67,7 +69,8 @@
 }
 
 .about {
-    margin: 1rem;
+    color: black;
+    margin: none;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -83,7 +86,8 @@
 }
 
 .contact {
-    margin: 1rem;
+    color: black;
+    margin: none;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -99,7 +103,8 @@
 }
 
 .contactList {
-    margin: 1rem;
+    color: black;
+    margin: none;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -109,6 +114,40 @@
 }
 
 .contactList:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}
+
+.loginBtn {
+    margin: 1rem;
+    transition: transform 250ms;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.loginBtn:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}
+
+.homeBtn {
+    color: black;
+    margin: none;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.homeBtn:hover {
     transform: translateY(-2px);
     background-color: #e1d4c6;
     border-radius: 15px;
