@@ -84,6 +84,21 @@
     height: 600px;
 
     /* Text Styling Here */
-    text-align: center;
+    text-align: left;
     font-family: 'Cinzel', serif;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.TitleSpace1{
+    height: 50px;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.TitleSpace2{
+    height: 50px;
+    width: 50%;
+    float: right;
+    text-align: right;
 }
