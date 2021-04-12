@@ -1,3 +1,7 @@
+.DissolveBody{
+  background : #e2d2c5;;
+}
+
 .DissolveMainTitle{
     background : #e2d2c5;;
     
@@ -36,7 +40,7 @@
     height:600px;
     margin-left: none;
     margin-right: 20%;
-    text-align: right;
+    text-align: left;
     float: right;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -70,6 +74,8 @@
     height: 600px;
 
     /* Text Styling Here */
-    text-align: center;
+    text-align: left;
     font-family: 'Cinzel', serif;
+    margin-left: 15%;
+    margin-right: 15%;
   }

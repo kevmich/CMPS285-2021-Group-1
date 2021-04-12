@@ -1,3 +1,7 @@
+.FWBody{
+  background:#e2d2c5;
+
+}
 .FaceWaxTitles{
     background:#e2d2c5;
     width: auto;
@@ -13,7 +17,7 @@
 .FaceContainer{
 background:#e2d2c5;
 width: auto;
-height: 700px;
+height: 1000px;
 
 }
 
@@ -35,10 +39,10 @@ height: 700px;
 .FacerightBox{
     background: #e2d2c5;
     width: 30%;
-    height:600px;
+    height:900px;
     margin-left: none;
     margin-right: 30%;
-    text-align: right;
+    text-align: left;
     float: right;
     margin-top: 20px;
     margin-bottom: 50px;
