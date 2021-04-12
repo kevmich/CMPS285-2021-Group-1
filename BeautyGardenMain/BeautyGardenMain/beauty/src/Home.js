@@ -21,6 +21,7 @@ const Home = () => {
 
              <div className="ImageOutline" >
                  <h2>Background Image(s)</h2>
+             
                  <div className="BookingLink">
 
                      <div className="BookTopText">
@@ -35,7 +36,11 @@ const Home = () => {
 
                      
                      
-                    <a href='https://square.site/book/VKYEJ3SQ1VFW7/the-beauty-garden-slidell-la'>
+                    <a
+                        href='https://square.site/book/VKYEJ3SQ1VFW7/the-beauty-garden-slidell-la'
+                        target = "_blank"
+                        rel = "noopener noreferrer"
+                    >
                         <Booking />
                     </a>
 
