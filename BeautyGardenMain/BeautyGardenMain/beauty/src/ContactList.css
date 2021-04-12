@@ -1,3 +1,15 @@
 .thead-dark {
     font-family : "Times New Roman", serif;
 }
+
+i:hover {
+    transform: translateY(-3px);
+    background-color: yellow;
+    border-radius: 100%;
+    }
+
+i {
+    margin: 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}

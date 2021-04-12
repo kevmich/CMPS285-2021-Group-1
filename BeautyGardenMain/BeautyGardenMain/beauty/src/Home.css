@@ -18,8 +18,18 @@
 }
 
 .ImageOutline {
-    background: #e2d2c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
+    background: #e2d2c5;
+    background-image: url(./images/waitingroom.png);
+    background-size: cover;
+    background-position-y: 60%;
+   
+    background-repeat: no-repeat;
+
     width: auto;
     height: 700px;
     border-top: 1px solid black;
