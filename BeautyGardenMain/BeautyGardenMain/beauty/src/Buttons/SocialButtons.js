@@ -24,6 +24,8 @@ const SocialButtons = () =>{
             </a>
             <a
                 href="https://www.instagram.com/thebeautygarden_northshore/"
+                target = "_blank"
+                rel = "noopener noreferrer"
                 className="instagram social"
             >
             <FontAwesomeIcon icon={faInstagram} size="2x" />    

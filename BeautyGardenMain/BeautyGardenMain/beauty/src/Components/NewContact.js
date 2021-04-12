@@ -48,6 +48,7 @@ const NewContact = () => {
                     </div>
                 </body>  
             </form>
+            <body className="blankSpace" />
         </div>
     );
 }

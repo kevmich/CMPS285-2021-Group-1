@@ -9,7 +9,7 @@
     height: auto;
     text-align: center;
     border-top: 4px solid black;
-    border-bottom: 3px solid black;
+    border-bottom: 3px transparent;
     padding: 0px;
 
     text-align: center;
@@ -22,8 +22,8 @@
     
     width: auto;
     height: 700px;
-    border-top: 1px solid black;
-    border-bottom: 2px solid black;
+    border-top: 1px transparent;
+    border-bottom: 2px solid transparent;
     text-align: center;
     padding: 10px;
 
@@ -70,7 +70,7 @@
 
 .MoreImages {
     Background: #e2d2c5;
-    Border-top: 2px solid black;
+    Border-top: 2px transparent;
     Width: auto;
     Height: 600px;
 

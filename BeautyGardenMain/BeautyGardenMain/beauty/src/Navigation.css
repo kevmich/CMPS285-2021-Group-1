@@ -20,7 +20,9 @@
 
 .home {
     color: black;
-    margin: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -70,6 +72,8 @@
 
 .about {
     color: black;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: none;
     transition: transform 250ms;
     width: auto;
@@ -87,6 +91,8 @@
 
 .contact {
     color: black;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: none;
     transition: transform 250ms;
     width: auto;
@@ -104,6 +110,8 @@
 
 .contactList {
     color: black;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: none;
     transition: transform 250ms;
     width: auto;
