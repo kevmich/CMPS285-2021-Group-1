@@ -31,7 +31,9 @@ const SocialButtons = () =>{
             <FontAwesomeIcon icon={faInstagram} size="2x" />    
             </a>
             <a
-                href=""
+                href="https://tinyurl.com/4sdsrvsn"
+                target = "_blank"
+                rel = "noopener noreferrer"
                 className="google social"
             >
             <FontAwesomeIcon icon={faGoogle} size="2x" />    

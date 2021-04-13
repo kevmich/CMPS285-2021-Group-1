@@ -37,8 +37,16 @@
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  
-}
+  }
+
+  .woods_overlay > * {
+    transform: translateY(20px);
+    transition: transform .5s;
+  }
+
+  .woods_overlay:hover > * {
+    transform: translateY(0);
+  }
 
 .ImageRow:hover .woods_overlay {
   opacity: 1;

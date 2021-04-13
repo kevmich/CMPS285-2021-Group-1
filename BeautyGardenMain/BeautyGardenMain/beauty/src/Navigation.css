@@ -6,156 +6,85 @@
     min-height: 100px;
     width: auto;
     z-index: 99999;
-    
 }
 
 .mr-auto {
-
     /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
-    
-
 }
 
-.home {
+.mainBtn {
     color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 5px;
+    padding: 5px;
+    margin: auto;
     transition: transform 250ms;
     width: auto;
     height: auto;
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.home:hover {
+.mainBtn:hover {
     transform: translateY(-2px);
     background-color: #e1d4c6;
     border-radius: 15px;
 }
 
-.services {
+.alphaBtn {
     color: black;
-    margin: none;
+    padding: 5px;
+    margin: auto;
     transition: transform 250ms;
     width: auto;
     height: auto;
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.services:hover {
+.alphaBtn:hover {
     transform: translateY(-2px);
     background-color: #e1d4c6;
     border-radius: 15px;
 }
 
-.servicesDrop {
+.bravoBtn {
     color: black;
-    margin: none;
+    padding: 5px;
+    margin: auto;
     transition: transform 250ms;
     width: auto;
     height: auto;
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.servicesDrop:hover {
-    transform: translateY(-2px);
-    
-}
-
-.about {
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: none;
-    transition: transform 250ms;
-    width: auto;
-    height: auto;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.about:hover {
+.bravoBtn:hover {
     transform: translateY(-2px);
     background-color: #e1d4c6;
     border-radius: 15px;
 }
 
-.contact {
+.charlieBtn {
     color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: none;
+    padding: auto;
+    margin: auto;
     transition: transform 250ms;
     width: auto;
     height: auto;
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.contact:hover {
-    transform: translateY(-2px);
-    background-color: #e1d4c6;
-    border-radius: 15px;
-}
-
-.contactList {
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: none;
-    transition: transform 250ms;
-    width: auto;
-    height: auto;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.contactList:hover {
-    transform: translateY(-2px);
-    background-color: #e1d4c6;
-    border-radius: 15px;
-}
-
-.loginBtn {
-    margin: 1rem;
-    transition: transform 250ms;
-    width: 100px;
-    height: 40px;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 15px;
-}
-
-.loginBtn:hover {
-    transform: translateY(-2px);
-    background-color: #e1d4c6;
-    border-radius: 15px;
-}
-
-.homeBtn {
-    color: black;
-    margin: none;
-    transition: transform 250ms;
-    width: auto;
-    height: auto;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.homeBtn:hover {
+.charlieBtn:hover {
     transform: translateY(-2px);
     background-color: #e1d4c6;
     border-radius: 15px;

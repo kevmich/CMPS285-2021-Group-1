@@ -4,6 +4,8 @@ import axios from 'axios';
 import {useState, useEffect } from 'react'
 import "./ContactList.css"
 
+
+
 function ContactList(props) {
     const [data, setData] = useState({});
   
@@ -41,7 +43,7 @@ function ContactList(props) {
                 </div>
                 <div className="card-body">
                   <table className="table table-hover">
-                    <thead className="thead-dark"><tr><th>Name</th><th>Phone Number</th><th>Email</th><th>Comment</th><th></th></tr></thead>
+                    <thead className="thead-dark"><tr><th><h5>Name</h5></th><th>Phone Number</th><th>Email</th><th>Comment</th><th></th></tr></thead>
                     <tbody>
                                 {
                                    data.map && data.map((item, idx) => {
@@ -53,8 +55,8 @@ function ContactList(props) {
                                             <td>{item.comment}</td>
                                             <td>
                                                 <div className="btn-group">
-                                                <button className="btn btn-secondary" onClick={deleteContact.bind(this, item.id)  
-                                                 }>Delete</button>
+                                                <i className="fas fa-trash-alt fa-2x" onClick={deleteContact.bind(this, item.id)  
+                                                 }></i>
                                                 </div>
                                             </td>
                                         </tr>
