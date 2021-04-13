@@ -6,7 +6,9 @@ import Booking from "./Buttons/BookingButton.js";
 import review1 from "./images/review1.png";
 import review2 from "./images/review2.png";
 import review3 from "./images/review3.png";
-import waitingroom from "./images/waitingroom.png";
+
+
+
 
 
 const Home = () => {
@@ -107,7 +109,7 @@ const Home = () => {
 
 
          </div>                 
-             
+           
         </body>
 
 

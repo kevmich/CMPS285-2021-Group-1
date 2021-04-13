@@ -4,11 +4,12 @@ import './Components/NewContact.css'
 
 const Contact = () => {
     return (
+    <body className="contact_body">
         <div className="ContactTitle"> 
             <h1>Contact Us!</h1>
-            
-            <NewContact />
-        </div>
+        </div>'
+        <NewContact />
+    </body>
             
         
         
