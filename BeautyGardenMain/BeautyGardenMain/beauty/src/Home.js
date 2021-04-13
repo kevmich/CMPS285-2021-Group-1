@@ -22,7 +22,6 @@ const Home = () => {
              </div>
 
              <div className="ImageOutline" >
-                 <h2>Background Image(s)</h2>
              
                  <div className="BookingLink">
 
