@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace BeautyGardenMain.Controllers
@@ -59,7 +60,24 @@ namespace BeautyGardenMain.Controllers
             }); ;
         }
 
-        [HttpPost("create")]
+
+        [HttpGet]
+        public static Expression<Func<CreateUser, CreateUserDto>> MapEntitytoDto()
+        {
+            return dto => new CreateUserDto
+            {
+               var user = new User { UserName = dto.Username };
+            await userManager.CreateAsync(user, dto.Password);
+            await userManager.AddToRoleAsync(user, dto.Role);
+            return Ok();
+        };
+         }
+
+
+
+
+
+        [HttpPost("CreateUser")]
         public async Task<ActionResult> Create(CreateUserDto dto)
         {
             var user = new User { UserName = dto.Username };
