@@ -61,17 +61,17 @@ namespace BeautyGardenMain.Controllers
         }
 
 
-        [HttpGet]
-        public static Expression<Func<CreateUser, CreateUserDto>> MapEntitytoDto()
-        {
-            return dto => new CreateUserDto
-            {
-               var user = new User { UserName = dto.Username };
-            await userManager.CreateAsync(user, dto.Password);
-            await userManager.AddToRoleAsync(user, dto.Role);
-            return Ok();
-        };
-         }
+        //[HttpGet]
+        //public static Expression<Func<CreateUser, CreateUserDto>> MapEntitytoDto()
+        //{
+        //    return dto => new CreateUserDto
+        //    {
+        //       var user = new User { UserName = dto.Username };
+        //    await userManager.CreateAsync(user, dto.Password);
+        //    await userManager.AddToRoleAsync(user, dto.Role);
+        //    return Ok();
+        //};
+         
 
 
 
