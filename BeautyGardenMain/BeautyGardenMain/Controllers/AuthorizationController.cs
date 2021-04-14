@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace BeautyGardenMain.Controllers
 {
-    [Route("/api/auth")]
+    [Route("api/auth")]
     [ApiController]
     public class AuthorizationController : ControllerBase
     {
