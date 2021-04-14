@@ -124,7 +124,7 @@ namespace BeautyGardenMain
                 }
 
                 await CreateUser(userManager, "admin", Roles.Admin);
-                await CreateUser(userManager, "employee", Roles.Employee);
+                //await CreateUser(userManager, "employee", Roles.Employee);
             }
         }//end AddUsers
 
