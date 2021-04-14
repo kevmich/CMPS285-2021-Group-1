@@ -75,10 +75,11 @@ namespace BeautyGardenMain
 
             });
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseSpaStaticFiles();
             app.UseRouting();
+            
+            //app.UseStaticFiles();
+            app.UseSpaStaticFiles();
+            
 
             
 
@@ -88,6 +89,8 @@ namespace BeautyGardenMain
             {
                 endpoints.MapControllers();
             });
+
+            app.UseHttpsRedirection();
 
             app.UseSpa(spa =>
             {
