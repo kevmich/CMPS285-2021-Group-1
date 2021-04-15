@@ -224,18 +224,18 @@ const LashExtensions = () => {
                <br></br>
                <br></br>
                <h3>Do lash extensions damage your natural lashes? </h3>
-               <h5 className="SmallFont">No! When applied properly with perfect isolation and weight, eyelash extensions will not harm your natural lashes.</h5>
+               <h5>No! When applied properly with perfect isolation and weight, eyelash extensions will not harm your natural lashes.</h5>
                <br></br>
                <br></br>
                <h3>How long will my full set last? </h3>
-               <h5 className="SmallFont"> A full set will last as long as your natural lash cycle, which is anywhere from 3-4 weeks, depending on the individual. </h5>
-               <h5 className="SmallFont"> We recommend getting a fill anywhere between 2 and 3 weeks. </h5>
+               <h5> A full set will last as long as your natural lash cycle, which is anywhere from 3-4 weeks, depending on the individual. </h5>
+               <h5> We recommend getting a fill anywhere between 2 and 3 weeks. </h5>
                <br></br>
                <br></br>
                <h3> Do lash extensions damage your natural lashes? </h3>
-               <h5 className="SmallFont"> • Do not wash eyes, swim, or shower for 12 24 hours after lash extension application </h5>
-               <h5 className="SmallFont"> • Avoid oil-based makeup products, including mascara and eye-makeup remover </h5>
-               <h5 className="SmallFont"> • Refrain from rubbing your eyes </h5>
+               <h5> • Do not wash eyes, swim, or shower for 12 24 hours after lash extension application </h5>
+               <h5> • Avoid oil-based makeup products, including mascara and eye-makeup remover </h5>
+               <h5> • Refrain from rubbing your eyes </h5>
             </div>
      </body>
     )
