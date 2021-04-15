@@ -8,11 +8,12 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace BeautyGardenMain.Controllers
 {
-    [Route("/api/auth")]
+    [Route("api/auth")]
     [ApiController]
     public class AuthorizationController : ControllerBase
     {
@@ -56,10 +57,10 @@ namespace BeautyGardenMain.Controllers
                 Id = user.Id,
                 Username = user.UserName,
                 UserRoles = roles
-            }); ;
+            });
         }
 
-        [HttpPost("create")]
+        [HttpPost("CreateUser")]
         public async Task<ActionResult> Create(CreateUserDto dto)
         {
             var user = new User { UserName = dto.Username };

@@ -31,25 +31,35 @@ namespace BeautyGardenMain
         public void ConfigureServices(IServiceCollection services)
         {
             
-
             services.AddControllers();
 
             services.AddDbContext<DataContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
 
-            services.AddIdentity<User, Role>()
-               .AddEntityFrameworkStores<DataContext>();
 
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "beauty/build";
             });
 
-            services.AddSwaggerGen();
-            services.AddSwaggerGen(c =>
+            services.AddIdentity<User, Role>()
+               .AddEntityFrameworkStores<DataContext>();
+
+            services.ConfigureApplicationCookie(options =>
             {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "V1" });
+                options.Events.OnRedirectToAccessDenied = context =>
+                {
+                    context.Response.StatusCode = 403;
+                    return Task.CompletedTask;
+                };
+                options.Events.OnRedirectToLogin = context =>
+                {
+                    context.Response.StatusCode = 401;
+                    return Task.CompletedTask;
+                };
             });
+
+            services.AddSwaggerGen();
 
         }//end ConfigureServices
 
@@ -75,19 +85,18 @@ namespace BeautyGardenMain
 
             });
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
             app.UseSpaStaticFiles();
+
             app.UseRouting();
-
             
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            app.UseHttpsRedirection();
 
             app.UseSpa(spa =>
             {
@@ -124,7 +133,7 @@ namespace BeautyGardenMain
                 }
 
                 await CreateUser(userManager, "admin", Roles.Admin);
-                await CreateUser(userManager, "employee", Roles.Employee);
+                //await CreateUser(userManager, "employee", Roles.Employee);
             }
         }//end AddUsers
 

@@ -22,9 +22,7 @@ const Home = () => {
              </div>
 
              <div className="ImageOutline" >
-                 
-             
-                 <div className="BookingLink">
+             <div className="BookingLink">
 
                      <div className="BookTopText">
 
