@@ -47,11 +47,9 @@ const App = (props) => {
             <Route path='/newblog' exact component={AddBlogPage} />
           </Switch>
         </div>
-        
       </Router>
       <Footer />
       </div>
-     .
     </div>
     
   );

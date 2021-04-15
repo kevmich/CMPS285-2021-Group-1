@@ -7,7 +7,7 @@ const Contact = () => {
     <body className="contact_body">
         <div className="ContactTitle"> 
             <h1>Contact Us!</h1>
-        </div>'
+        </div>
         <NewContact />
        
     </body>
