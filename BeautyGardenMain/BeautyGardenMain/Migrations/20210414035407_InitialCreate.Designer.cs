@@ -10,15 +10,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeautyGardenMain.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210320023337_Login")]
-    partial class Login
+    [Migration("20210414035407_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.3")
+                .HasAnnotation("ProductVersion", "5.0.5")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("BeautyGardenMain.Data.Posts.Post", b =>
@@ -171,6 +171,30 @@ namespace BeautyGardenMain.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("UserContact");
+                });
+
+            modelBuilder.Entity("BeautyGardenMain.Migrations.Entity.Blog.BlogPost", b =>
+                {
+                    b.Property<int>("BlogID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BlogBody")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BlogDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BlogTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("BlogID");
+
+                    b.ToTable("BlogPost");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

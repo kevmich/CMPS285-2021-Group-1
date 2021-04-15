@@ -1,6 +1,7 @@
 ﻿using BeautyGardenMain.Data.Posts;
 using BeautyGardenMain.Data.Users;
 using BeautyGardenMain.Entity.UserContacts;
+using BeautyGardenMain.Migrations.Entity.Blog;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,8 @@ namespace BeautyGardenMain.Data
         }
         public DbSet<Post> Post { get; set; }
         public DbSet<UserContact> UserContact { get; set; }
+
+        public DbSet<BlogPost> BlogPost { get; set; }
        
         //DbSet go here--------
 

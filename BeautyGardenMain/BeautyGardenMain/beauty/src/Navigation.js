@@ -169,6 +169,31 @@ const Navigation = (props) => {
               </Link>
             </NavItem>
 
+            <NavItem className="mainBtn">
+              <Link
+                className="blog"
+                to="/blog"
+                title="News"
+                style={{ textDecoration: 'none', color: 'black' }}
+              >
+                <mainButton className="secondBtn">
+                  Blog
+                </mainButton>
+              </Link>
+            </NavItem>
+            <NavItem className="mainBtn">
+              <Link
+                className="newblog"
+                to="/newblog"
+                title="New Blog Post"
+                style={{ textDecoration: 'none', color: 'black' }}
+              >
+                <mainButton className="secondBtn">
+                  Add Blog Post
+                </mainButton>
+              </Link>
+            </NavItem>
+
           </Nav>
           <SocialButtons />
           <NavbarText className="mainBtn">

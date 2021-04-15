@@ -11,6 +11,9 @@ import LashExtensions from './ServicesTab/LashExtensions';
 import LipFiller from './ServicesTab/LipFillers';
 import TeethTreatment from './ServicesTab/TeethTreatments';
 import Footer from "./Components/Footer";
+import BlogPage from "./BlogPage";
+import AddBlogPage from "./AddBlogPage";
+
 
 import {BrowserRouter as Router,
   Switch,
@@ -25,7 +28,7 @@ const App = (props) => {
 
   return (
     <div classname="NavBar">
-      <div className="pageContainer">
+      <div className="pageContainer"> 
         <Router>
         <Navbar />
         <div className="contentWrap">
@@ -40,13 +43,15 @@ const App = (props) => {
             <Route path='/lash-extensions' exact component={LashExtensions} />
             <Route path='/lip-filler' exact component={LipFiller} />
             <Route path='/teeth-treatment' exact component={TeethTreatment} />
+            <Route path='/blog' exact component={BlogPage} />
+            <Route path='/newblog' exact component={AddBlogPage} />
           </Switch>
         </div>
         
       </Router>
       <Footer />
       </div>
-     
+     .
     </div>
     
   );
