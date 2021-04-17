@@ -27,7 +27,7 @@ const App = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div classname="NavBar">
+    <div className="NavBar">
       <div className="pageContainer"> 
         <Router>
         <Navbar />

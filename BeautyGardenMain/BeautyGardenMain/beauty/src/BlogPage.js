@@ -1,8 +1,8 @@
 import React from "react";
 import axios from 'axios';
 import {useState, useEffect } from 'react';
-import "./Home.css";
-import parse from "html-react-parser";
+
+
 
 function BlogPage(props) {
     const [data, setData] = useState({});
@@ -18,7 +18,25 @@ function BlogPage(props) {
 
 
 return (
-    <div className="blog-details">
+    <div>
+       {
+            data.map && data.map((item, idx) => {
+                return (
+                    <>
+            <div className='post' key={item.blogID}>
+            <img src={item.imageSrc} className="post_img" />
+            <h2 className="QuoteCurs1">{ item.blogTitle }</h2>
+            <p>Posted On: { item.blogDate }</p>
+            <p> {item.blogBody}</p>
+             </div>   
+       
+                </>
+            
+                )
+})}
+    </div>
+            
+   /* <div className="blog-details">
      {
      data.map && data.map((item, idx) => {
          return <>
@@ -33,7 +51,8 @@ return (
      }).reverse()}
       
     </div>
-  );
+  );*/
+)
+    }   
       
-      }
 export default BlogPage;

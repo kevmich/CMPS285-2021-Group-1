@@ -14,3 +14,17 @@
 .ck-editor__editable {
     min-height: 300px !important;
 }
+
+.post_img {
+    height: 300px;
+    width: 500px;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 300px;
+}
+
+.card-body {
+    background-color: #e2d2c5;
+}

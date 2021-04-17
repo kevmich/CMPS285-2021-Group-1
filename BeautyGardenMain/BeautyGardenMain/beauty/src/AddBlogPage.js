@@ -1,10 +1,11 @@
 import React from "react";
-import NewBlog from "./Components/NewBlog";
+import BlogList from "./Components/BlogList";
+
 
 const AddBlogPage = () => {
     return (
         <div>
-            <NewBlog />
+            <BlogList />
         </div>
     )
 }

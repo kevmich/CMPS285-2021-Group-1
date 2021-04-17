@@ -15,6 +15,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using BeautyGardenMain.Data.Users;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace BeautyGardenMain
 {
@@ -85,7 +87,11 @@ namespace BeautyGardenMain
 
             });
 
-            app.UseSpaStaticFiles();
+            app.UseSpaStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images")),
+                RequestPath = "/Images"
+            });
 
             app.UseRouting();
             
@@ -96,6 +102,12 @@ namespace BeautyGardenMain
                 endpoints.MapControllers();
             });
 
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images")),
+                RequestPath = "/Images"
+            });
+            
             app.UseHttpsRedirection();
 
             app.UseSpa(spa =>
