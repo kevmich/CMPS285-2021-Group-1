@@ -1,7 +1,7 @@
 import React from "react";
 import imageUpload from "./imageUpload";
 import "./portfolio.css";
-import mainButton from '../Buttons/mainButton';
+import MainButton from '../Buttons/MainButton';
 import { Link } from 'react-router-dom';
 
 const portfolio = () => {
@@ -15,9 +15,9 @@ const portfolio = () => {
             </div>
             <div>
                 <Link className="uploadImageBtn" to="/image-upload">
-                    <mainButton>
+                    <MainButton>
                         Click here to upload more images
-                    </mainButton>
+                    </MainButton>
                 </Link>
             </div>
         </body>
