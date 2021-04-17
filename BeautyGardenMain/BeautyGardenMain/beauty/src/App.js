@@ -13,6 +13,8 @@ import TeethTreatment from './ServicesTab/TeethTreatments';
 import Footer from "./Components/Footer";
 import BlogPage from "./BlogPage";
 import AddBlogPage from "./AddBlogPage";
+import portfolio from "./Components/portfolio";
+import imageUpload from "./Components/imageUpload";
 
 
 import {BrowserRouter as Router,
@@ -45,6 +47,8 @@ const App = (props) => {
             <Route path='/teeth-treatment' exact component={TeethTreatment} />
             <Route path='/blog' exact component={BlogPage} />
             <Route path='/newblog' exact component={AddBlogPage} />
+            <Route path='/portfolio' exact component={portfolio} />
+            <Route path='/image-upload' exact component={imageUpload} />
           </Switch>
         </div>
       </Router>

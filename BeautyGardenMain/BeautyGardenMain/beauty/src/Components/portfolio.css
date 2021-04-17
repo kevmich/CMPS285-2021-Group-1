@@ -1,0 +1,50 @@
+.container {
+    background: none;
+}
+
+.titleText {
+    background : #e2d2c5;
+    
+    width: auto;
+    height: 100px;
+    text-align: center;
+    border-top: 5px solid black;
+    padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.bodyContainer {
+    background : #e2d2c5;
+    
+    width: auto;
+    height: 100px;
+    text-align: center;
+    border-top: 5px solid black;
+    padding: 10px;
+
+    /* Text Styling Here */
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.imageUploadBtn {
+    color: black;
+    padding: 5px;
+    margin: auto;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.imageUploadBtn:hover {
+    transform: translateY(-2px);
+    background-color: #e1d4c6;
+    border-radius: 15px;
+}
