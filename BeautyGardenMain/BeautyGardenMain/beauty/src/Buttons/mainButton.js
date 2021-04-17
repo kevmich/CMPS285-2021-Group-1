@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainButton.css';
+import './mainButton.css';
 import {Link} from 'react-router-dom';
 
 export function MainButton() {

@@ -9,6 +9,7 @@ using BeautyGardenMain.Data;
 using BeautyGardenMain.Migrations.Entity.Blog;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
+using System.Linq.Expressions;
 
 namespace BeautyGardenMain.Controllers
 {
@@ -25,6 +26,17 @@ namespace BeautyGardenMain.Controllers
             this._hostEnvironment = hostEnvironment;
         }
 
+        private static Expression<Func<BlogPost, BlogPostDto>> MapEntityToDto()
+        {
+            return x => new BlogPostDto
+            {
+                BlogID = x.BlogID,
+                BlogTitle = x.BlogTitle,
+                BlogDate = x.BlogDate,
+                BlogBody = x.BlogBody,
+                ImageName = x.ImageName
+            };
+        }
         // GET: api/BlogPosts
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BlogPost>>> GetBlogPost()

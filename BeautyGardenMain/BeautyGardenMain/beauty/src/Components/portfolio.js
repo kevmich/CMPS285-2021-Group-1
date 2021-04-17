@@ -15,9 +15,9 @@ const portfolio = () => {
             </div>
             <div>
                 <Link className="uploadImageBtn" to="/image-upload">
-                    <MainButton>
+                    <mainButton>
                         Click here to upload more images
-                    </MainButton>
+                    </mainButton>
                 </Link>
             </div>
         </body>

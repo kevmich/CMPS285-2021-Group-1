@@ -32,7 +32,7 @@ namespace BeautyGardenMain.Controllers
         }//end constructor 
 
         [HttpPost("login")]
-        [Authorize(Roles = Roles.Admin)]
+       // [Authorize(Roles = Roles.Admin)]
 
         public async Task<ActionResult> LoginAsync(LoginDto dto)
         {
@@ -42,7 +42,7 @@ namespace BeautyGardenMain.Controllers
                 return BadRequest();
             }
 
-            var result = await signInManager.CheckPasswordSignInAsync(user, dto.Password, true);
+            var result = await signInManager.CheckPasswordSignInAsync(user, dto.Password, false);
             if(!result.Succeeded)
             {
                 return BadRequest();

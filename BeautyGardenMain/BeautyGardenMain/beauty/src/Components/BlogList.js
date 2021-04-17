@@ -5,7 +5,7 @@ import "../Blog.css"
 
 export default function BlogList(props) {
     const [data, setData] = useState({});
-    const [recordForEdit, setRecordForEdit] = useState(null)
+    const [postEdit, setPostEdit] = useState(null)
 
 
   
@@ -32,8 +32,8 @@ export default function BlogList(props) {
     }
 
    
-    const showRecordDetails = data => {
-        setRecordForEdit(data)
+    const showPostDetails = data => {
+        setPostEdit(data)
     }
 
     const addOrEdit = (formData, onSuccess) => {
@@ -87,7 +87,7 @@ export default function BlogList(props) {
             <div className="col-md-4">
                 <Post 
                 addOrEdit={addOrEdit}
-                recordForEdit={recordForEdit}
+                recordForEdit={postEdit}
                 />
             </div>
             <div className="col-md-8">
@@ -106,7 +106,7 @@ export default function BlogList(props) {
             <p> {item.blogBody}</p>
           <div className="btn-group">
           <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
-          <button className="btn btn-dark" onClick={() => { showRecordDetails(item) }}>Edit</button>
+          <button className="btn btn-dark" onClick={() => { showPostDetails(item) }}>Edit</button>
         </div>
           <hr />
         
