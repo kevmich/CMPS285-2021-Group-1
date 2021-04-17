@@ -194,6 +194,19 @@ const Navigation = (props) => {
               </Link>
             </NavItem>
 
+            <NavItem className="mainBtn">
+              <Link
+                className="portfolioPage"
+                to="/portfolio"
+                title="See our work"
+                style={{ textDecoration: 'none', color: 'black' }}
+              >
+                <mainButton className="secondBtn">
+                  Portfolio
+                </mainButton>
+              </Link>
+            </NavItem>
+
           </Nav>
           <SocialButtons />
           <NavbarText className="mainBtn">

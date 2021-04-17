@@ -25,6 +25,7 @@ const LipFillers = () => {
                         <h3>$300</h3>
                     </div>
                 
+                <div className="FillSmallFont">
                 <br></br>
                 <br></br>
                 <br></br>
@@ -32,9 +33,9 @@ const LipFillers = () => {
                 1mL of 100% hyaluronic acid using our 
                 needleless hyaluron pen. 1mL is used 
                 for all first time clients to provide a 
-                natural, plump look! 
-
+                natural, plump look!
                 </h5>
+                </div>
 
                 </div>
 
@@ -67,7 +68,17 @@ const LipFillers = () => {
             </div>
 
             <div className="FillersTitles">
-                <h2>Frequently Asked Questions</h2>
+            <div className="FillTitleOutlines1">
+                  <div className="FillLine1"></div>
+               </div>
+               <div className="FillTitleOutlines2">
+                  <h1> F.A.Q.</h1>
+               </div>
+               <div className="FillTitleOutlines3">
+                  <div className="FillLine2"></div>
+               </div>
+
+
             </div>
             
             <div className="FillersFAQ">

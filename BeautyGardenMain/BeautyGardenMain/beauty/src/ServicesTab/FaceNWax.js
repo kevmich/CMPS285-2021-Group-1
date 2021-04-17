@@ -4,8 +4,18 @@ import './FaceNWax.css'
 const FaceNWax = () => {
     return (
         <body className="FWBody">
+
             <div className="FaceWaxTitles">
-                <h2>Face services</h2>
+            <div className="FTitleOutlines1">
+                  <div className="FLine1"></div>
+               </div>
+               <div className="FTitleOutlines2">
+                  <h1> Facial Services</h1>
+               </div>
+               <div className="FTitleOutlines3">
+                  <div className="FLine2"></div>
+               </div>
+
             </div>
 
             <div className="FaceContainer">
@@ -57,7 +67,16 @@ const FaceNWax = () => {
             </div>
 
             <div className="FaceWaxTitles">
-                <h2> Wax Titles</h2>
+            <div className="WTitleOutlines1">
+                  <div className="WLine1"></div>
+               </div>
+               <div className="WTitleOutlines2">
+                  <h1> Full Body Waxing Services</h1>
+               </div>
+               <div className="WTitleOutlines3">
+                  <div className="WLine2"></div>
+               </div>
+
             </div>
 
             <div className="WaxContainer">

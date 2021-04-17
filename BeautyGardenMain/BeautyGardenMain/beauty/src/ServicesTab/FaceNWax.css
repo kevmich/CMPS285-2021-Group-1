@@ -3,15 +3,14 @@
 
 }
 .FaceWaxTitles{
-    background:#e2d2c5;
-    width: auto;
-    height: 50px;
-    Border: 2px solid black;
+  background:#e2d2c5;
+  width: 100%;
+  height: 80px;
+  color: #a69263;
 
 
-    /* Text Styling Here */
-    text-align: center;
-    font-family: 'Cinzel', serif;
+  /* Text Styling Here */
+  text-align: center;
 }
 
 .FaceContainer{
@@ -47,6 +46,7 @@ height: 1000px;
     margin-top: 20px;
     margin-bottom: 50px;
     border: 5px solid black;
+    font-family: 'Bitter', serif;
 
   }
 
@@ -68,6 +68,7 @@ height: 500px;
     margin-bottom: 50px; 
     margin-top: 20px;  
     border: 5px solid black;
+    font-family: 'Bitter', serif;
   }
 
 
@@ -88,4 +89,90 @@ height: 500px;
 
 .bodyColor{
     background: #e2d2c5;
+}
+
+
+.FTitleOutlines1{
+  height: 70px;
+  width: 42.5%;
+  float: left;
+  margin-left:.5%;
+}
+.FTitleOutlines2{
+  height: 50px;
+  width: 15%;
+  float: left;
+  margin-left:.5%;
+  margin-top: 14px;
+  color: #a69263;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+.FTitleOutlines3{
+  height: 70px;
+  width: 41%;
+  float: left;
+  margin-left:.5%;
+}
+
+.FLine1{
+  height: 2px;
+  width: 70%;
+  background: #a69263;
+  MARGIN-TOP: 35px;
+  margin-left: 30%;
+}
+
+.FLine2{
+  height: 2px;
+  width: 70%;
+  background: #a69263;
+  MARGIN-TOP: 35px;
+  margin-right: 30%;
+}
+
+
+
+
+
+
+.WTitleOutlines1{
+  height: 70px;
+  width: 34%;
+  float: left;
+  margin-left:.5%;
+}
+.WTitleOutlines2{
+  height: 50px;
+  width: 30%;
+  float: left;
+  margin-left:.5%;
+  margin-top: 14px;
+  color: #a69263;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+.WTitleOutlines3{
+  height: 70px;
+  width: 34%;
+  float: left;
+  margin-left:.5%;
+}
+
+.WLine1{
+  height: 2px;
+  width: 70%;
+  background: #a69263;
+  MARGIN-TOP: 35px;
+  margin-left: 30%;
+}
+
+.WLine2{
+  height: 2px;
+  width: 70%;
+  background: #a69263;
+  MARGIN-TOP: 35px;
+  margin-right: 30%;
 }
