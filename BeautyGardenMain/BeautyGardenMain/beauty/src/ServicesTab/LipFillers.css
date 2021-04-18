@@ -41,6 +41,7 @@
     width: 100%;
     height: 650px;
     border:5px solid black;
+    border-bottom: none;
     border-top: none;
 
 }
@@ -92,7 +93,7 @@
 .FillersFAQ{
     background: #e2d2c5;
     width: auto;
-    height: 600px;
+    height: 750px;
 
     /* Text Styling Here */
     text-align: Left;
