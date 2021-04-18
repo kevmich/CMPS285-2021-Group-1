@@ -20,7 +20,7 @@ import {
 import { Link } from 'react-router-dom';
 import "./Navigation.css"
 
-import MainButton from './Buttons/MainButton';
+import mainButton from './Buttons/mainButton';
 import SocialButtons from "./Buttons/SocialButtons";
 
 const Navigation = (props) => {

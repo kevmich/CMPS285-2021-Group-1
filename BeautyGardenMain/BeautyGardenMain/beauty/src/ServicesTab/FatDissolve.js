@@ -1,5 +1,6 @@
 import React from 'react';
 import './FatDissolve.css'
+import FatDissolvePic from "../images/FatDissolvePic.jpg";
 
 const FatDissolve = () => {
     return (
@@ -11,7 +12,7 @@ const FatDissolve = () => {
             <div className="BoxesContainer">
 
                 <div className="DissleftBox">
-                    [image goes here]
+                <img className="FatDissolvePic" src={ FatDissolvePic } alt="FatDissolvePic.jpg" />
                 </div>
 
                 <div className="DissrightBox">
