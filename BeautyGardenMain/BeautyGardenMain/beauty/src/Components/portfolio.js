@@ -1,7 +1,7 @@
 import React from "react";
 import imageUpload from "./imageUpload";
 import "./portfolio.css";
-import MainButton from '../Buttons/MainButton';
+import mainButton from '../Buttons/mainButton';
 import { Link } from 'react-router-dom';
 
 const portfolio = () => {

@@ -47,11 +47,16 @@
 
 .BoxesOne{
     background: #e2d2c5;
-    width: 400px;
+    width: 365px;
     height: 275px;
-    border: 5px solid black;
     margin-left: 40%;
     margin-top: 25px;
+
+}
+
+.LipFillers1{
+    height: 275px;
+    width: 350px;
 
 }
 
@@ -108,12 +113,6 @@
     float: right;
     text-align: right;
 }
-
-
-
-
-
-
 
 
 

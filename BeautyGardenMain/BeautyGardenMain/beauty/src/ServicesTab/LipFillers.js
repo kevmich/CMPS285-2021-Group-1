@@ -1,5 +1,7 @@
 import React from 'react';
 import './LipFillers.css'
+import LipFillers1 from "../images/LipFillers1.jpg";
+
 
 const LipFillers = () => {
     return (
@@ -12,7 +14,7 @@ const LipFillers = () => {
 
                 <div className="BoxesOne">
 
-                    [Image goes here]
+                    <img className="LipFillers1" src={ LipFillers1 } alt="LipFillers1.jpg" />
 
                 </div>
 

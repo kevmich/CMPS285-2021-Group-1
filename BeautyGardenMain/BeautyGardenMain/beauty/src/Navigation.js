@@ -20,7 +20,7 @@ import {
 import { Link } from 'react-router-dom';
 import "./Navigation.css"
 
-import MainButton from './Buttons/MainButton';
+import mainButton from './Buttons/mainButton';
 import SocialButtons from "./Buttons/SocialButtons";
 
 const Navigation = (props) => {
@@ -44,7 +44,7 @@ const Navigation = (props) => {
                 title="Go to the homepage"
                 style={{ textDecoration: 'none', color: 'black' }}
               >
-                <MainButton className="secondBtn">Home</MainButton>
+                <mainButton className="secondBtn">Home</mainButton>
               </Link>
             </NavItem>
 

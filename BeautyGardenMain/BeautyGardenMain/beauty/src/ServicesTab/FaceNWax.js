@@ -1,5 +1,6 @@
 import React from 'react';
 import './FaceNWax.css'
+import Face1 from "../images/Face1.jpg";
 
 const FaceNWax = () => {
     return (
@@ -20,7 +21,7 @@ const FaceNWax = () => {
 
             <div className="FaceContainer">
                 <div className="FaceleftBox">
-                    [image here]
+                <img className="Face1" src={ Face1 } alt="Face1.jpg" />
                 </div>
 
                 <div className="FacerightBox">
