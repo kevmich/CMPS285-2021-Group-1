@@ -91,8 +91,8 @@ export default function BlogList(props) {
                 />
             </div>
             <div className="col-md-8">
-                <div>Blog Page</div>
-                <div className="blog-details">
+                <div className="lead">Blog Page</div>
+                <div className="blog_details">
                    <article>
                     {
                 
@@ -104,7 +104,7 @@ export default function BlogList(props) {
             <h2 className="QuoteCurs1">{ item.blogTitle }</h2>
             <p>Posted On: { item.blogDate }</p>
             <p> {item.blogBody}</p>
-          <div className="btn-group">
+          <div className="btn_group">
           <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
           <button className="btn btn-dark" onClick={() => { showPostDetails(item) }}>Edit</button>
         </div>

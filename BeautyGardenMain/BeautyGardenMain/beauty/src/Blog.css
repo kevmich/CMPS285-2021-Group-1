@@ -16,8 +16,11 @@
 }
 
 .post_img {
-    height: 300px;
-    width: 500px;
+    display: flex;
+    height: 400px;
+    width: 800px;
+    image-resolution: inherit;
+    
 }
 
 .card-img-top {
@@ -27,4 +30,58 @@
 
 .card-body {
     background-color: #e2d2c5;
+}
+
+.blog_page {
+    
+}
+
+.jumbotron-fluid {
+    background-color: black;
+    
+}
+
+.display-4 {
+    color: white;
+    text-align: center;
+
+}
+
+.blog_details {
+    margin-top: 1em;
+}
+
+.btn_group {
+     display: inline-block;
+     border-spacing: 5px;
+}
+
+.post {
+    margin-left: 40rem;
+    margin-right: 40rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    image-resolution:inherit ;
+}
+
+hr {
+    flex-grow:1;
+  }
+
+.title_style {
+    width: 100%;
+    height: 80px;
+    color:black;
+
+
+    /* Text Styling Here */
+    text-align: center;
+}
+
+.post_body {
+    width: 100%;
+    height: 50%;
+    min-width: 500px;
 }

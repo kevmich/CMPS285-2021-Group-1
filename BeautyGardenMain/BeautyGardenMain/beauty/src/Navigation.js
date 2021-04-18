@@ -44,7 +44,7 @@ const Navigation = (props) => {
                 title="Go to the homepage"
                 style={{ textDecoration: 'none', color: 'black' }}
               >
-                <MainButton className="secondBtn">Home</MainButton>
+                <mainButton className="secondBtn">Home</mainButton>
               </Link>
             </NavItem>
 
@@ -208,7 +208,7 @@ const Navigation = (props) => {
             </NavItem>
 
           </Nav>
-          <SocialButtons />
+          <div className="button_container"><SocialButtons />
           <NavbarText className="mainBtn">
               <Link
                 className="loginButton"
@@ -221,6 +221,7 @@ const Navigation = (props) => {
                 </mainButton>
               </Link>
           </NavbarText>
+          </div>
                   
         </Collapse>
       </Navbar>

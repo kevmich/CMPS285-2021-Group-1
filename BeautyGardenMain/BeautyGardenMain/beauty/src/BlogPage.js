@@ -1,6 +1,8 @@
 import React from "react";
 import axios from 'axios';
 import {useState, useEffect } from 'react';
+import "./Blog.css";
+
 
 
 
@@ -18,18 +20,21 @@ function BlogPage(props) {
 
 
 return (
-    <div>
+    <div className="blog_page">
+        
        {
             data.map && data.map((item, idx) => {
                 return (
                     <>
             <div className='post' key={item.blogID}>
+            <h1 className="title_style">{ item.blogTitle }</h1>
             <img src={item.imageSrc} className="post_img" />
-            <h2 className="QuoteCurs1">{ item.blogTitle }</h2>
+            
             <p>Posted On: { item.blogDate }</p>
-            <p> {item.blogBody}</p>
+            <p className="post_body"> {item.blogBody}</p>
+            
              </div>   
-       
+             <hr />
                 </>
             
                 )
