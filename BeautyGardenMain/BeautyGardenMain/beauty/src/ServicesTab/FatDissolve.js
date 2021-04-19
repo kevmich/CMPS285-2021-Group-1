@@ -18,7 +18,6 @@ const FatDissolve = () => {
                 <div className="DissrightBox">
                     <br></br>
                     <br></br>
-                    <br></br>
                  
                     <h1>Fat Dissolve Treatment</h1>
                     <h4>Kybella is a product made of deoxycholic acid, which is a naturally occurring 
