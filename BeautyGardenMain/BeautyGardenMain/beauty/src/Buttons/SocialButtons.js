@@ -19,6 +19,7 @@ const SocialButtons = () =>{
                 target = "_blank"
                 rel = "noopener noreferrer"
                 className="facebook social"
+                title="Go to external site: https://m.facebook.com/TheBeautyGardenNorthshore"
             >
             <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
@@ -27,14 +28,16 @@ const SocialButtons = () =>{
                 target = "_blank"
                 rel = "noopener noreferrer"
                 className="instagram social"
+                title="Go to external site: https://www.instagram.com/thebeautygarden_northshore/"
             >
             <FontAwesomeIcon icon={faInstagram} size="2x" />    
             </a>
             <a
-                href="https://tinyurl.com/4sdsrvsn"
+                href="https://www.google.com/search?q=The+Beauty+Garden+Northshore"
                 target = "_blank"
                 rel = "noopener noreferrer"
                 className="google social"
+                title="Go to exteral site: https://www.google.com/search?q=The+Beauty+Garden+Northshore"
             >
             <FontAwesomeIcon icon={faGoogle} size="2x" />    
             </a>      

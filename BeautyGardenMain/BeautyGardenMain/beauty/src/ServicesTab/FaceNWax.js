@@ -1,16 +1,27 @@
 import React from 'react';
 import './FaceNWax.css'
+import Face1 from "../images/Face1.jpg";
 
 const FaceNWax = () => {
     return (
         <body className="FWBody">
+
             <div className="FaceWaxTitles">
-                <h2>Face services</h2>
+            <div className="FTitleOutlines1">
+                  <div className="FLine1"></div>
+               </div>
+               <div className="FTitleOutlines2">
+                  <h1> Facial Services</h1>
+               </div>
+               <div className="FTitleOutlines3">
+                  <div className="FLine2"></div>
+               </div>
+
             </div>
 
             <div className="FaceContainer">
                 <div className="FaceleftBox">
-                    [image here]
+                <img className="Face1" src={ Face1 } alt="Face1.jpg" />
                 </div>
 
                 <div className="FacerightBox">
@@ -57,7 +68,16 @@ const FaceNWax = () => {
             </div>
 
             <div className="FaceWaxTitles">
-                <h2> Wax Titles</h2>
+            <div className="WTitleOutlines1">
+                  <div className="WLine1"></div>
+               </div>
+               <div className="WTitleOutlines2">
+                  <h1> Full Body Waxing Services</h1>
+               </div>
+               <div className="WTitleOutlines3">
+                  <div className="WLine2"></div>
+               </div>
+
             </div>
 
             <div className="WaxContainer">

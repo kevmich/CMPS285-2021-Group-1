@@ -15,6 +15,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using BeautyGardenMain.Data.Users;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace BeautyGardenMain
 {
@@ -31,25 +33,35 @@ namespace BeautyGardenMain
         public void ConfigureServices(IServiceCollection services)
         {
             
-
             services.AddControllers();
 
             services.AddDbContext<DataContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
 
-            services.AddIdentity<User, Role>()
-               .AddEntityFrameworkStores<DataContext>();
 
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "beauty/build";
             });
 
-            services.AddSwaggerGen();
-            services.AddSwaggerGen(c =>
+            services.AddIdentity<User, Role>()
+               .AddEntityFrameworkStores<DataContext>();
+
+            services.ConfigureApplicationCookie(options =>
             {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "V1" });
+                options.Events.OnRedirectToAccessDenied = context =>
+                {
+                    context.Response.StatusCode = 403;
+                    return Task.CompletedTask;
+                };
+                options.Events.OnRedirectToLogin = context =>
+                {
+                    context.Response.StatusCode = 401;
+                    return Task.CompletedTask;
+                };
             });
+
+            services.AddSwaggerGen();
 
         }//end ConfigureServices
 
@@ -75,19 +87,28 @@ namespace BeautyGardenMain
 
             });
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseSpaStaticFiles();
+            app.UseSpaStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images")),
+                RequestPath = "/Images"
+            });
+
             app.UseRouting();
-
             
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images")),
+                RequestPath = "/Images"
+            });
+            
+            app.UseHttpsRedirection();
 
             app.UseSpa(spa =>
             {
@@ -124,7 +145,7 @@ namespace BeautyGardenMain
                 }
 
                 await CreateUser(userManager, "admin", Roles.Admin);
-                await CreateUser(userManager, "employee", Roles.Employee);
+                //await CreateUser(userManager, "employee", Roles.Employee);
             }
         }//end AddUsers
 

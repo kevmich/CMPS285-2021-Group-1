@@ -1,5 +1,7 @@
 import React from 'react';
 import './LipFillers.css'
+import LipFillers1 from "../images/LipFillers1.jpg";
+
 
 const LipFillers = () => {
     return (
@@ -12,7 +14,7 @@ const LipFillers = () => {
 
                 <div className="BoxesOne">
 
-                    [Image goes here]
+                    <img className="LipFillers1" src={ LipFillers1 } alt="LipFillers1.jpg" />
 
                 </div>
 
@@ -25,6 +27,7 @@ const LipFillers = () => {
                         <h3>$300</h3>
                     </div>
                 
+                <div className="FillSmallFont">
                 <br></br>
                 <br></br>
                 <br></br>
@@ -32,9 +35,9 @@ const LipFillers = () => {
                 1mL of 100% hyaluronic acid using our 
                 needleless hyaluron pen. 1mL is used 
                 for all first time clients to provide a 
-                natural, plump look! 
-
+                natural, plump look!
                 </h5>
+                </div>
 
                 </div>
 
@@ -58,16 +61,20 @@ const LipFillers = () => {
                 </div>
             </div>
 
-            <div className="SectionThree">
-                <div className="BigImage">
-                [Image goes here]
 
-                </div>
-
-            </div>
 
             <div className="FillersTitles">
-                <h2>Frequently Asked Questions</h2>
+            <div className="FillTitleOutlines1">
+                  <div className="FillLine1"></div>
+               </div>
+               <div className="FillTitleOutlines2">
+                  <h1> F.A.Q.</h1>
+               </div>
+               <div className="FillTitleOutlines3">
+                  <div className="FillLine2"></div>
+               </div>
+
+
             </div>
             
             <div className="FillersFAQ">
@@ -83,6 +90,15 @@ const LipFillers = () => {
                <br></br>
                <h3> How often can I get my lips done? </h3>
                <h5> If after the first 1mL you are looking to add more volume, you can get another mL a week from your previous appointment.</h5>
+               <br></br>
+               <br></br>
+               <h3> What is the difference between the Hyaluron pen and traditional filler injections?</h3>
+               <h5>• No needles</h5>
+               <h5>• Minimal to no pain at all </h5>
+               <h5>• Minimal to no swelling or bruising</h5>
+               <h5>• Results are natural and instant</h5>
+               <h5>• The more you hydrate, the more plump your lips get</h5>
+               <h5>• 100% hyaluronic acid used</h5>
             </div>
      </body>
     )

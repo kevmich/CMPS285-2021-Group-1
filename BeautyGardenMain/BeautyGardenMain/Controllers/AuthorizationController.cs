@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace BeautyGardenMain.Controllers
 {
-    [Route("/api/auth")]
+    [Route("api/auth")]
     [ApiController]
     public class AuthorizationController : ControllerBase
     {
@@ -42,7 +42,7 @@ namespace BeautyGardenMain.Controllers
                 return BadRequest();
             }
 
-            var result = await signInManager.CheckPasswordSignInAsync(user, dto.Password, true);
+            var result = await signInManager.CheckPasswordSignInAsync(user, dto.Password, false);
             if(!result.Succeeded)
             {
                 return BadRequest();
@@ -57,25 +57,8 @@ namespace BeautyGardenMain.Controllers
                 Id = user.Id,
                 Username = user.UserName,
                 UserRoles = roles
-            }); ;
+            });
         }
-
-
-        [HttpGet]
-        public static Expression<Func<CreateUser, CreateUserDto>> MapEntitytoDto()
-        {
-            return dto => new CreateUserDto
-            {
-               var user = new User { UserName = dto.Username };
-            await userManager.CreateAsync(user, dto.Password);
-            await userManager.AddToRoleAsync(user, dto.Role);
-            return Ok();
-        };
-         }
-
-
-
-
 
         [HttpPost("CreateUser")]
         public async Task<ActionResult> Create(CreateUserDto dto)

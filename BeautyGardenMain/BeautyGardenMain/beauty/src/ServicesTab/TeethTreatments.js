@@ -1,6 +1,6 @@
 import React from 'react';
 import './TeethTreatments.css'
-import teeth1 from '../images/teeth1.jpg';
+import teeth2 from '../images/teeth2.svg';
 
 const TeethTreatments = () => {
     return (
@@ -12,16 +12,16 @@ const TeethTreatments = () => {
             <div className="TeethImages">
 
                 <div className="TeethBoxes">
-                <img className="teeth1" src={ teeth1 } alt="teeth1.jpg" />
+                <img className="teeth2" src={ teeth2 } alt="teeth2.svg" />
 
                 </div>
 
                 <div className="TeethBoxes">
                     <h3>Cosmetic Teeth Whitening</h3>
                     <br></br>
-                    <h5>With our all natural gel and LED light, 
-                    your smile will whiten 4-9 shades in only 60-minutes! 
-                    </h5>
+                    <h5>With our all natural gel and LED light, </h5>
+                    <h5>your smile will whiten 4-9 shades in</h5>
+                    <h5> only 60-minutes!</h5>
 
                 </div>
 
@@ -30,11 +30,21 @@ const TeethTreatments = () => {
 
 
             <div className="TeethTitles">
-                <h2>Prices</h2>
+            <div className="TTitleOutlines1">
+                  <div className="TLine1"></div>
+               </div>
+               <div className="TTitleOutlines2">
+                  <h1> Pricing</h1>
+               </div>
+               <div className="TTitleOutlines3">
+                  <div className="TLine2"></div>
+               </div>
             </div>
 
             <div className="TtableContainer">
                 <div className="TrightPrice">
+
+                <div className="TSmallFont">
                 <br></br>
                 <br></br>
                 <br></br>
@@ -42,23 +52,43 @@ const TeethTreatments = () => {
                 <h4>90</h4>
                 <br></br>
                 <h4>50</h4>
+                </div>
 
                 </div>
 
                 <div className="TleftPrice">
                 <br></br>
                 <h1 className="TeethPriceTitle">Cosmetic Teeth Whitening</h1>
+
+                <div className="TSmallFont">
                 <br></br>
                 <h4>60-minute session</h4>
                 <br></br>
                 <h4>30-Minute Touchup Session</h4>
+                </div>
 
                 </div>
 
             </div>
 
+
+
+
+
+
             <div className="TeethTitles">
-                <h2>Frequently Asked Questions</h2>
+
+            <div className="TTitleOutlines1">
+                  <div className="TLine1"></div>
+               </div>
+               <div className="TTitleOutlines2">
+                  <h1> F.A.Q.</h1>
+               </div>
+               <div className="TTitleOutlines3">
+                  <div className="TLine2"></div>
+               </div>
+
+
             </div>
 
             <div className="TTFAQ">

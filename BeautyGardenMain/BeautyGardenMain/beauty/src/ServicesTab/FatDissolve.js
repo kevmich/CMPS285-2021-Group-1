@@ -1,5 +1,6 @@
 import React from 'react';
 import './FatDissolve.css'
+import FatDissolvePic from "../images/FatDissolvePic.jpg";
 
 const FatDissolve = () => {
     return (
@@ -11,23 +12,13 @@ const FatDissolve = () => {
             <div className="BoxesContainer">
 
                 <div className="DissleftBox">
-                    [image goes here]
+                <img className="FatDissolvePic" src={ FatDissolvePic } alt="FatDissolvePic.jpg" />
                 </div>
 
                 <div className="DissrightBox">
                     <br></br>
                     <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                 
                     <h1>Fat Dissolve Treatment</h1>
                     <h4>Kybella is a product made of deoxycholic acid, which is a naturally occurring 
                         molecule that aids in the breakdown and absorption of fat.
@@ -37,8 +28,16 @@ const FatDissolve = () => {
 
             </div>
 
-            <div className="DissolveTitle">
-                <h2>Frequently asked questions</h2>
+            <div className="DissolveTitles">
+            <div className="DissTitleOutlines1">
+                  <div className="DissLine1"></div>
+               </div>
+               <div className="DissTitleOutlines2">
+                  <h1> F.A.Q.</h1>
+               </div>
+               <div className="DissTitleOutlines3">
+                  <div className="DissLine2"></div>
+               </div>
 
             </div>
             

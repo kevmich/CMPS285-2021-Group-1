@@ -92,6 +92,8 @@
 
 .BookTopText{
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
@@ -109,7 +111,6 @@
 
 .QuoteFont1{
 color:black;
-font-family: 'Dancing Script', cursive;
 font-family: 'Playfair Display', serif;
 font-size: 300%;
 
