@@ -53,7 +53,7 @@ const Home = () => {
                     <h6> affordable beauty services on the Northshoe. </h6>
                     <h6> From the moment you walk into your bouquet salon, </h6>
                     <h6> you will receive exceptional customer service </h6>
-                    <h6> and a personalized experiences. </h6>
+                    <h6> and a personalized experience. </h6>
 
                     
 

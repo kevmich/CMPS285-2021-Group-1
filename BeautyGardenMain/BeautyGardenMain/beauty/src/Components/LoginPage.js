@@ -1,67 +1,35 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import axios from 'axios';
-import Login from '../Login';
+import './LoginPage.css';
+import loginForm from '../loginForm';
 
-function LoginPage() {
-
-    let history = useHistory();
-
-    const [error, setError] = useState("");
-
-    const Login = details => {
-        axios.post('/api/auth/login', {
-            username: details.email,
-            password: details.password
-        })
-
-
-            .then(function (response) {
-                console.log(response);
-                history.push('/login')
-            })
-            .catch(err => {
-                if (err.response) {
-                    setError('Email and/or Password is incorrect')
-                }
-            });
-     }
-
-        const [details, setDetails] = useState({email: "", password: ""})
-
-    const submitHandler = e => {
-        e.preventDefault();
-        console.log("details")
-        Login(details);
-    }//end const
+const loginPage = () => {
+    const {handleChange, login, handleSubmit, isLoading } = loginForm();
 
         return (
-
+            
             <div className="container" >
-                <form className='white' onSubmit={submitHandler}>
-                    <body>
-
-                        <div className="input-field">
-                            <label htmlFor="email">email</label>
-                            <input type="text" name="emaile" placeholder="example@yahoo.com" onChange={e => setDetails({ ...details, email: e.target.value })} value={details.name} />
-                            {setError.userName && <p>{setError.email.message}</p>}
-                        </div>
+                <form className='white' onSubmit={handleSubmit}>
+                    <body>                 
+                
+                      <div className="input-field">
+                            <label htmlFor="userName">User Name</label>
+                            <input type="text" name="userName" value={login.userName} onChange={handleChange} placeholder="example@yahoo.com" />
+                         </div>   
 
                         <div className="input-field">
                             <label htmlFor="password">Password</label>
-                            <input type="password" name="password" placeholder="Please enter your password" onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password}
-                                styles={{ width: "300px" }} />
-                            {setError.password && <p>{setError.password.message}</p>}
-                        </div>
-
-                        <div>
-                            <button className="btn blue darken-3" type="submit">Submit</button>
-                        </div>
-                    </body>
+                            <input type="password" name="password" value={login.password} onChange={handleChange} placeholder ="Please enter your password"
+                                styles={{width:"300px"}} />
+                            </div>
+                            <div>
+                        { !isLoading && <button className="btn blue darken-3" type="submit">Submit</button> }
+                        { isLoading && <button className="btn blue darken-3" disabled>
+                            <i className = "fas fa-spinner fa-spin"></i> Submitting...
+                        </button>}
+                    </div>
+                    </body>  
                 </form>
             </div>
-            )
-}
-
-    export default LoginPage;
-
+        );
+    }
+export default loginPage;

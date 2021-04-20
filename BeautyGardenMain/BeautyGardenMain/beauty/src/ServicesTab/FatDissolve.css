@@ -23,8 +23,8 @@
     background: #e2d2c5;
     width: 30%;
     height:600px;
-    margin-left: 20%;
-    margin-right: none;
+    margin-left: 19%;
+    margin-right: 1%;
     text-align: left;
     float: left;
     margin-top: 100px;
@@ -36,15 +36,14 @@
 .DissrightBox{
     background: #e2d2c5;
     width: 30%;
-    height:600px;
-    margin-left: none;
-    margin-right: 20%;
+    height:300px;
+    margin-left: 1%;
+    margin-right: 19%;
     text-align: left;
     float: right;
-    margin-top: 100px;
+    margin-top: 400px;
     margin-bottom: 100px;
     font-family: 'Bitter', serif;
-    border: 5px solid black;
 
   }
 
