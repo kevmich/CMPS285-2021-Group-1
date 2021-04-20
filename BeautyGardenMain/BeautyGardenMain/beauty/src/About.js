@@ -21,21 +21,148 @@ const About = () => {
 
 
     <div className="ProfileContainer">
-        <div>
+
+        <div className="TwoBoxesCont">
             <div className="LeftBox">
-                Services: one
+
+                <div className="profileLeft">
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Listening:
+
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Challenge: 
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Watching:
+                    </div>
+
+                    <div className="profileTextSections">
+                        <br></br>
+                            <br></br>
+                        Drinking:
+                    </div>                                                            
+
+             </div>
+
+                <div className="profileRight">
+
+                    <div className="profileAnswer">
+                        <br></br>
+                        <br></br>
+                        something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+
+                </div>
+                
             </div>
 
 
             <div className="RightBox">
                 IMAGE one
             </div>
+
+            
         </div>
 
 
-        <div>
+        <div className="EmptySpace"></div>
+
+        <div className="TwoBoxesCont">
             <div className="LeftBox">
-                Services: two
+                <div className="profileLeft">
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Listening:
+
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Challenge: 
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Watching:
+                    </div>
+
+                    <div className="profileTextSections">
+                        <br></br>
+                            <br></br>
+                        Drinking:
+                    </div>                                                            
+
+                </div>
+
+                <div className="profileRight">
+
+                    <div className="profileAnswer">
+                        <br></br>
+                        <br></br>
+                        something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+
+                </div>
             </div>
 
 
@@ -44,10 +171,72 @@ const About = () => {
             </div>
         </div>
 
+        <div className="EmptySpace"></div>
 
-        <div>
+
+        <div className="TwoBoxesCont">
             <div className="LeftBox">
-                Services: three
+                <div className="profileLeft">
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Listening:
+
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Challenge: 
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Watching:
+                    </div>
+
+                    <div className="profileTextSections">
+                        <br></br>
+                            <br></br>
+                        Drinking:
+                    </div>                                                            
+
+                </div>
+
+                <div className="profileRight">
+
+                    <div className="profileAnswer">
+                        <br></br>
+                        <br></br>
+                        something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+
+                </div>
             </div>
 
 
@@ -55,11 +244,73 @@ const About = () => {
                 IMAGE three
             </div>
         </div>
+        
+        <div className="EmptySpace"></div>
 
 
-        <div>
+        <div className="TwoBoxesCont">
             <div className="LeftBox">
-                Services: four
+                <div className="profileLeft">
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Listening:
+
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Challenge: 
+                    </div>
+
+                    <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            Watching:
+                    </div>
+
+                    <div className="profileTextSections">
+                        <br></br>
+                            <br></br>
+                        Drinking:
+                    </div>                                                            
+
+                </div>
+
+                <div className="profileRight">
+
+                    <div className="profileAnswer">
+                        <br></br>
+                        <br></br>
+                        something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+                           
+                    </div>
+
+                    <div className="profileAnswer">
+                    <br></br>
+                    <br></br>
+                    something something something
+
+                    </div>
+
+
+                </div>
             </div>
 
 
@@ -68,6 +319,9 @@ const About = () => {
             </div>
         </div>
     </div>
+
+
+
         <div className="BottomText">
             Placeholder for whatever is at the bottom
         </div>
