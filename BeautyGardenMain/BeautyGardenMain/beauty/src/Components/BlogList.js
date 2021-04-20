@@ -41,14 +41,14 @@ export default function BlogList(props) {
             blogAPI().create(formData)
                 .then(res => {
                     onSuccess();
-                   refreshEmployeeList();
+                   refreshPostPage();
                 })
                 .catch(err => console.log(err))
         else
         blogAPI().update(formData.get('blogID'), formData)
         .then(res => {
             onSuccess();
-            refreshEmployeeList();
+            refreshPostPage();
             
             
         })
@@ -63,14 +63,14 @@ export default function BlogList(props) {
         .then(response => {
             if (response.data !=null) {
                 alert("Post deleted successfully.");
-                refreshEmployeeList();
+                refreshPostPage();
             }
             
         });
         
     };
    
-    function refreshEmployeeList() {
+    function refreshPostPage() {
         blogAPI().fetchAll()
             .then(res => {
                 setData(res.data)
@@ -91,31 +91,37 @@ export default function BlogList(props) {
                 />
             </div>
             <div className="col-md-8">
-                <div className="lead">Blog Page</div>
-                <div className="blog_details">
-                   <article>
-                    {
+                <div className="lead text-center">Blog Page</div>
+                {
                 
                 data.map && data.map((item, idx) => {
-                return <>
-         
-            
-            <img src={item.imageSrc} className="post_img" />
-            <h2 className="QuoteCurs1">{ item.blogTitle }</h2>
-            <p>Posted On: { item.blogDate }</p>
-            <p> {item.blogBody}</p>
-          <div className="btn_group">
+                    return (
+                        <>
+                         <div>
+                             <hr />
+                             
           <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
+          
           <button className="btn btn-dark" onClick={() => { showPostDetails(item) }}>Edit</button>
         </div>
+          
+                <div className='post' key={item.blogID}>
+                
+                <h1 className="title_style">{ item.blogTitle }</h1>
+                <img src={item.imageSrc} className="post_img" />
+                
+                <p className="post_date">Posted On: { item.blogDate }</p>
+                <pre><p className="post_body"> {item.blogBody}</p></pre>
+                </div>
+          
           <hr />
         
-        </>}).reverse()}
-        </article>     
+        </>)}).reverse()}
+          
     </div>
-            </div>
+    </div>
         
-        </div>
+        
     )
     
 }

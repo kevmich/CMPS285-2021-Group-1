@@ -2,14 +2,22 @@
     font-family : "Times New Roman", serif;
 }
 
-i:hover {
+.fas.fa-trash-alt:hover {
     transform: translateY(-3px);
     background-color: yellow;
     border-radius: 100%;
     }
 
-i {
+.fas.fa-trash-alt {
     margin: 1rem;
     transition: transform 250ms;
     display: inline-block;
+}
+
+.table{
+    background-color: white;
+}
+
+tbody {
+    background-color: white;
 }

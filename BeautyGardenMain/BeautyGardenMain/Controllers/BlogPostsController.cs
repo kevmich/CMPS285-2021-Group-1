@@ -39,10 +39,10 @@ namespace BeautyGardenMain.Controllers
         }
         // GET: api/BlogPosts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<BlogPost>>> GetBlogPost()
+        public async Task<ActionResult<IEnumerable<BlogPostDto>>> GetBlogPost()
         {
             return await _context.BlogPost
-                .Select(x => new BlogPost() {
+                .Select(x => new BlogPostDto() {
                     BlogID = x.BlogID,
                     BlogTitle=x.BlogTitle,
                     BlogDate=x.BlogDate,

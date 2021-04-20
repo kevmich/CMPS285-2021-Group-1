@@ -12,7 +12,8 @@ const initialFieldValues = {
     blogBody: '',
     imageName: '',
     imageSrc: defaultImageSrc,
-    imageFile: null
+    imageFile: null,
+   
 }
 export default function Post(props) {
     const {addOrEdit, recordForEdit} = props
@@ -31,6 +32,17 @@ export default function Post(props) {
             [name]: value
         })
     }
+
+    const getDateTime = () => {
+  
+        let tempDate = new Date();
+        let date = (tempDate.getMonth()+1) + '/' + tempDate.getDate() + '/' +  tempDate.getFullYear(); 
+        const currDate = date;
+        setValues({ 
+            ...values,
+            blogDate: currDate
+        })
+      }
 
     const showPreview = e => {
         if (e.target.files && e.target.files[0]) {
@@ -79,6 +91,7 @@ const handleFormSubmit = e =>{
         formData.append('blogBody', values.blogBody)
         formData.append('imageName', values.imageName)
         formData.append('imageFile', values.imageFile)
+        formData.append(0, values.blogLikes)
         addOrEdit(formData, resetForm)
        
     }
@@ -94,6 +107,7 @@ return (
             
         
         <form autoComplete="off" noValidate onSubmit={handleFormSubmit}>
+        <hr />
             <div className="card">
                 
                 <img src={values.imageSrc} className="card-img-top" />
@@ -110,6 +124,7 @@ return (
                         <input className="form-control" placeholder="Post Date" name="blogDate"
                         value={values.blogDate} 
                         onChange = {handleInputChange}/>
+                        <button type="button" class="btn btn-secondary btn-sm btn-dark" onClick={getDateTime}>Today's Date</button>
                     </div>
                     <div className="form-group">
                         <textarea className="form-control" placeholder="Post Body" name="blogBody"

@@ -1,10 +1,10 @@
 import React from "react";
 import BlogList from "./Components/BlogList";
-
+import "./Blog.css"
 
 const AddBlogPage = () => {
     return (
-        <div>
+        <div className="add_container">
             <BlogList />
         </div>
     )

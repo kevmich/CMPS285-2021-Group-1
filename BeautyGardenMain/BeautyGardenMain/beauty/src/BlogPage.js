@@ -1,6 +1,6 @@
 import React from "react";
 import axios from 'axios';
-import {useState, useEffect } from 'react';
+import {setState, useState, useEffect } from 'react';
 import "./Blog.css";
 
 
@@ -8,7 +8,8 @@ import "./Blog.css";
 
 function BlogPage(props) {
     const [data, setData] = useState({});
-
+    const [count, setCount] = useState(data.blogLikes);
+    
     useEffect (() => {
         const GetData = async () => {
             const result = await axios("/api/BlogPosts");
@@ -17,6 +18,10 @@ function BlogPage(props) {
 
         GetData();
     }, []);
+
+
+
+
 
 
 return (
@@ -29,16 +34,14 @@ return (
             <div className='post' key={item.blogID}>
             <h1 className="title_style">{ item.blogTitle }</h1>
             <img src={item.imageSrc} className="post_img" />
-            
             <p>Posted On: { item.blogDate }</p>
-            <p className="post_body"> {item.blogBody}</p>
-            
-             </div>   
+            <pre><p className="post_body"> {item.blogBody}</p></pre>
+            </div>
              <hr />
                 </>
             
                 )
-})}
+}).reverse()}
     </div>
             
    /* <div className="blog-details">
