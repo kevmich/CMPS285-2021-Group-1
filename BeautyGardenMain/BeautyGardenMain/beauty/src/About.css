@@ -8,7 +8,8 @@
     width: auto;
     height: 100px;
     text-align: center;
-    border-top: 5px solid black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
     padding: 10px;
 
     /* Text Styling Here */
@@ -25,8 +26,6 @@
     width: auto;
     height: 300px;
     text-align: center;
-    border-top: 1px solid black;
-    border-bottom: 5px solid black;
     padding: 10px;
     font-family: cursive;
     /* text-decoration: underline; */
@@ -40,10 +39,11 @@
 .LeftBox{
     background : #e2d2c5;
     
-    width: 40%;
+    width: 38%;
     height: 625px;
     float: left;
     margin-left: 10%;
+    margin-right: 2%;
 
     /* Text Styling Here */
     text-align: center;
@@ -53,10 +53,11 @@
 .RightBox{
     background : #e2d2c5;
     
-    width: 40%;
+    width: 38%;
     height: 625px;
     float: right;
     margin-right: 10%;
+    margin-left: 2%;
 
     /* Text Styling Here */
     text-align: center;
@@ -128,4 +129,9 @@
 .EmptySpace{
     width: 100%;
     height: 100px;
+}
+
+.Madison{
+    height: 90%;
+    width: 90%;
 }

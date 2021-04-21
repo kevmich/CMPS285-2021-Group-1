@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css"
+import Madison from "./images/Madison.jpg";
 
 const About = () => {
     return (
@@ -241,7 +242,8 @@ const About = () => {
 
 
             <div className="RightBox">
-                IMAGE three
+            <h2> Madison</h2>
+            <img className="Madison" src={ Madison } alt="Madison.jpg" />
             </div>
         </div>
         
@@ -315,7 +317,7 @@ const About = () => {
 
 
             <div className="RightBox">
-                IMAGE four
+                4
             </div>
         </div>
     </div>
