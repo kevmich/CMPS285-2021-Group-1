@@ -35,7 +35,7 @@ return (
             <h1 className="title_style">{ item.blogTitle }</h1>
             <img src={item.imageSrc} className="post_img" />
             <p>Posted On: { item.blogDate }</p>
-            <pre><p className="post_body"> {item.blogBody}</p></pre>
+            <pre><p className="post_body SmallFont" > {item.blogBody}</p></pre>
             </div>
              <hr />
                 </>

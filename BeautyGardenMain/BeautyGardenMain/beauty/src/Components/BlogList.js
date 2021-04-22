@@ -97,7 +97,7 @@ export default function BlogList(props) {
                 data.map && data.map((item, idx) => {
                     return (
                         <>
-                         <div>
+                         <div key={item.id}>
                              <hr />
                              
           <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
@@ -111,7 +111,7 @@ export default function BlogList(props) {
                 <img src={item.imageSrc} className="post_img" />
                 
                 <p className="post_date">Posted On: { item.blogDate }</p>
-                <pre><p className="post_body"> {item.blogBody}</p></pre>
+                <pre className="SmallFont"><p className="post_body"> {item.blogBody}</p></pre>
                 </div>
           
           <hr />
