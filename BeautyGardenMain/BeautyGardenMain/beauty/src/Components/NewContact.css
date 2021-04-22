@@ -76,3 +76,44 @@
 .contact_body {
     background-color: #e2d2c5;
 }
+
+.FTitleOutlines1{
+    height: 70px;
+    width: 42.5%;
+    float: left;
+    margin-left:.5%;
+}
+
+.FTitleOutlines2{
+    height: 50px;
+    width: 15%;
+    float: left;
+    margin-left:.5%;
+    margin-top: 14px;
+    color: #a69263;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+  
+.FTitleOutlines3{
+    height: 70px;
+    width: 41%;
+    float: left;
+    margin-left:.5%;
+}
+
+.FLine1{
+    height: 2px;
+    width: 70%;
+    background: #a69263;
+    MARGIN-TOP: 35px;
+    margin-left: 30%;
+}
+  
+.FLine2{
+    height: 2px;
+    width: 70%;
+    background: #a69263;
+    MARGIN-TOP: 35px;
+    margin-right: 30%;
+}
