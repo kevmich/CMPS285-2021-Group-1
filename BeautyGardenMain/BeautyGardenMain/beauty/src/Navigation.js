@@ -50,8 +50,6 @@ const Navigation = (props) => {
 
             <UncontrolledDropdown
               className="charlieBtn"
-              nav
-              inNavbar
             >
               <DropdownToggle
                 nav
@@ -64,12 +62,11 @@ const Navigation = (props) => {
 
                 <DropdownItem className="alphaBtn">
                   <Link
-                    className="servicesDrop"
                     to="/lash-extensions"
                     title="See what we offer"
                     style={{ textDecoration: 'none', color: 'black' }}
                   >
-                    <mainButton className="bravoBtn">
+                    <mainButton>
                       Lash Extensions
                     </mainButton>
                   </ Link>
@@ -77,12 +74,11 @@ const Navigation = (props) => {
 
                 <DropdownItem className="alphaBtn">
                   <Link
-                    className="servicesDrop"
                     to="/teeth-treatment"
                     title="See what we offer"
                     style={{ textDecoration: 'none', color: 'black' }}
                   >
-                    <mainButton className="bravoBtn">
+                    <mainButton>
                       Teeth Treatments
                     </mainButton>
                   </ Link>
@@ -90,12 +86,11 @@ const Navigation = (props) => {
 
                 <DropdownItem className="alphaBtn">
                   <Link
-                    className="servicesDrop"
                     to="/lip-filler"
                     title="See what we offer"
                     style={{ textDecoration: 'none', color: 'black' }}
                   >
-                    <mainButton className="bravoBtn">
+                    <mainButton>
                       Needle Free Lip Fillers
                     </mainButton>
                   </Link>
@@ -103,25 +98,23 @@ const Navigation = (props) => {
                
                 <DropdownItem className="alphaBtn">
                   <Link
-                    className="servicesDrop"
                     to="/fat-dissolve"
                     title="See what we offer"
                     style={{ textDecoration: 'none', color: 'black' }}
                   >
-                    <mainButton className="bravoBtn">
+                    <mainButton>
                       Needle Free Fat Disolve
                     </mainButton>
                   </Link>
                 </DropdownItem>
 
                 <DropdownItem className="alphaBtn">
-                  <Link 
-                    className="servicesDrop"
+                  <Link
                     to="/face-and-wax"
                     title="See what we offer"
                     style={{ textDecoration: 'none', color: 'black' }}
                   >
-                    <mainButton className="bravoBtn">
+                    <mainButton>
                       Facials and Waxing
                     </mainButton>
                   </Link>
@@ -158,19 +151,6 @@ const Navigation = (props) => {
 
             <NavItem className="mainBtn">
               <Link
-                className="contactList"
-                to="/contact-list"
-                title="View all inquiries"
-                style={{ textDecoration: 'none', color: 'black' }}
-              >
-                <mainButton className="secondBtn">
-                  Contact List
-                </mainButton>
-              </Link>
-            </NavItem>
-
-            <NavItem className="mainBtn">
-              <Link
                 className="blog"
                 to="/blog"
                 title="News"
@@ -178,18 +158,6 @@ const Navigation = (props) => {
               >
                 <mainButton className="secondBtn">
                   Blog
-                </mainButton>
-              </Link>
-            </NavItem>
-            <NavItem className="mainBtn">
-              <Link
-                className="newblog"
-                to="/newblog"
-                title="New Blog Post"
-                style={{ textDecoration: 'none', color: 'black' }}
-              >
-                <mainButton className="secondBtn">
-                  Add/Edit Post
                 </mainButton>
               </Link>
             </NavItem>
@@ -208,19 +176,54 @@ const Navigation = (props) => {
             </NavItem>
 
           </Nav>
-          <div className="button_container"><SocialButtons />
-          <NavbarText className="mainBtn">
-              <Link
-                className="loginButton"
-                to="/login"
-                title="Login as admin"
+          <div className="button_container">
+          <SocialButtons />
+          <UncontrolledDropdown
+            className="charlieBtn"
+          >
+            <DropdownToggle
+                nav
+                caret
                 style={{ textDecoration: 'none', color: 'black' }}
               >
-                <mainButton className="secondBtn">
-                  Login
-                </mainButton>
-              </Link>
-          </NavbarText>
+                Admin
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem className="alphaBtn">
+                  <Link
+                    to="/login"
+                    title="Admin Login"
+                    style={{ textDecoration: 'none', color: 'black' }}
+                  >
+                    <mainButton>
+                      Admin Login
+                    </mainButton>
+                  </Link>
+                </DropdownItem>
+                <DropdownItem className="alphaBtn">
+                  <Link
+                    to="/contact-list"
+                    title="See current inquiries"
+                    style={{ textDecoration: 'none', color: 'black' }}
+                  >
+                    <mainButton>
+                      Contact List
+                    </mainButton>
+                  </Link>
+                </DropdownItem>
+                <DropdownItem className="alphaBtn">
+                  <Link
+                    to="/newblog"
+                    title="Create or edit a blog post"
+                    style={{ textDecoration: 'none', color: 'black' }}
+                  >
+                    <mainButton>
+                      Add/Edit Blog Post
+                    </mainButton>
+                  </Link>
+                </DropdownItem>
+              </DropdownMenu>
+          </UncontrolledDropdown>
           </div>
                   
         </Collapse>

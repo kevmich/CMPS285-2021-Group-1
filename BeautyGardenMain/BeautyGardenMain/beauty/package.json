@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^27.0.0",
+    "@ckeditor/ckeditor5-build-classic": "^27.1.0",
     "@ckeditor/ckeditor5-build-inline": "^27.0.0",
     "@ckeditor/ckeditor5-react": "^3.0.2",
     "@fortawesome/fontawesome": "^1.1.8",
@@ -25,6 +25,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.2.3",
     "react-images-upload": "^1.2.8",
     "react-linkify": "^1.0.0-alpha",
     "react-router-dom": "^5.2.0",
