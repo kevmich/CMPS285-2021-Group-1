@@ -62,7 +62,7 @@
     /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
-    border: 2px solid black;
+    border: 2px solid goldenrod;
 
 }
 
@@ -133,5 +133,20 @@
 
 .Madison{
     height: 90%;
-    width: 90%;
+    width: 75%;
+}
+
+.Madi{
+    height: 80%;
+    width: 80%;
+}
+
+.Courtney{
+    height: 80%;
+    width: 80%;
+}
+
+.Abby{
+    height: 90%;
+    width: 75%;
 }

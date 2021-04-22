@@ -1,6 +1,10 @@
 import React from "react";
 import "./About.css"
 import Madison from "./images/Madison.jpg";
+import Madi from "./images/Madi.jpg";
+import Abby from "./images/Abby.jpg";
+import Courtney from "./images/Courtney.jpg";
+
 
 const About = () => {
     return (
@@ -92,7 +96,8 @@ const About = () => {
 
 
             <div className="RightBox">
-                IMAGE one
+            <h2> Madi</h2>
+            <img className="Madi" src={ Madi } alt="Madi.jpg" />
             </div>
 
             
@@ -168,7 +173,8 @@ const About = () => {
 
 
             <div className="RightBox">
-                IMAGE two
+            <h2> Abby </h2>
+            <img className="Abby" src={ Abby } alt="Abby.jpg" />   
             </div>
         </div>
 
@@ -317,7 +323,8 @@ const About = () => {
 
 
             <div className="RightBox">
-                4
+            <h2> Courtney </h2>
+            <img className="Courtney" src={ Courtney } alt="Courtney.jpg" />
             </div>
         </div>
     </div>
