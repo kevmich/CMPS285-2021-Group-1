@@ -44,31 +44,31 @@ const useForm = () => {
         
        
         if(!newContact.fullName) {
-            nameError = "Please fill in this field.";
+            nameError = "*";
             
             } else if (!/^[a-zA-Z ]+$/.test(newContact.fullName)){
-                nameError = "Please only use letters.";
+                nameError = ": Please only use letters.";
             }
 
         if(!newContact.phoneNumber) {
-            phoneError = "Please fill in this field.";
+            phoneError = "*";
             
         }  else if (!/^[0-9\b]+$/.test(newContact.phoneNumber)){
-            phoneError = "Please only input numbers.";
+            phoneError = ": Please only input numbers.";
         
         }   else if (newContact.phoneNumber.length < 10){
-            phoneError = "Please enter your full number, inlcuding the area code";
+            phoneError = ": Please enter your full number, inlcuding the area code";
         }  
         
         
         if(!newContact.email) {
-            emailError = "Please fill in this field.";
+            emailError = "*";
         }  else if (!/\S+@\S+\.\S+/.test(newContact.email)){
-            emailError = 'Please enter a valid email';
+            emailError = ': Please enter a valid email';
         } 
 
         if(!newContact.comment) {
-            commentError = "Please fill in this field.";
+            commentError = "*";
         }  
        
         if (nameError || phoneError || emailError || commentError) {
