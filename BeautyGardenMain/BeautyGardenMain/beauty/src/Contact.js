@@ -1,5 +1,5 @@
 import React from "react";
-import NewContact from "./Components/NewContact";
+import NewContact from "./Components/NewContact.js";
 import './Components/NewContact.css';
 
 const Contact = () => {
