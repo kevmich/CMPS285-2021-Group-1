@@ -1,5 +1,24 @@
+.contactContent {
+    background: #e2d2c5;
+}
+
 .contactPage {
     background: #e2d2c5;
+}
+
+.LogoOutline {
+    background: #e2d2c5;
+    
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-top: 4px solid black;
+    border-bottom: 3px transparent;
+    padding: 0px;
+
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
 }
 
 .floatBox {
@@ -11,12 +30,12 @@
     float:unset;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 50px;
     margin-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 3px solid black;
+    padding-bottom: 20px;
+    border: 2px solid #b1a599;
     background: white;
 
     /* Text Styling Here */
@@ -24,36 +43,104 @@
     font-family: 'Cinzel', serif;
 }
 
+.inputField_1 {
+    float: left;
+    width: 370px;
+    height: 80px;
+    border: 2px solid transparent;
+    background: white;
+}
+
+.inputField_2 {
+    float: right;
+    width: 370px;
+    height: 80px;
+    border: 2px solid transparent;
+    background: white;
+}
+
+.dividerLine_1 {
+    color: transparent;
+    height: 90px;
+}
+
+.inputField_3 {
+    display: block;
+    align-items: center;
+    width: 746px;
+    height: 80px;
+    border: 2px solid transparent;
+    background: white;
+}
+
+.dividerLine_2 {
+    color: transparent;
+    height: 10px;
+}
+
+.inputField_4 {
+    align-items: center;
+    width: 746px;
+    height: px;
+    border: 2px solid transparent;
+    background: white;
+}
+
 .fullName {
     float: left;
-    margin-left: 5px;
+    color: #b1a599;
 }
 
 .fullNameText {
-    float: left;
-    margin-left: 5px;
-}
-
-.phoneNumber {
-    float:right;
-}
-
-.phoneNumberText {
-    float: right;
-}
-
-.email {
-    padding: 10px;
-}
-
-.emailText {
+    border: 2px solid #b1a599;
+    height: 40px;
+    width: 366px;
     padding: 5px;
 }
 
+.phoneNumber {
+    float: left;
+    color: #b1a599;
+}
+
+.phoneNumberText {
+    border: 2px solid #b1a599;
+    height: 40px;
+    width: 366px;
+    padding: 5px;
+}
+
+.email {
+    float: left;
+    color: #b1a599;
+}
+
+.emailText {
+    border: 2px solid #b1a599;
+    height: 40px;
+    width: 740px;
+    padding: 5px;
+}
+
+.comment {
+    float: left;
+    color: #b1a599;
+}
+
+.commentText {
+    padding: 5px;
+    border: 2px solid #b1a599;
+    width: 740px;
+    height: 100px;
+    align-items: center;
+}
+
 .submitBtn {
+    float: right;
     color: black;
     padding: 9px;
     margin: auto;
+    margin-right: 25px;
     transition: transform 250ms;
     width: auto;
     height: auto;
@@ -66,7 +153,7 @@
 
 .submitBtn:hover {
     transform: translateY(-2px);
-    background-color: #e1d4c6;
+    background-color: #b1a599;
     border-radius: 15px;
 }
 

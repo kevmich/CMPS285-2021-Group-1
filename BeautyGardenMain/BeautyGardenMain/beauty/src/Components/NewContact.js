@@ -14,59 +14,60 @@ const NewContact = () => {
                             <label
                                 htmlFor="fullName"
                                 className="fullName"
-                            >Full Name</label>
+                            >Full Name{newContact.nameError}</label>
                             <input
                                 className="fullNameText"
-                                placeholder="Full Name"
+                                placeholder="E.g., Kat Jones"
                                 type="text"
                                 name="fullName"
                                 value={newContact.fullName}
                                 onChange={handleChange}
                             />
-                            <div style ={{ color: "red "}}>{newContact.nameError}</div>
                         </div>
                         <div className="inputField_2">
                             <label
                                 htmlFor="phoneNumber"
                                 className="phoneNumber"
-                            >Phone Number</label>
+                            >Phone Number{newContact.phoneError}</label>
                             <input
                                 className="phoneNumberText"
-                                placeholder="Phone Number"
+                                placeholder="E.g., (123)456 7890"
                                 type="text"
                                 name="phoneNumber"
                                 maxLength = {10}
                                 value={newContact.phoneNumber}
                                 onChange={handleChange}
                             />
-                            <div style ={{ color: "red "}}>{newContact.phoneError}</div>
                         </div>
+                        <li className="dividerLine_1" />
                         <div className="inputField_3" >
                             <label
                                 htmlFor="email"
                                 className="email"
-                            >Email Address</label>
+                            >Email Address{newContact.emailError}</label>
                             <input
                                 className="emailText"
-                                placeholder="Email Address"
+                                placeholder="E.g., mail@example.com"
                                 type="text"
                                 name="email"
                                 value={newContact.email}
                                 onChange={handleChange}
                             />
-                            <div style ={{ color: "red "}}>{newContact.emailError}</div>
                         </div>
+                        <li className="dividerLine_2" />
                         <div className="inputField_4">
-                            <label htmlFor="comment">Comment</label>
+                            <label
+                                htmlFor="comment"
+                                className="comment"
+                            >Comment{newContact.commentError}</label>
                             <textarea
                                 className="commentText"
-                                placeholder="Is there anything you would like to know about?"
+                                placeholder="Type your message here..."
                                 type="text"
                                 name="comment"
                                 value={newContact.comment}
                                 onChange={handleChange}
                             />
-                            <div style ={{ color: "red "}}>{newContact.commentError}</div>
                         </div>
                         <div>
                             { !isLoading && <button className="submitBtn" type="submit">Submit</button> }
