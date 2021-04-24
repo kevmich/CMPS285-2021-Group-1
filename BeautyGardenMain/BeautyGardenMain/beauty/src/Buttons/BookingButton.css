@@ -13,15 +13,16 @@
     outline: none;
     border: none;
     font-size: 30px;
+    font-weight: bold;
     color: black;
     cursor: pointer;
     border-radius: 15px;
-    background-color: #e0d2c5;
+    background-color: #b1a599;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .bookingBtn:hover {
     transform: translateY(-2px);
-    background-color: #c4ad75;
+    background-color: #8a8076;
 }

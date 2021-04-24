@@ -49,7 +49,7 @@ const Navigation = (props) => {
             </NavItem>
 
             <UncontrolledDropdown
-              className="charlieBtn"
+              className="dropBtn"
             >
               <DropdownToggle
                 nav
@@ -60,7 +60,7 @@ const Navigation = (props) => {
               </DropdownToggle>
               <DropdownMenu right>
 
-                <DropdownItem className="alphaBtn">
+                <DropdownItem>
                   <Link
                     to="/lash-extensions"
                     title="See what we offer"
@@ -72,7 +72,7 @@ const Navigation = (props) => {
                   </ Link>
                 </DropdownItem>
 
-                <DropdownItem className="alphaBtn">
+                <DropdownItem>
                   <Link
                     to="/teeth-treatment"
                     title="See what we offer"
@@ -84,7 +84,7 @@ const Navigation = (props) => {
                   </ Link>
                 </DropdownItem>
 
-                <DropdownItem className="alphaBtn">
+                <DropdownItem>
                   <Link
                     to="/lip-filler"
                     title="See what we offer"
@@ -96,7 +96,7 @@ const Navigation = (props) => {
                   </Link>
                 </DropdownItem>
                
-                <DropdownItem className="alphaBtn">
+                <DropdownItem>
                   <Link
                     to="/fat-dissolve"
                     title="See what we offer"
@@ -108,7 +108,7 @@ const Navigation = (props) => {
                   </Link>
                 </DropdownItem>
 
-                <DropdownItem className="alphaBtn">
+                <DropdownItem>
                   <Link
                     to="/face-and-wax"
                     title="See what we offer"

@@ -23,19 +23,14 @@ const Home = () => {
 
              <div className="ImageOutline" >
              <div className="BookingLink">
-
-                     <div className="BookTopText">
-
-                     <h4> The Beauty Garden is your ultimate source in the </h4>
-                     <h4> Northshore area for clean beauty products, cutting </h4>     
-                     <h4> edge beauty technology and stunning results without </h4>    
-                     <h4> invasive surgical prodcedures.</h4> 
-                     
-                     </div>
- 
-
-                     
-                     
+                <div className="BookTopText">
+                    <div className="topText">
+                        <h5>The Beauty Garden is your ultimate source in the
+                        Northshore area for clean beauty products, cutting
+                        edge beauty technology and stunning results without
+                        invasive surgical prodcedures.</h5>
+                    </div>
+                </div>
                     <a
                         href='https://square.site/book/VKYEJ3SQ1VFW7/the-beauty-garden-slidell-la'
                         target = "_blank"
@@ -43,27 +38,19 @@ const Home = () => {
                     >
                         <Booking />
                     </a>
-
-                    <div className="DividerLine">
-
+                <div className="DividerLine" />
+                    <div className="bottomText">
+                        <h5>Our goal is to provide the highest quality, most
+                        affordable beauty services on the Northshoe.
+                        From the moment you walk into your bouquet salon,
+                        you will receive exceptional customer service
+                        and a personalized experience.</h5>
                     </div>
-
-                    
-                    <h6> Our goal is to provide the highest quality, most </h6>
-                    <h6> affordable beauty services on the Northshoe. </h6>
-                    <h6> From the moment you walk into your bouquet salon, </h6>
-                    <h6> you will receive exceptional customer service </h6>
-                    <h6> and a personalized experience. </h6>
-
-                    
-
-                    <h5>
-                        We can't wait to meet you!
-                    </h5>
-                    
-                 </div>
-             </div>
-
+                    <div className="exitText">
+                        <div>We can't wait to meet you!</div>
+                    </div>
+                </div>
+            </div>
         <div>
             <br></br>
             <br></br>
