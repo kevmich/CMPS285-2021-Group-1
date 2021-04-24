@@ -10,9 +10,13 @@ a.social:hover{
 }
 
 a.facebook {
-    color: #4968ad
+    color: black;
 }
 
 a.instagram {
+    color: black;
+}
+
+a.google {
     color: black;
 }
