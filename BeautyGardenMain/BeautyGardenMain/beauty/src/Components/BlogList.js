@@ -1,14 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import Post from './Post';
 import axios from 'axios';
-import "../Blog.css"
+import "../Blog.css";
+
 
 export default function BlogList(props) {
     const [data, setData] = useState({});
     const [postEdit, setPostEdit] = useState(null)
+    const [show, setShow] = useState(false);
+    const [modal, setModal] = useState(false);
+    
 
-
-  
+    
+    const toggle = () => {
+        
+        setModal(!modal);
+        
+    }
     
     useEffect(() => {
         
@@ -33,7 +41,9 @@ export default function BlogList(props) {
 
    
     const showPostDetails = data => {
-        setPostEdit(data)
+        refreshPostPage();
+        toggle();
+        setPostEdit(data);
     }
 
     const addOrEdit = (formData, onSuccess) => {
@@ -41,14 +51,14 @@ export default function BlogList(props) {
             blogAPI().create(formData)
                 .then(res => {
                     onSuccess();
-                   refreshEmployeeList();
+                   refreshPostPage();
                 })
                 .catch(err => console.log(err))
         else
         blogAPI().update(formData.get('blogID'), formData)
         .then(res => {
             onSuccess();
-            refreshEmployeeList();
+            refreshPostPage();
             
             
         })
@@ -63,14 +73,21 @@ export default function BlogList(props) {
         .then(response => {
             if (response.data !=null) {
                 alert("Post deleted successfully.");
-                refreshEmployeeList();
+                refreshPostPage();
             }
             
         });
         
     };
    
-    function refreshEmployeeList() {
+
+    const addPost = () => {
+        toggle();
+        refreshPostPage();
+        
+        
+    }
+    function refreshPostPage() {
         blogAPI().fetchAll()
             .then(res => {
                 setData(res.data)
@@ -81,41 +98,53 @@ export default function BlogList(props) {
     
     return (
         <div className="row">
-            <div className="col-md-12">
+            
                
-            </div>
-            <div className="col-md-4">
+            
+            <div>
                 <Post 
                 addOrEdit={addOrEdit}
                 recordForEdit={postEdit}
+                toggle={toggle}
+                modal={modal}
+                setModal={setModal}
                 />
             </div>
-            <div className="col-md-8">
-                <div className="lead">Blog Page</div>
-                <div className="blog_details">
-                   <article>
-                    {
+            <div className>
+                <div className="lead text-center">Blog Page</div>
+                <button className="btn btn-dark" onClick={addPost}>Add</button>        
+                {
                 
                 data.map && data.map((item, idx) => {
-                return <>
-         
-            
-            <img src={item.imageSrc} className="post_img" />
-            <h2 className="QuoteCurs1">{ item.blogTitle }</h2>
-            <p>Posted On: { item.blogDate }</p>
-            <p> {item.blogBody}</p>
-          <div className="btn_group">
-          <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
-          <button className="btn btn-dark" onClick={() => { showPostDetails(item) }}>Edit</button>
+                    return (
+                        <>
+                         <div key={item.id}>
+                             
+                                               
+          
+                            <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
+          
+                            <button className="btn btn-dark" onClick={() => {showPostDetails(item) }}>Edit</button>
+          
         </div>
+          
+                <div className='post' key={item.blogID}>
+                
+                <h1 className="title_style">{ item.blogTitle }</h1>
+                <img src={item.imageSrc} className="post_img" />
+                
+                <p className="post_date">Posted On: { item.blogDate }</p>
+                <pre className="SmallFont"><p className="post_body"> {item.blogBody}</p></pre>
+                </div>
+          
           <hr />
         
-        </>}).reverse()}
-        </article>     
+        </>)}).reverse()}
+          
     </div>
-            </div>
+    </div>
         
-        </div>
+        
     )
     
 }

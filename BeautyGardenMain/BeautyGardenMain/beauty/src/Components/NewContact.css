@@ -1,78 +1,199 @@
-.ContactTitle {
-    background : rgba(246,236,227,255);
+.contactContent {
+    background: #e2d2c5;
+}
+
+.contactPage {
+    background: #e2d2c5;
+}
+
+.LogoOutline {
+    background: #e2d2c5;
     
     width: auto;
-    height: 100px;
+    height: auto;
     text-align: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    padding: 10px;
+    border-top: 4px solid black;
+    border-bottom: 3px transparent;
+    padding: 0px;
 
-    /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
 
 }
 
-.white {
-    background : rgba(246,236,227,255);
-    
+.floatBox {
+    width: auto;
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 450px;
     height: auto;
-    width: 300px;
-    text-align: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    padding: 10px;
-    margin-top: 75px;
+    float:unset;
     margin-right: auto;
     margin-left: auto;
-    justify-content: center;
-    overflow: hidden;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    border: 2px solid #b1a599;
+    background: white;
 
     /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
-
 }
 
-.input-field {
-    background : rgba(246,236,227,255);
-    
-    height: auto;
-    width: auto;
-    text-align: center;
-    padding: 20px;
+.inputField_1 {
     float: left;
-    margin: auto;
-
-    /* Text Styling Here */
-    text-align: center;
-    font-family: 'Cinzel', serif;
-
+    width: 370px;
+    height: 80px;
+    border: 2px solid transparent;
+    background: white;
 }
 
-.btn {
-    background : rgba(246,236,227,255);
-    
-    height: auto;
-    width: auto;
-    text-align: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    padding: 20px;
+.inputField_2 {
     float: right;
-
-    /* Text Styling Here */
-    text-align: center;
-    font-family: 'Cinzel', serif;
-
+    width: 370px;
+    height: 80px;
+    border: 2px solid transparent;
+    background: white;
 }
 
-.blankSpace {
-    padding: 20px;
-    background-color: #e2d2c5;
+.dividerLine_1 {
+    color: transparent;
+    height: 90px;
 }
 
-.contact_body {
-    background-color: #e2d2c5;
+.inputField_3 {
+    display: block;
+    align-items: center;
+    width: 746px;
+    height: 80px;
+    border: 2px solid transparent;
+    background: white;
+}
+
+.dividerLine_2 {
+    color: transparent;
+    height: 10px;
+}
+
+.inputField_4 {
+    align-items: center;
+    width: 746px;
+    height: px;
+    border: 2px solid transparent;
+    background: white;
+}
+
+.fullName {
+    float: left;
+    color: #b1a599;
+}
+
+.fullNameText {
+    border: 2px solid #b1a599;
+    height: 40px;
+    width: 366px;
+    padding: 5px;
+}
+
+.phoneNumber {
+    float: left;
+    color: #b1a599;
+}
+
+.phoneNumberText {
+    border: 2px solid #b1a599;
+    height: 40px;
+    width: 366px;
+    padding: 5px;
+}
+
+.email {
+    float: left;
+    color: #b1a599;
+}
+
+.emailText {
+    border: 2px solid #b1a599;
+    height: 40px;
+    width: 740px;
+    padding: 5px;
+}
+
+.comment {
+    float: left;
+    color: #b1a599;
+}
+
+.commentText {
+    padding: 5px;
+    border: 2px solid #b1a599;
+    width: 740px;
+    height: 100px;
+    align-items: center;
+}
+
+.submitBtn {
+    float: right;
+    color: black;
+    padding: 9px;
+    margin: auto;
+    margin-right: 25px;
+    transition: transform 250ms;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+    background-color: #b1a599;
+    border-radius: 15px;
+}
+
+.FTitleOutlines1{
+    height: 70px;
+    width: 42.5%;
+    float: left;
+    margin-left:.5%;
+}
+
+.FTitleOutlines2{
+    height: 50px;
+    width: 15%;
+    float: left;
+    margin-left:.5%;
+    margin-top: 14px;
+    color: #a69263;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+  
+.FTitleOutlines3{
+    height: 70px;
+    width: 41%;
+    float: left;
+    margin-left:.5%;
+}
+
+.FLine1{
+    height: 2px;
+    width: 70%;
+    background: #a69263;
+    MARGIN-TOP: 35px;
+    margin-left: 30%;
+}
+  
+.FLine2{
+    height: 2px;
+    width: 70%;
+    background: #a69263;
+    MARGIN-TOP: 35px;
+    margin-right: 30%;
 }

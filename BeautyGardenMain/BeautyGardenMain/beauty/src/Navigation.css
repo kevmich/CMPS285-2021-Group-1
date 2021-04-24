@@ -16,7 +16,7 @@
 
 .mainBtn {
     color: black;
-    padding: 5px;
+    padding: 9px;
     margin: auto;
     transition: transform 250ms;
     width: auto;
@@ -35,7 +35,7 @@
 
 .alphaBtn {
     color: black;
-    padding: 5px;
+    padding: 9px;
     margin: auto;
     transition: transform 250ms;
     width: auto;
@@ -54,7 +54,7 @@
 
 .bravoBtn {
     color: black;
-    padding: 5px;
+    padding: 9px;
     margin: auto;
     transition: transform 250ms;
     width: auto;
