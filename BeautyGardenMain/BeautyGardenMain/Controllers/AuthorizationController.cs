@@ -30,9 +30,9 @@ namespace BeautyGardenMain.Controllers
             this.roleManager = roleManager;
             this.signInManager = signInManager;
         }//end constructor 
-
+        
         [HttpPost("login")]
-        [Authorize(Roles = Roles.Admin)]
+        //[Authorize(Roles = Roles.Admin)]
 
         public async Task<ActionResult> LoginAsync(LoginDto dto)
         {
