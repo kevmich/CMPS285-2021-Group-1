@@ -19,8 +19,8 @@ const loginForm  = () => {
     const validate = () => {
         let userNameError = '';
         let passwordError = '';
-        let userName = loginPage.userName;
-        let password = loginPage.password;
+        let userName = loginForm.userName;
+        let password = loginForm.password;
 
         if(!login.userName) {
             userNameError = "Please fill in this field.";
