@@ -44,8 +44,8 @@
 
 
 .BookingLink {
-    background: #eee4e2;
-    border-radius: 35px;
+    background: #e9d8cb;
+    border-radius: 15px;
     
     width: auto;
     min-width: 300px;
@@ -56,12 +56,33 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
-    border: 3px solid black;
+    border: 3px solid #b1a599;
 
     /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
 
+}
+
+.topText {
+    margin-top: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.bottomText {
+    margin-top: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.exitText {
+    margin-bottom: 15px;
+    font-size: 20pt;
 }
 
 
@@ -102,11 +123,11 @@
 }
 
 .DividerLine{
-    background: #6d3d16;
+    background: #b1a599;
     height: 2px;
-    width: 400px;
-    margin-left: 200px;
-    margin-bottom: 10px;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .QuoteFont1{
