@@ -105,6 +105,8 @@ const handleFormSubmit = e =>{
         formData.append('imageFile', values.imageFile)
         formData.append(0, values.blogLikes)
         addOrEdit(formData, resetForm)
+        resetForm();
+        toggle();
        
     }
 }

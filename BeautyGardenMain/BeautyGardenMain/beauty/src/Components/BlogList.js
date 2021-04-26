@@ -51,6 +51,7 @@ export default function BlogList(props) {
             blogAPI().create(formData)
                 .then(res => {
                     onSuccess();
+                    alert("Post submitted successfully.");
                    refreshPostPage();
                 })
                 .catch(err => console.log(err))
@@ -58,6 +59,7 @@ export default function BlogList(props) {
         blogAPI().update(formData.get('blogID'), formData)
         .then(res => {
             onSuccess();
+            alert("Post submitted successfully.");
             refreshPostPage();
             
             
@@ -118,24 +120,18 @@ export default function BlogList(props) {
                 data.map && data.map((item, idx) => {
                     return (
                         <>
-                         <div key={item.id}>
-                             
-                                               
-          
-                            <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
-          
-                            <button className="btn btn-dark" onClick={() => {showPostDetails(item) }}>Edit</button>
-          
-        </div>
-          
-                <div className='post' key={item.blogID}>
-                
-                <h1 className="title_style">{ item.blogTitle }</h1>
-                <img src={item.imageSrc} className="post_img" />
-                
-                <p className="post_date">Posted On: { item.blogDate }</p>
-                <pre className="SmallFont"><p className="post_body"> {item.blogBody}</p></pre>
-                </div>
+                         <div>
+                             <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
+                             <button className="btn btn-dark" onClick={() => {showPostDetails(item) }}>Edit</button>
+                        </div>
+                        <div className='post' key={item.blogID}>
+                            <h1 className="title_style">{ item.blogTitle }</h1>
+                            <img src={item.imageSrc} className="post_img" />
+                             <p className="post_date">Posted On: { item.blogDate }</p>
+                             <div className="body_container">  
+                                <pre className="SmallFont"><p className="post_body"> {item.blogBody}</p></pre>
+                             </div>
+                        </div>
           
           <hr />
         
