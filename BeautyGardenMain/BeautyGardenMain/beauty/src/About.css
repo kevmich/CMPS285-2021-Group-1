@@ -25,6 +25,7 @@
     
     width: auto;
     height: 300px;
+    min-height: 100px;
     text-align: center;
     padding: 10px;
     font-family: cursive;
