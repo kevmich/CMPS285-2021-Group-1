@@ -5,6 +5,10 @@
 
 }
 
+.NavBar {
+  min-width: 1920px;
+}
+
 .pageContainer{
   display: flex;
   flex-direction: column;
