@@ -58,11 +58,10 @@
     float: right;
     margin-right: 10%;
     margin-left: 2%;
-
     /* Text Styling Here */
     text-align: center;
     font-family: 'Cinzel', serif;
-    border: 2px solid goldenrod;
+    
 
 }
 
@@ -85,7 +84,7 @@
 
     /* Text Styling Here */
     text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Cinzel', serif; 
 }
 
 
@@ -134,19 +133,23 @@
 .Madison{
     height: 90%;
     width: 75%;
+    border: 4px solid goldenrod;
 }
 
 .Madi{
     height: 80%;
     width: 80%;
+    border: 4px solid goldenrod;
 }
 
 .Courtney{
     height: 80%;
     width: 80%;
+    border: 4px solid goldenrod;
 }
 
 .Abby{
     height: 90%;
     width: 75%;
+    border: 4px solid goldenrod;
 }
