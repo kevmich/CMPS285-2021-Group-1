@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import review3 from '../images/review3.png';
 import "../Blog.css"
-
+import {Modal, ModalHeader} from 'reactstrap';
 
 const defaultImageSrc = review3
 
@@ -16,10 +16,15 @@ const initialFieldValues = {
    
 }
 export default function Post(props) {
-    const {addOrEdit, recordForEdit} = props
+    const {addOrEdit, recordForEdit, modalClass, toggle, modal} = props
     const [values, setValues] = useState(initialFieldValues)
     const [errors, setErrors] = useState({})
-   
+    
+    
+
+    
+    
+    
     useEffect(() => {
         if (recordForEdit != null)
             setValues(recordForEdit);
@@ -80,6 +85,13 @@ const resetForm = () => {
     setErrors({})
 }
 
+const resetModal = () =>{
+    toggle();
+    setValues(initialFieldValues)
+    document.getElementById('image-uploader').value = null;
+    setErrors({})
+}
+
 const handleFormSubmit = e =>{
     e.preventDefault()
     if (validate()){
@@ -99,15 +111,18 @@ const handleFormSubmit = e =>{
 
 const applyErrorClass = field => ((field in errors && errors[field] == false) ? ' invalid-field' : '')
    
+
+
 return (
         <>
+        <Modal trapFocus={true} isOpen={modal} toggle={toggle} className={modalClass} backdrop={'static'} >
         <div className="container text-center">
-            <p className="lead">Post</p>
+        <ModalHeader toggle={toggle}>Post</ModalHeader>
         </div>
             
         
         <form autoComplete="off" noValidate onSubmit={handleFormSubmit}>
-        <hr />
+        
             <div className="card">
                 
                 <img src={values.imageSrc} className="card-img-top" />
@@ -133,11 +148,18 @@ return (
                     </div>
                     <div className="form-group text-center">
                         <button type="submit" className="btn btn-dark">Submit</button>
+                        <button type="button" onClick={resetModal} className="btn btn-dark">Cancel</button>
                         
                     </div>
                 </div>
             </div>
         </form>
+        </Modal>
+        
+
        </>
+       
     )
+    
 }
+

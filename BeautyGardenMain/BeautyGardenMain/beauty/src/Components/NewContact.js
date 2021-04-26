@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect } from 'react-router';
 import useForm from '../useForm';
 import './NewContact.css';
 
@@ -14,7 +15,11 @@ const NewContact = () => {
                             <label
                                 htmlFor="fullName"
                                 className="fullName"
-                            >Full Name{newContact.nameError}</label>
+                            >Full Name</label>
+                            <label
+                                className="errorMsg"
+                                style={{ color: 'red'}}
+                            >{newContact.nameError}</label>
                             <input
                                 className="fullNameText"
                                 placeholder="E.g., Kat Jones"
@@ -28,7 +33,11 @@ const NewContact = () => {
                             <label
                                 htmlFor="phoneNumber"
                                 className="phoneNumber"
-                            >Phone Number{newContact.phoneError}</label>
+                            >Phone Number</label>
+                            <label
+                                className="errorMsg"
+                                style={{ color: 'red'}}
+                            >{newContact.phoneError}</label>
                             <input
                                 className="phoneNumberText"
                                 placeholder="E.g., (123)456 7890"
@@ -44,7 +53,11 @@ const NewContact = () => {
                             <label
                                 htmlFor="email"
                                 className="email"
-                            >Email Address{newContact.emailError}</label>
+                            >Email Address</label>
+                            <label
+                                className="errorMsg"
+                                style={{ color: 'red' }}
+                            >{newContact.emailError}</label>
                             <input
                                 className="emailText"
                                 placeholder="E.g., mail@example.com"
@@ -59,7 +72,11 @@ const NewContact = () => {
                             <label
                                 htmlFor="comment"
                                 className="comment"
-                            >Comment{newContact.commentError}</label>
+                            >Comment</label>
+                            <label
+                                className="errorMsg"
+                                style={{ color: 'red' }}
+                            >{newContact.commentError}</label>
                             <textarea
                                 className="commentText"
                                 placeholder="Type your message here..."
@@ -74,7 +91,7 @@ const NewContact = () => {
                             { isLoading && <button className="btn blue darken-3" disabled>
                                 <i className = "fas fa-spinner fa-spin"></i> Submitting...
                             </button>}
-                            </div>
+                        </div>
                     </form>
                 </div>
             </body>

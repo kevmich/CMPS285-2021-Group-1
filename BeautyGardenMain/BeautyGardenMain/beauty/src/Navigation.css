@@ -33,45 +33,7 @@
     border-radius: 15px;
 }
 
-.alphaBtn {
-    color: black;
-    padding: 9px;
-    margin: auto;
-    transition: transform 250ms;
-    width: auto;
-    height: auto;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.alphaBtn:hover {
-    transform: translateY(-2px);
-    background-color: #e1d4c6;
-    border-radius: 15px;
-}
-
-.bravoBtn {
-    color: black;
-    padding: 9px;
-    margin: auto;
-    transition: transform 250ms;
-    width: auto;
-    height: auto;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.bravoBtn:hover {
-    transform: translateY(-2px);
-    background-color: #e1d4c6;
-    border-radius: 15px;
-}
-
-.charlieBtn {
+.dropBtn {
     color: black;
     padding: auto;
     margin: auto;
@@ -84,7 +46,7 @@
     text-decoration: none;
 }
 
-.charlieBtn:hover {
+.dropBtn:hover {
     transform: translateY(-2px);
     background-color: #e1d4c6;
     border-radius: 15px;

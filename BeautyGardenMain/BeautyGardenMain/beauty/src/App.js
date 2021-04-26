@@ -15,11 +15,12 @@ import BlogPage from "./BlogPage";
 import AddBlogPage from "./AddBlogPage";
 import portfolio from "./Components/portfolio";
 import imageUpload from "./Components/imageUpload";
-
+import errorPage from "./Components/errorPage";
 
 import {BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
   } from "react-router-dom";
 import Navbar from './Navigation';
 
@@ -49,6 +50,8 @@ const App = (props) => {
             <Route path='/newblog' exact component={AddBlogPage} />
             <Route path='/portfolio' exact component={portfolio} />
             <Route path='/image-upload' exact component={imageUpload} />
+            <Route path='/404-page-not-found' exact component={errorPage} />
+            <Redirect to="/404-page-not-found" />
           </Switch>
         </div>
       </Router>
