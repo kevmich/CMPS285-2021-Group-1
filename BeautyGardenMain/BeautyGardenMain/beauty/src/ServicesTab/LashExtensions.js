@@ -8,7 +8,7 @@ const LashExtensions = () => {
     return (
         <body className="bodyColor">
             <div className="MainTitle"> 
-                <h1>Eyelash Extensions</h1>            
+                <h2>Eyelash Extensions</h2>            
             </div>
 
 
