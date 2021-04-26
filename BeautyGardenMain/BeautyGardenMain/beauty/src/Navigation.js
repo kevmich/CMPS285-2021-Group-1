@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./App.css"
 import {
   Collapse,
@@ -25,8 +25,63 @@ import SocialButtons from "./Buttons/SocialButtons";
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const handleLogout = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
+  
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("user");
+    if (loggedInUser) {
+     setIsLoggedIn(true);
+    }
+  }, []);//Check if a user has previously logged in
+
+
+  const ContactList = () => (
+    <DropdownItem className="alphaBtn">
+    <Link
+      to="/contact-list"
+      title="See current inquiries"
+      style={{ textDecoration: 'none', color: 'black' }}
+    >
+      <mainButton>
+        Contact List
+      </mainButton>
+    </Link>
+  </DropdownItem>
+  )//end ContactList
+
+  const AddBlogPost = () => (
+    <DropdownItem className="alphaBtn">
+    <Link
+      to="/newblog"
+      title="Add/Edit blog post"
+      style={{ textDecoration: 'none', color: 'black' }}
+    >
+      <mainButton>
+        Add/Edit Blog Post
+      </mainButton>
+    </Link>
+  </DropdownItem>
+  )//end Add/Edit blog
+
+
+  const LogoutButton = () => (
+    <DropdownItem className="alphaBtn">
+    <Link
+      title="Logout"
+      style={{ textDecoration: 'none', color: 'black' }}
+    >
+      <button 
+      onClick={handleLogout}>logout
+      </button>
+    </Link>
+  </DropdownItem>
+  )//end Logout
+
 
   return (
     <div  className="App">
@@ -200,28 +255,9 @@ const Navigation = (props) => {
                     </mainButton>
                   </Link>
                 </DropdownItem>
-                <DropdownItem className="alphaBtn">
-                  <Link
-                    to="/contact-list"
-                    title="See current inquiries"
-                    style={{ textDecoration: 'none', color: 'black' }}
-                  >
-                    <mainButton>
-                      Contact List
-                    </mainButton>
-                  </Link>
-                </DropdownItem>
-                <DropdownItem className="alphaBtn">
-                  <Link
-                    to="/newblog"
-                    title="Create or edit a blog post"
-                    style={{ textDecoration: 'none', color: 'black' }}
-                  >
-                    <mainButton>
-                      Add/Edit Blog Post
-                    </mainButton>
-                  </Link>
-                </DropdownItem>
+               {isLoggedIn? <ContactList/>:null}
+                {isLoggedIn? <AddBlogPost/>:null}
+                {isLoggedIn? <LogoutButton/>:null}
               </DropdownMenu>
           </UncontrolledDropdown>
           </div>

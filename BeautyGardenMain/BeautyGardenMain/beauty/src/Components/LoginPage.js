@@ -1,35 +1,72 @@
 import React, { useState } from 'react';
-import './LoginPage.css';
-import loginForm from '../loginForm';
+import { useHistory } from 'react-router-dom';
+import axios from 'axios';
+import Login from '../Login';
 
-const loginPage = () => {
-    const {handleChange, login, handleSubmit, isLoading } = loginForm();
+function LoginPage() {
+
+    let history = useHistory();
+
+    const [error, setError] = useState("");
+    const http = axios.create({
+        baseURL: "http://localhost:3001"
+      });
+    const Login = details => {
+        http.post('/api/auth/login', {
+            username: details.email,
+            password: details.password
+        })
+            .then(function (response) {
+                console.log(response);
+                if (response.status == 200) {
+                    alert('logged in successfully!');
+                    localStorage.setItem("user", response.data)
+                    window.location.reload();
+                }else{
+                    alert('Email and/or Password is incorrect')
+                }
+            })
+            .catch(err => {
+                if (err.response) {
+                    alert('Email and/or Password is incorrect')
+                }
+            });
+     }
+
+        const [details, setDetails] = useState({email: "", password: ""})
+
+    const submitHandler = e => {
+        e.preventDefault();
+        console.log("details")
+        Login(details);
+    }//end const
 
         return (
-            
+
             <div className="container" >
-                <form className='white' onSubmit={handleSubmit}>
-                    <body>                 
-                
-                      <div className="input-field">
-                            <label htmlFor="userName">User Name</label>
-                            <input type="text" name="userName" value={login.userName} onChange={handleChange} placeholder="example@yahoo.com" />
-                         </div>   
+                <form className='white' onSubmit={submitHandler}>
+                    <body>
+
+                        <div className="input-field">
+                            <label htmlFor="email">email</label>
+                            <input type="text" name="emaile" placeholder="example@yahoo.com" onChange={e => setDetails({ ...details, email: e.target.value })} value={details.name} />
+                            {setError.userName && <p>{setError.email.message}</p>}
+                        </div>
 
                         <div className="input-field">
                             <label htmlFor="password">Password</label>
-                            <input type="password" name="password" value={login.password} onChange={handleChange} placeholder ="Please enter your password"
-                                styles={{width:"300px"}} />
-                            </div>
-                            <div>
-                        { !isLoading && <button className="btn blue darken-3" type="submit">Submit</button> }
-                        { isLoading && <button className="btn blue darken-3" disabled>
-                            <i className = "fas fa-spinner fa-spin"></i> Submitting...
-                        </button>}
-                    </div>
-                    </body>  
+                            <input type="password" name="password" placeholder="Please enter your password" onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password}
+                                styles={{ width: "300px" }} />
+                            {setError.password && <p>{setError.password.message}</p>}
+                        </div>
+
+                        <div>
+                            <button className="btn blue darken-3" type="submit">Submit</button>
+                        </div>
+                    </body>
                 </form>
             </div>
-        );
-    }
-export default loginPage;
+            )
+}
+
+    export default LoginPage;
