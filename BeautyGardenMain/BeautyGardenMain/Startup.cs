@@ -63,6 +63,16 @@ namespace BeautyGardenMain
 
             services.AddSwaggerGen();
 
+            services.AddCors(options =>     //Cross Origin Resource Sharing- Configures who can access API. 
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+
+                });
+                
+            });
+
         }//end ConfigureServices
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,7 +104,9 @@ namespace BeautyGardenMain
             });
 
             app.UseRouting();
-            
+
+            app.UseCors();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -119,6 +131,9 @@ namespace BeautyGardenMain
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+
+     
+
         }//end Configure
         private static async Task AddRoles(IApplicationBuilder app)
         {

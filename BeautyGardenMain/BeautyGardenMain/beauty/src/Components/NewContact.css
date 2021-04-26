@@ -37,10 +37,16 @@
     padding-bottom: 20px;
     border: 2px solid #b1a599;
     background: white;
+    border-radius: 15px;
 
     /* Text Styling Here */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+}
+
+.errorMsg {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .inputField_1 {
@@ -138,23 +144,25 @@
 .submitBtn {
     float: right;
     color: black;
-    padding: 9px;
+    padding: auto;
     margin: auto;
-    margin-right: 25px;
+    margin-top: 25px;
+    margin-right: none;
+    margin-bottom: 25px;
     transition: transform 250ms;
-    width: auto;
-    height: auto;
+    width: 125px;
+    height: 40px;
     outline: none;
     border: none;
     cursor: pointer;
     text-decoration: none;
-    background-color: white;
+    background-color: #b1a599;
+    border-radius: 15px;
 }
 
 .submitBtn:hover {
     transform: translateY(-2px);
-    background-color: #b1a599;
-    border-radius: 15px;
+    background-color: #8a8076;
 }
 
 .FTitleOutlines1{

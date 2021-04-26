@@ -47,29 +47,29 @@ const useForm = () => {
             nameError = "*";
             
             } else if (!/^[a-zA-Z ]+$/.test(newContact.fullName)){
-                nameError = ": Please only use letters.";
+                nameError = "* Enter a valid name";
             }
 
         if(!newContact.phoneNumber) {
             phoneError = "*";
             
         }  else if (!/^[0-9\b]+$/.test(newContact.phoneNumber)){
-            phoneError = ": Please only input numbers.";
+            phoneError = "* Enter a valid phone number";
         
         }   else if (newContact.phoneNumber.length < 10){
-            phoneError = ": Please enter your full number, inlcuding the area code";
+            phoneError = "* Include area code";
         }  
         
         
         if(!newContact.email) {
             emailError = "*";
         }  else if (!/\S+@\S+\.\S+/.test(newContact.email)){
-            emailError = ': Please enter a valid email';
+            emailError = '* Enter a valid email';
         } 
 
         if(!newContact.comment) {
             commentError = "*";
-        }  
+        }
        
         if (nameError || phoneError || emailError || commentError) {
            

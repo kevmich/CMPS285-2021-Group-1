@@ -2,15 +2,13 @@
     background: #e2d2c5;
 }
 .MainTitle{
-    background : #e2d2c5;;
+    background : #e2d2c5;
     
     width: auto;
     height: 100px;
     text-align: center;
-    border-top: 3px solid black;
-    border-bottom:3px solid black;
-    border-right: none;
-    border-left: none;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
     padding: 10px;
 
     /* Text Styling Here */
@@ -117,7 +115,7 @@
 
   .FAQ{
       background: #e2d2c5;
-      width: auto;
+      width: 100%;
       height: 600px;
   
       /* Text Styling Here */

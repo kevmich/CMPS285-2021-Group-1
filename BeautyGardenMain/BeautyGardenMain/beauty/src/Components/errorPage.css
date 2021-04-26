@@ -1,0 +1,46 @@
+.content {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title {
+    border-top: 3px solid black;
+}
+
+.errorTitle {
+    color: #a69263;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40pt;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.errorText {
+    color: #a69263;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dividerLine{
+    background: #a69263;
+    height: 2px;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.homeBtn {
+    color: #a69263;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20pt;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-decoration: none;
+}
