@@ -19,9 +19,15 @@
 
 .post_img {
     display: flex;
-    height: 400px;
-    width: 600px;
-    image-resolution: inherit;
+    height:auto;
+    width: auto;
+    max-height: 600px;
+    border: 5px solid darkgoldenrod;
+    
+}
+
+.add_button {
+    display: flex;
     
 }
 

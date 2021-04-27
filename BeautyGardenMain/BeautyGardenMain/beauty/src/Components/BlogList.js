@@ -113,8 +113,9 @@ export default function BlogList(props) {
                 />
             </div>
             <div className>
-                <div className="lead text-center">Blog Page</div>
-                <button className="btn btn-dark" onClick={addPost}>Add</button>        
+                
+                <button className="btn btn-dark add_button" onClick={addPost}>Add</button>
+                      
                 {
                 
                 data.map && data.map((item, idx) => {
