@@ -74,21 +74,40 @@ const Home = () => {
               <div className="ImageRow">
                 <img className="review" src={ review1 } alt="review1.png" />
               <div className="woods_overlay">
-                  <div className= 'woods_review'>This is a review. I love this place. 5 stars.</div>
+                  <div className= 'woods_review'>
+                  <div> <h3>★★★★★</h3></div>
+                  I got my teeth whitened here! 
+                  Most welcoming people ever. Very clean salon and super sweet employees. 
+                  Everyone caters to you literally and makes sure you leave as happy as ever and with the look you wanted. 
+                  The teeth whitening is so amazing!!! Abby Henson did amazing!  I can’t wait to go back to do more.
+                  
+                  </div>
               </div>
               </div> 
 
               <div className="ImageRow">
                 <img className="review" src={ review2 } alt="review1.png" />
               <div className="woods_overlay">
-                  <div className= 'woods_review'>Second Review</div>
+                  <div className= 'woods_review'>
+                    <div><h3>★★★★★</h3></div>
+                    My experience at the Beauty Garden was more than exceptional. 
+                    Hayley made sure my eyebrows were to my liking; During the service and before she 
+                    completed them. I hope this sweet young lady continue to grow and keep putting 
+                    that smile on each and every clients face!!
+
+                  </div>
               </div>
               </div> 
 
               <div className="ImageRow">
                 <img className="review" src={ review3 } alt="review3.png" />
               <div className="woods_overlay">
-                  <div className= 'woods_review'>Third Review</div>
+                  <div className= 'woods_review'>
+                  <div><h3>★★★★★</h3></div>
+                  madison is literally the best lash tech I have ever met! 
+                  I never know what to get and she always surprises me and 
+                  makes me look and feel beautiful! LOVE HER!
+                  </div>
               </div>
               </div> 
 
