@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-linkify": "^1.0.0-alpha"
+    "react-linkify": "^1.0.0-alpha",
+    "react-scripts": "^4.0.3"
   }
 }
