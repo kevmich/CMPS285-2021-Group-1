@@ -218,7 +218,7 @@ const Navigation = (props) => {
                             </Link>
                         </NavItem>
 
-                        <NavItem className="mainBtn">
+                        {/* <NavItem className="mainBtn"> 
                             <Link
                                 className="portfolioPage"
                                 to="/portfolio"
@@ -229,7 +229,7 @@ const Navigation = (props) => {
                                     Portfolio
                 </mainButton>
                             </Link>
-                        </NavItem>
+                        </NavItem> */}
 
                     </Nav>
                     <div className="button_container">
