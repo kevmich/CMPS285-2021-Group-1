@@ -59,13 +59,37 @@
 
 }
 
-.SectionImages{
+.SectionImages1{
     background: #e2d2c5;
     width: 450px;
     height: 450px;
     float: left;
-    margin-left: 7.5%;
+    margin-left: 7%;
+    margin-right: 3.5%;
     margin-top: 25px;
+    border: 5px solid black;
+}
+
+.SectionImages2{
+    background: #e2d2c5;
+    width: 450px;
+    height: 450px;
+    float: left;
+    margin-right: 3.5%;
+    margin-left: 3.5%;
+    margin-top: 25px;
+    border: 5px solid black;
+}
+
+.SectionImages3{
+    background: #e2d2c5;
+    width: 450px;
+    height: 450px;
+    float: right;
+    margin-right: 7%;
+    margin-left: 3.5%;
+    margin-top: 25px;
+    border: 5px solid black;
 }
 
 

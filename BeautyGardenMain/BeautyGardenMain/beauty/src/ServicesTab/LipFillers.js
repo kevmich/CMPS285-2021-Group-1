@@ -48,17 +48,17 @@ const LipFillers = () => {
 
             <div className="TwoSectionContainer">
 
-                <div className="SectionImages">
+                <div className="SectionImages1">
                 <img className="Lips1" src={ lips1 } alt="lips1.jpg" />
 
                 </div>
 
-                <div className="SectionImages">
+                <div className="SectionImages2">
                 <img className="Lips2" src={ lips2 } alt="lips2.jpg" />
 
                 </div>
 
-                <div className="SectionImages">
+                <div className="SectionImages3">
                 <img className="Lips3" src={ lips3 } alt="lips3.jpg" />
 
                 </div>
