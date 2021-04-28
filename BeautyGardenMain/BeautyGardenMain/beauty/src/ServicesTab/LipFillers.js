@@ -1,6 +1,9 @@
 import React from 'react';
 import './LipFillers.css'
 import LipFillers1 from "../images/LipFillers1.jpg";
+import lips1 from "../images/lips1.jpg";
+import lips2 from "../images/lips2.jpg";
+import lips3 from "../images/lips3.jpg";
 
 
 const LipFillers = () => {
@@ -45,18 +48,18 @@ const LipFillers = () => {
 
             <div className="TwoSectionContainer">
 
-                <div className="SectionImages">
-                [Image goes here]
+                <div className="SectionImages1">
+                <img className="Lips1" src={ lips1 } alt="lips1.jpg" />
 
                 </div>
 
-                <div className="SectionImages">
-                [Image goes here]
+                <div className="SectionImages2">
+                <img className="Lips2" src={ lips2 } alt="lips2.jpg" />
 
                 </div>
 
-                <div className="SectionImages">
-                [Image goes here]
+                <div className="SectionImages3">
+                <img className="Lips3" src={ lips3 } alt="lips3.jpg" />
 
                 </div>
             </div>

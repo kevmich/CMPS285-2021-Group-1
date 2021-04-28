@@ -4,6 +4,7 @@ import Madison from "./images/Madison.jpg";
 import Madi from "./images/Madi.jpg";
 import Abby from "./images/Abby.jpg";
 import Courtney from "./images/Courtney.jpg";
+import AboutSign from "./images/AboutSign.jpg";
 
 
 const About = () => {
@@ -332,7 +333,7 @@ const About = () => {
 
 
         <div className="BottomText">
-            Placeholder for whatever is at the bottom
+        <img className="AboutSign" src={ AboutSign } alt="AboutSign.jpg" />
         </div>
 
         </body>
