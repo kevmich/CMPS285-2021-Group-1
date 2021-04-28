@@ -62,11 +62,10 @@
 
 .SectionImages{
     background: #e2d2c5;
-    border: 5px solid black;
-    width: 300px;
+    width: 450px;
     height: 450px;
     float: left;
-    margin-left: 13.5%;
+    margin-left: 7.5%;
     margin-top: 25px;
 }
 
@@ -138,4 +137,19 @@
     background: #a69263;
     MARGIN-TOP: 35px;
     margin-right: 30%;
+}
+
+.Lips1{
+    Width: 100%;
+    Height: 100%;
+}
+
+.Lips2{
+    Width: 100%;
+    Height: 100%;
+}
+
+.Lips3{
+    Width: 100%;
+    Height: 100%;
 }
