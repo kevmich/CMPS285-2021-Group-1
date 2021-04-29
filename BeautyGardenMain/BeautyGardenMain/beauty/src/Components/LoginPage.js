@@ -22,7 +22,7 @@ function LoginPage() {
                 if (response.status == 200) {
                     alert('logged in successfully!');
                     localStorage.setItem("user", response.data)
-                    window.location.reload();
+                    window.location.href = "/";
                 } else {
                     alert('Email and/or Password is incorrect')
                 }
