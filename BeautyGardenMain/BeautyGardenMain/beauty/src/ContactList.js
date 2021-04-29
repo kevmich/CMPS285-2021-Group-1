@@ -60,7 +60,7 @@ function ContactList(props) {
                                                 </div>
                                             </td>
                                         </tr>
-                                    })}
+                                    }).reverse()}
                                 </tbody>
                   </table>
                 

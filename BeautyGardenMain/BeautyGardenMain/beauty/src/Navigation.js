@@ -72,6 +72,7 @@ const Navigation = (props) => {
     const LogoutButton = () => (
         <DropdownItem className="alphaBtn">
             <Link
+                
                 title="Logout"
                 style={{ textDecoration: 'none', color: 'black' }}
             >
@@ -217,7 +218,7 @@ const Navigation = (props) => {
                             </Link>
                         </NavItem>
 
-                        <NavItem className="mainBtn">
+                        {/* <NavItem className="mainBtn"> 
                             <Link
                                 className="portfolioPage"
                                 to="/portfolio"
@@ -228,13 +229,13 @@ const Navigation = (props) => {
                                     Portfolio
                 </mainButton>
                             </Link>
-                        </NavItem>
+                        </NavItem> */}
 
                     </Nav>
                     <div className="button_container">
                         <SocialButtons />
                         <UncontrolledDropdown
-                            className="charlieBtn"
+                            className="dropBtn"
                         >
                             <DropdownToggle
                                 nav
@@ -250,9 +251,9 @@ const Navigation = (props) => {
                                         title="Admin Login"
                                         style={{ textDecoration: 'none', color: 'black' }}
                                     >
-                                        <mainButton>
+                                        {!isLoggedIn ? <mainButton>
                                             Admin Login
-                    </mainButton>
+                    </mainButton> : null}
                                     </Link>
                                 </DropdownItem>
                                 {isLoggedIn ? <ContactList /> : null}
