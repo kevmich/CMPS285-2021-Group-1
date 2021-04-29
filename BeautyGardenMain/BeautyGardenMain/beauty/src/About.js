@@ -36,14 +36,8 @@ const About = () => {
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Listening:
+                            Hobbies:
 
-                    </div>
-
-                    <div className="profileTextSections">
-                            <br></br>
-                            <br></br>
-                            Challenge: 
                     </div>
 
                     <div className="profileTextSections">
@@ -53,9 +47,15 @@ const About = () => {
                     </div>
 
                     <div className="profileTextSections">
+                            <br></br>
+                            <br></br>
+                            A perfect day:
+                    </div>
+
+                    <div className="profileTextSections">
                         <br></br>
                             <br></br>
-                        Drinking:
+                        Guilty Pleasure:
                     </div>                                                            
 
              </div>
@@ -65,28 +65,28 @@ const About = () => {
                     <div className="profileAnswer">
                         <br></br>
                         <br></br>
-                        something something
+                        Shopping with my mom.
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                   Vampire Diaries for the 1000th time.
 
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Brunch and girls day!
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Online shopping.
 
                     </div>
 
@@ -114,26 +114,26 @@ const About = () => {
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Listening:
+                            Hobbies:
 
                     </div>
 
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Challenge: 
+                            Watching: 
                     </div>
 
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Watching:
+                            A perfect day:
                     </div>
 
                     <div className="profileTextSections">
                         <br></br>
                             <br></br>
-                        Drinking:
+                        Guilty Pleasure:
                     </div>                                                            
 
                 </div>
@@ -143,28 +143,28 @@ const About = () => {
                     <div className="profileAnswer">
                         <br></br>
                         <br></br>
-                        something something
+                    Spending time with my family and friends.
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Greys Anatomy.
 
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Hiking in the mountains.
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Buying myself new shoes.
 
                     </div>
 
@@ -189,26 +189,26 @@ const About = () => {
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Listening:
+                            Hobbies:
 
                     </div>
 
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Challenge: 
+                            Watching: 
                     </div>
 
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Watching:
+                            A perfect day:
                     </div>
 
                     <div className="profileTextSections">
                         <br></br>
                             <br></br>
-                        Drinking:
+                        Guilty Pleasure:
                     </div>                                                            
 
                 </div>
@@ -218,28 +218,28 @@ const About = () => {
                     <div className="profileAnswer">
                         <br></br>
                         <br></br>
-                        something something
+                        Playing with my German Shepher , Drax!
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    90 Day Fiance.
 
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Exploring a new location.
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Buying myself nice things.
 
                     </div>
 
@@ -264,26 +264,26 @@ const About = () => {
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Listening:
+                           Hobbies:
 
                     </div>
 
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Challenge: 
+                            Watching: 
                     </div>
 
                     <div className="profileTextSections">
                             <br></br>
                             <br></br>
-                            Watching:
+                            A perfect day:
                     </div>
 
                     <div className="profileTextSections">
                         <br></br>
                             <br></br>
-                        Drinking:
+                        Guilty pleasure:
                     </div>                                                            
 
                 </div>
@@ -293,28 +293,27 @@ const About = () => {
                     <div className="profileAnswer">
                         <br></br>
                         <br></br>
-                        something something
+                        Playing outside with my family.
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
-
+                   Bridgerton/ Behind her eyes.
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Outside soaking up the sun(using SPF of course).
                            
                     </div>
 
                     <div className="profileAnswer">
                     <br></br>
                     <br></br>
-                    something something something
+                    Late night snacks.
 
                     </div>
 
@@ -336,9 +335,14 @@ const About = () => {
         <img className="AboutSign" src={ AboutSign } alt="AboutSign.jpg" />
         </div>
 
-        </body>
+        </body>//end
+
+
         
-    )
-}
+
+
+        
+    )//end
+}//end
 
 export default About;
