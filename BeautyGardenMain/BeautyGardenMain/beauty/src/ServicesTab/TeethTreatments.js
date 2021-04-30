@@ -1,6 +1,6 @@
 import React from 'react';
 import './TeethTreatments.css'
-import teeth2 from '../images/teeth2.svg';
+import teeth1 from '../images/teeth1.jpg';
 
 const TeethTreatments = () => {
     return (
@@ -12,7 +12,7 @@ const TeethTreatments = () => {
             <div className="TeethImages">
 
                 <div className="TeethBoxes">
-                <img className="teeth2" src={ teeth2 } alt="teeth2.svg" />
+                <img className="teeth1" src={ teeth1 } alt="teeth1.jpg" />
 
                 </div>
 
