@@ -26,7 +26,6 @@
     width: auto;
     height: 300px;
     min-height: 100px;
-    text-align: center;
     padding: 10px;
     font-family: cursive;
     /* text-decoration: underline; */
@@ -78,8 +77,6 @@
     
     width: auto;
     height: 300px;
-    text-align: center;
-    font-family: cursive;
 
     /* Text Styling Here */
     text-align: center;
