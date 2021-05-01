@@ -81,7 +81,6 @@ height: 500px;
     float: right;
     margin-top: 20px;
     margin-bottom: 50px;
-    border: 5px solid black;
 
   }
 
@@ -181,4 +180,12 @@ height: 500px;
   Height: 100%;
   background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 
+}
+
+.waxing1{
+  
+  border: 5px solid black;
+  height: 100%;
+  width: 100%;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
