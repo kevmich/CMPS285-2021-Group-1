@@ -6,9 +6,7 @@
     background : #e2d2c5;;
     
     width: auto;
-    height: 100px;
-    text-align: center;
-    border-top: 5px solid black;
+    height: 80px;
     border-bottom: 5px solid black;
     padding: 10px;
 
@@ -39,7 +37,6 @@
 .TwoSectionContainer{
     background:#e2d2c5;
     height: 650px;
-    border: 5px solid black;
     width: 100%;
 
 }
@@ -56,6 +53,8 @@
 .LipFillers1{
     height: 275px;
     width: 350px;
+    border: 5px solid black;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 
 }
 
@@ -165,14 +164,17 @@
 .Lips1{
     Width: 100%;
     Height: 100%;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .Lips2{
     Width: 100%;
     Height: 100%;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .Lips3{
     Width: 100%;
     Height: 100%;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }

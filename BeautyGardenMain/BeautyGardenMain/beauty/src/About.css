@@ -6,11 +6,11 @@
     background : #e2d2c5;
     
     width: auto;
-    height: 100px;
+    height: 80px;
     text-align: center;
-    border-top: 3px solid black;
     border-bottom: 3px solid black;
     padding: 10px;
+   
 
     /* Text Styling Here */
     text-align: center;
@@ -26,7 +26,6 @@
     width: auto;
     height: 300px;
     min-height: 100px;
-    text-align: center;
     padding: 10px;
     font-family: cursive;
     /* text-decoration: underline; */
@@ -78,8 +77,6 @@
     
     width: auto;
     height: 300px;
-    text-align: center;
-    font-family: cursive;
 
     /* Text Styling Here */
     text-align: center;
@@ -133,24 +130,28 @@
     height: 90%;
     width: 75%;
     border: 4px solid goldenrod;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .Madi{
     height: 80%;
     width: 80%;
     border: 4px solid goldenrod;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .Courtney{
     height: 80%;
     width: 80%;
     border: 4px solid goldenrod;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .Abby{
     height: 90%;
     width: 75%;
     border: 4px solid goldenrod;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .AboutSign{
