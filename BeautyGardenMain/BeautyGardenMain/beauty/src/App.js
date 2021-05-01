@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
@@ -17,6 +17,7 @@ import portfolio from "./Components/portfolio";
 import imageUpload from "./Components/imageUpload";
 import errorPage from "./Components/errorPage";
 
+
 import {BrowserRouter as Router,
   Switch,
   Route,
@@ -26,10 +27,27 @@ import Navbar from './Navigation';
 
 const App = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
+  const [isLoading, setLoading] = useState(true);
+  
+  function fakeRequest() {
+    return new Promise(resolve => setTimeout(() => resolve(), 2000));
+  }
+  
+  useEffect(() => {
+    fakeRequest().then(() => {
+      const el = document.querySelector(".loader-container");
+      if (el) {
+        el.remove();        setLoading(!isLoading);      }
+    });
+  }, []);
+  
+  if (isLoading) {
+    return null;
+  }
 
   return (
+    <>
+  
     <div className="NavBar">
       <div className="pageContainer"> 
         <Router>
@@ -57,9 +75,13 @@ const App = (props) => {
       </Router>
       <Footer />
       </div>
-    </div>
+      </div>
+  
+  
     
-  );
+  
+  </>
+);
 }
 
 export default App;
