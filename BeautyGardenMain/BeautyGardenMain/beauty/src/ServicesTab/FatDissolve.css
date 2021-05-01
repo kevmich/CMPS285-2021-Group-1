@@ -3,18 +3,16 @@
 }
 
 .DissolveMainTitle{
-    background : #e2d2c5;;
+  background : #e2d2c5;;
     
-    width: auto;
-    height: 100px;
-    text-align: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    padding: 10px;
+  width: auto;
+  height: 80px;
+  border-bottom: 5px solid black;
+  padding: 10px;
 
-    /* Text Styling Here */
-    text-align: center;
-    font-family: 'Cinzel', serif;
+  /* Text Styling Here */
+  text-align: center;
+  font-family: 'Cinzel', serif;
 
 }
 
@@ -122,4 +120,6 @@
 .FatDissolvePic{
   Height: 100%;
   Width: 100%;
+  border: 5px solid black;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }

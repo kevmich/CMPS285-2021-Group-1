@@ -1,6 +1,7 @@
 import React from 'react';
 import './FaceNWax.css'
 import Face1 from "../images/Face1.jpg";
+import waxing1 from "../images/waxing1.jpg";
 
 const FaceNWax = () => {
     return (
@@ -95,7 +96,8 @@ const FaceNWax = () => {
                 </div>
 
                 <div className="WaxrightBox">
-                    [image here]
+                <img className="waxing1" src={ waxing1 } alt="waxing1.jpg" />
+
                 </div>
 
             </div>

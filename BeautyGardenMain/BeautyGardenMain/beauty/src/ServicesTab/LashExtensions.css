@@ -2,12 +2,10 @@
     background: #e2d2c5;
 }
 .MainTitle{
-    background : #e2d2c5;
+    background : #e2d2c5;;
     
     width: auto;
-    height: 100px;
-    text-align: center;
-    border-top: 5px solid black;
+    height: 80px;
     border-bottom: 5px solid black;
     padding: 10px;
 
@@ -133,18 +131,24 @@
     width: 300px;
     height: 300px;
     margin-left: 12%;
+    border: 5px solid black;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .lash2 {
     width: 300px;
     height: 300px;
     margin-left: 12%;
+    border: 5px solid black;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .lash3 {
     width: 300px;
     height: 300px;
     margin-left: 12%;
+    border: 5px solid black;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif) no-repeat center;
 }
 
 .SmallFont{

@@ -99,7 +99,7 @@ export default function BlogList(props) {
 
     
     return (
-        <div className="row">
+        <div>
             
                
             
@@ -113,15 +113,15 @@ export default function BlogList(props) {
                 />
             </div>
             <div className>
-                
+                <div className="add_button">
                 <button className="btn btn-dark add_button" onClick={addPost}>Add</button>
-                      
+                </div>     
                 {
                 
                 data.map && data.map((item, idx) => {
                     return (
                         <>
-                         <div>
+                         <div className="crud_buttons">
                              <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
                              <button className="btn btn-dark" onClick={() => {showPostDetails(item) }}>Edit</button>
                         </div>

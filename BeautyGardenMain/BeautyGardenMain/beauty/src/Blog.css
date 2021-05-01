@@ -26,14 +26,14 @@
     
 }
 
-.add_button {
+.crud_buttons {
     display: flex;
+    flex-direction: row;
+    float: right;
     
 }
 
-.add_container {
-    border-top: 5px solid black;
-}
+
 
 .card-img-top {
     height: 300px;
@@ -44,9 +44,7 @@
     background-color: #e2d2c5;
 }
 
-.blog_page {
-    border-top: 5px solid black;
-}
+
 
 .jumbotron-fluid {
     background-color: black;
@@ -63,10 +61,7 @@
     margin-top: 1em;
 }
 
-.btn_group {
-     display: inline-block;
-     border-spacing: 5px;
-}
+
 
 .post {
     margin-left: 40rem;
@@ -100,9 +95,7 @@ pre {
     outline-color: darkgoldenrod;
  }
 
-hr {
-    flex-grow:1;
-  }
+
 
 .title_style {
     width: 100%;
@@ -124,4 +117,12 @@ hr {
 
 .btn.btn-dark {
     margin: 1px;
+    
+}
+
+.add_button {
+    align-items: left;
+    
+    padding-top: 10px;
+    padding-left:20px;
 }

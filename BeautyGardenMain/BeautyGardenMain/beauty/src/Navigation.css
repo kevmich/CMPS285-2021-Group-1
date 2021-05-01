@@ -6,6 +6,7 @@
     min-height: 100px;
     width: auto;
     z-index: 99999;
+    box-shadow: 5px 8px 3px rgb(160, 156, 156);
 }
 
 .mr-auto {
