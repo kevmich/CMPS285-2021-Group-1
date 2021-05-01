@@ -19,7 +19,6 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import "./Navigation.css"
-
 import mainButton from './Buttons/mainButton';
 import SocialButtons from "./Buttons/SocialButtons";
 
@@ -53,7 +52,7 @@ const Navigation = (props) => {
             </Link>
         </DropdownItem>
     )//end ContactList
-
+    
     const AddBlogPost = () => (
         <DropdownItem className="alphaBtn">
             <Link

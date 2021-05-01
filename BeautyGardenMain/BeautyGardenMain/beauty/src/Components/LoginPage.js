@@ -20,7 +20,6 @@ function LoginPage() {
             .then(function (response) {
                 console.log(response);
                 if (response.status == 200) {
-                    alert('logged in successfully!');
                     localStorage.setItem("user", response.data)
                     window.location.href = "/";
                 } else {
