@@ -29,7 +29,7 @@ const Navigation = (props) => {
     const toggle = () => setIsOpen(!isOpen);
     const handleLogout = () => {
         localStorage.clear();
-        window.location.reload();
+        window.location.href="/"
     };
 
     useEffect(() => {
