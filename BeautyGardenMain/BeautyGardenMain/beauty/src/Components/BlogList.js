@@ -97,51 +97,53 @@ export default function BlogList(props) {
             .catch(err => console.log(err))
     }
 
-    
-    return (
-        <div>
-            
-               
-            
+    const LoggedIn = localStorage.getItem("user");
+
+    if(LoggedIn){
+        return (
             <div>
-                <Post 
-                addOrEdit={addOrEdit}
-                recordForEdit={postEdit}
-                toggle={toggle}
-                modal={modal}
-                setModal={setModal}
-                />
-            </div>
-            <div className>
-                <div className="add_button">
-                <button className="btn btn-dark add_button" onClick={addPost}>Add</button>
-                </div>     
-                {
                 
-                data.map && data.map((item, idx) => {
-                    return (
-                        <>
-                         <div className="crud_buttons">
-                             <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
-                             <button className="btn btn-dark" onClick={() => {showPostDetails(item) }}>Edit</button>
-                        </div>
-                        <div className='post' key={item.blogID}>
-                            <h1 className="title_style">{ item.blogTitle }</h1>
-                            <img src={item.imageSrc} className="post_img" />
-                             <p className="post_date">Posted On: { item.blogDate }</p>
-                             <div className="body_container">  
-                                <pre className="SmallFont"><p className="post_body"> {item.blogBody}</p></pre>
-                             </div>
-                        </div>
-          
-          <hr />
-        
-        </>)}).reverse()}
-          
-    </div>
-    </div>
-        
-        
-    )
-    
+                
+                
+                <div>
+                    <Post 
+                    addOrEdit={addOrEdit}
+                    recordForEdit={postEdit}
+                    toggle={toggle}
+                    modal={modal}
+                    setModal={setModal}
+                    />
+                </div>
+                <div className>
+                    <div className="add_button">
+                    <button className="btn btn-dark add_button" onClick={addPost}>Add</button>
+                    </div>     
+                    {
+                    
+                    data.map && data.map((item, idx) => {
+                        return (
+                            <>
+                            <div className="crud_buttons">
+                                <button className="btn btn-dark" onClick={deletePost.bind(this, item.blogID)}>Delete</button>
+                                <button className="btn btn-dark" onClick={() => {showPostDetails(item) }}>Edit</button>
+                            </div>
+                            <div className='post' key={item.blogID}>
+                                <h1 className="title_style">{ item.blogTitle }</h1>
+                                <img src={item.imageSrc} className="post_img" />
+                                <p className="post_date">Posted On: { item.blogDate }</p>
+                                <div className="body_container">  
+                                    <pre className="SmallFont"><p className="post_body"> {item.blogBody}</p></pre>
+                                </div>
+                            </div>
+            
+            <hr />
+            
+            </>)}).reverse()}
+            
+        </div>
+        </div>    
+        )
+        }else{
+            window.location.href = "404-error-page";
+        }
 }

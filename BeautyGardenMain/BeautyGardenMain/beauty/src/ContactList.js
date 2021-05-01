@@ -8,16 +8,17 @@ import "./ContactList.css"
 
 function ContactList(props) {
     const [data, setData] = useState({});
-  
+    
 
     useEffect (() => {
         const GetData = async () => {
             const result = await axios("/api/UserContact");
             setData(result.data);
         };
-
         GetData();
     }, []);
+   
+
     
     const deleteContact = (id) => {
         if (window.confirm('Delete?'))
@@ -32,9 +33,11 @@ function ContactList(props) {
         });
         
     };
-   
+
+   const LoggedIn = localStorage.getItem("user");
     
-        return (
+   if(LoggedIn) {
+       return (
           <div className="container-fluid">
             <div className="row mt-3"><div className="col-lg-12">
               <div className="card">
@@ -70,8 +73,11 @@ function ContactList(props) {
          </div>
         </div>
        );
-      }
-    
+    }else{
+        window.location.href = "404-error-page";
+    }
+   
+}
    /* return (
         <div className="animated fadeIn" >
             <Row>
@@ -116,4 +122,5 @@ function ContactList(props) {
         </div>
     )
 }*/
+
 export default ContactList;
